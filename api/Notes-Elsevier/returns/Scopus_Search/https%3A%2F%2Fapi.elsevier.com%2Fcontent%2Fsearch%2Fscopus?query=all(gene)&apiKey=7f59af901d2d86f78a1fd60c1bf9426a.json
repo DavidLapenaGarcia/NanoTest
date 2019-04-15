@@ -1,0 +1,1451 @@
+{
+  "search-results": {
+    "opensearch:totalResults": "6452816",
+    "opensearch:startIndex": "0",
+    "opensearch:itemsPerPage": "25",
+    "opensearch:Query": {
+      "@role": "request",
+      "@searchTerms": "all(gene)",
+      "@startPage": "0"
+    },
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/search/scopus?start=0&count=25&query=all%28gene%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a",
+        "@type": "application/json"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "first",
+        "@href": "https://api.elsevier.com/content/search/scopus?start=0&count=25&query=all%28gene%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a",
+        "@type": "application/json"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "next",
+        "@href": "https://api.elsevier.com/content/search/scopus?start=25&count=25&query=all%28gene%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a",
+        "@type": "application/json"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "last",
+        "@href": "https://api.elsevier.com/content/search/scopus?start=4975&count=25&query=all%28gene%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a",
+        "@type": "application/json"
+      }
+    ],
+    "entry": [
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062565024"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062565024?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85062565024&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85062565024&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85062565024",
+        "dc:identifier": "SCOPUS_ID:85062565024",
+        "eid": "2-s2.0-85062565024",
+        "dc:title": "Optimization Problem of k-NN Classifier in DNA Microarray Methods",
+        "dc:creator": "Bentkowska U.",
+        "prism:publicationName": "Studies in Fuzziness and Soft Computing",
+        "prism:issn": "14349922",
+        "prism:volume": "378",
+        "prism:pageRange": "107-120",
+        "prism:coverDate": "2020-01-01",
+        "prism:coverDisplayDate": "2020",
+        "prism:doi": "10.1007/978-3-030-12927-9_5",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "University of Rzeszów",
+            "affiliation-city": "Rzeszow",
+            "affiliation-country": "Poland"
+          }
+        ],
+        "prism:aggregationType": "Book Series",
+        "subtype": "ch",
+        "subtypeDescription": "Chapter",
+        "source-id": "4900152704",
+        "openaccess": "0",
+        "openaccessFlag": false
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062912168"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062912168?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85062912168&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85062912168&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85062912168",
+        "dc:identifier": "SCOPUS_ID:85062912168",
+        "eid": "2-s2.0-85062912168",
+        "dc:title": "Predicting human position using improved numerical association analysis for bioelectric potential data",
+        "dc:creator": "Tahyudin I.",
+        "prism:publicationName": "Lecture Notes in Networks and Systems",
+        "prism:issn": "23673370",
+        "prism:eIssn": "23673389",
+        "prism:volume": "69",
+        "prism:pageRange": "655-666",
+        "prism:coverDate": "2020-01-01",
+        "prism:coverDisplayDate": "2020",
+        "prism:doi": "10.1007/978-3-030-12388-8_46",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "STMIK AMIKOM Purwokerto",
+            "affiliation-city": "Purwokerto",
+            "affiliation-country": "Indonesia"
+          },
+          {
+            "@_fa": "true",
+            "affilname": "Kanazawa University",
+            "affiliation-city": "Kanazawa",
+            "affiliation-country": "Japan"
+          }
+        ],
+        "prism:aggregationType": "Book Series",
+        "subtype": "ch",
+        "subtypeDescription": "Chapter",
+        "source-id": "21100901469",
+        "openaccess": "0",
+        "openaccessFlag": false
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85051544223"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85051544223?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85051544223&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85051544223&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85051544223",
+        "dc:identifier": "SCOPUS_ID:85051544223",
+        "eid": "2-s2.0-85051544223",
+        "dc:title": "Some results on the projective cone normed tensor product spaces over Banach algebras",
+        "dc:creator": "Das D.",
+        "prism:publicationName": "Boletim da Sociedade Paranaense de Matematica",
+        "prism:issn": "00378712",
+        "prism:eIssn": "21751188",
+        "prism:volume": "38",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "197-220",
+        "prism:coverDate": "2020-01-01",
+        "prism:coverDisplayDate": "2020",
+        "prism:doi": "10.5269/bspm.v38i1.36450",
+        "citedby-count": "1",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Gauhati University",
+            "affiliation-city": "Guwahati",
+            "affiliation-country": "India"
+          }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "19700201433",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062916766"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062916766?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85062916766&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85062916766&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85062916766",
+        "dc:identifier": "SCOPUS_ID:85062916766",
+        "eid": "2-s2.0-85062916766",
+        "dc:title": "Bioinformatics tools for pacbio sequenced amplicon data pre-processing and target sequence extraction",
+        "dc:creator": "Ahmed Z.",
+        "prism:publicationName": "Lecture Notes in Networks and Systems",
+        "prism:issn": "23673370",
+        "prism:eIssn": "23673389",
+        "prism:volume": "70",
+        "prism:pageRange": "326-340",
+        "prism:coverDate": "2020-01-01",
+        "prism:coverDisplayDate": "2020",
+        "prism:doi": "10.1007/978-3-030-12385-7_26",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "University of Connecticut Health Center",
+            "affiliation-city": "Farmington",
+            "affiliation-country": "United States"
+          },
+          {
+            "@_fa": "true",
+            "affilname": "University of Connecticut Health Center",
+            "affiliation-city": "Farmington",
+            "affiliation-country": "United States"
+          }
+        ],
+        "prism:aggregationType": "Book Series",
+        "subtype": "ch",
+        "subtypeDescription": "Chapter",
+        "source-id": "21100901469",
+        "openaccess": "0",
+        "openaccessFlag": false
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062897525"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062897525?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85062897525&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85062897525&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85062897525",
+        "dc:identifier": "SCOPUS_ID:85062897525",
+        "eid": "2-s2.0-85062897525",
+        "dc:title": "Transfer learning for cross-domain sequence tagging tasks",
+        "dc:creator": "Cao M.",
+        "prism:publicationName": "Lecture Notes in Networks and Systems",
+        "prism:issn": "23673370",
+        "prism:eIssn": "23673389",
+        "prism:volume": "70",
+        "prism:pageRange": "162-173",
+        "prism:coverDate": "2020-01-01",
+        "prism:coverDisplayDate": "2020",
+        "prism:doi": "10.1007/978-3-030-12385-7_14",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Northeastern University China",
+            "affiliation-city": "Shenyang",
+            "affiliation-country": "China"
+          }
+        ],
+        "prism:aggregationType": "Book Series",
+        "subtype": "ch",
+        "subtypeDescription": "Chapter",
+        "source-id": "21100901469",
+        "openaccess": "0",
+        "openaccessFlag": false
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062914924"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062914924?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85062914924&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85062914924&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85062914924",
+        "dc:identifier": "SCOPUS_ID:85062914924",
+        "eid": "2-s2.0-85062914924",
+        "dc:title": "Reverse engineering creativity into interpretable neural networks",
+        "dc:creator": "Oita M.",
+        "prism:publicationName": "Lecture Notes in Networks and Systems",
+        "prism:issn": "23673370",
+        "prism:eIssn": "23673389",
+        "prism:volume": "70",
+        "prism:pageRange": "235-247",
+        "prism:coverDate": "2020-01-01",
+        "prism:coverDisplayDate": "2020",
+        "prism:doi": "10.1007/978-3-030-12385-7_19",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Università della Svizzera italiana",
+            "affiliation-city": "Lugano",
+            "affiliation-country": "Switzerland"
+          }
+        ],
+        "prism:aggregationType": "Book Series",
+        "subtype": "ch",
+        "subtypeDescription": "Chapter",
+        "source-id": "21100901469",
+        "openaccess": "0",
+        "openaccessFlag": false
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062896209"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062896209?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85062896209&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85062896209&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85062896209",
+        "dc:identifier": "SCOPUS_ID:85062896209",
+        "eid": "2-s2.0-85062896209",
+        "dc:title": "Intellieppi: Intelligent reaction monitoring and holistic data management system for the molecular biology lab",
+        "dc:creator": "Neuberger A.",
+        "prism:publicationName": "Lecture Notes in Networks and Systems",
+        "prism:issn": "23673370",
+        "prism:eIssn": "23673389",
+        "prism:volume": "69",
+        "prism:pageRange": "392-407",
+        "prism:coverDate": "2020-01-01",
+        "prism:coverDisplayDate": "2020",
+        "prism:doi": "10.1007/978-3-030-12388-8_28",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "University of Cambridge",
+            "affiliation-city": "Cambridge",
+            "affiliation-country": "United Kingdom"
+          }
+        ],
+        "prism:aggregationType": "Book Series",
+        "subtype": "ch",
+        "subtypeDescription": "Chapter",
+        "source-id": "21100901469",
+        "openaccess": "0",
+        "openaccessFlag": false
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85061342373"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85061342373?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85061342373&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85061342373&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85061342373",
+        "dc:identifier": "SCOPUS_ID:85061342373",
+        "eid": "2-s2.0-85061342373",
+        "dc:title": "Grey wolf optimizer: Theory, literature review, and application in computational fluid dynamics problems",
+        "dc:creator": "Mirjalili S.",
+        "prism:publicationName": "Studies in Computational Intelligence",
+        "prism:issn": "1860949X",
+        "prism:volume": "811",
+        "prism:pageRange": "87-105",
+        "prism:coverDate": "2020-01-01",
+        "prism:coverDisplayDate": "2020",
+        "prism:doi": "10.1007/978-3-030-12127-3_6",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Griffith University",
+            "affiliation-city": "Brisbane",
+            "affiliation-country": "Australia"
+          }
+        ],
+        "prism:aggregationType": "Book Series",
+        "subtype": "ch",
+        "subtypeDescription": "Chapter",
+        "source-id": "4900152708",
+        "openaccess": "0",
+        "openaccessFlag": false
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062912799"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85062912799?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85062912799&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85062912799&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "full-text",
+            "@href": "https://api.elsevier.com/content/article/eid/1-s2.0-S2095495618310246"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85062912799",
+        "dc:identifier": "SCOPUS_ID:85062912799",
+        "eid": "2-s2.0-85062912799",
+        "dc:title": "Improved hydrogen oxidation reaction under alkaline conditions by Au–Pt alloy nanoparticles",
+        "dc:creator": "Lu L.",
+        "prism:publicationName": "Journal of Energy Chemistry",
+        "prism:issn": "20954956",
+        "prism:volume": "40",
+        "prism:pageRange": "52-56",
+        "prism:coverDate": "2020-01-01",
+        "prism:coverDisplayDate": "January 2020",
+        "prism:doi": "10.1016/j.jechem.2019.02.008",
+        "pii": "S2095495618310246",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Chongqing University",
+            "affiliation-city": "Chongqing",
+            "affiliation-country": "China"
+          }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "21100244836",
+        "openaccess": "0",
+        "openaccessFlag": false
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85061300924"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85061300924?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85061300924&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85061300924&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85061300924",
+        "dc:identifier": "SCOPUS_ID:85061300924",
+        "eid": "2-s2.0-85061300924",
+        "dc:title": "Dragonfly algorithm: Theory, literature review, and application in feature selection",
+        "dc:creator": "Mafarja M.",
+        "prism:publicationName": "Studies in Computational Intelligence",
+        "prism:issn": "1860949X",
+        "prism:volume": "811",
+        "prism:pageRange": "47-67",
+        "prism:coverDate": "2020-01-01",
+        "prism:coverDisplayDate": "2020",
+        "prism:doi": "10.1007/978-3-030-12127-3_4",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Birzeit University",
+            "affiliation-city": "Birzeit",
+            "affiliation-country": "Palestine"
+          }
+        ],
+        "prism:aggregationType": "Book Series",
+        "subtype": "ch",
+        "subtypeDescription": "Chapter",
+        "source-id": "4900152708",
+        "openaccess": "0",
+        "openaccessFlag": false
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85059166422"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85059166422?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85059166422&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85059166422&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85059166422",
+        "dc:identifier": "SCOPUS_ID:85059166422",
+        "eid": "2-s2.0-85059166422",
+        "dc:title": "Design of graphene-based adsorbents and its removal of antibiotics in aqueous solution",
+        "dc:creator": "Jiang Z.",
+        "prism:publicationName": "Wuli Huaxue Xuebao/ Acta Physico - Chimica Sinica",
+        "prism:issn": "10006818",
+        "prism:volume": "35",
+        "prism:issueIdentifier": "7",
+        "prism:pageRange": "709-724",
+        "prism:coverDate": "2019-12-21",
+        "prism:coverDisplayDate": "21 December 2019",
+        "prism:doi": "10.3866/PKU.WHXB201807051",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Tongji University",
+            "affiliation-city": "Shanghai",
+            "affiliation-country": "China"
+          }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "re",
+        "subtypeDescription": "Review",
+        "source-id": "23773",
+        "openaccess": "0",
+        "openaccessFlag": false
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85045951305"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85045951305?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85045951305&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85045951305&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85045951305",
+        "dc:identifier": "SCOPUS_ID:85045951305",
+        "eid": "2-s2.0-85045951305",
+        "dc:title": "Contribution to the knowledge of the rare \"famatina tuco-Tuco\", Ctenomys famosus Thomas 1920 (Rodentia: Ctenomyidae)",
+        "dc:creator": "Tatiana Sánchez R.",
+        "prism:publicationName": "Mammalia",
+        "prism:issn": "00251461",
+        "prism:eIssn": "18641547",
+        "prism:volume": "83",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "11-22",
+        "prism:coverDate": "2019-12-19",
+        "prism:coverDisplayDate": "19 December 2019",
+        "prism:doi": "10.1515/mammalia-2017-0131",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Universidad Nacional de Tucuman (UNT)",
+            "affiliation-city": "San Miguel de Tucuman",
+            "affiliation-country": "Argentina"
+          },
+          {
+            "@_fa": "true",
+            "affilname": "Fundacion Miguel Lillo",
+            "affiliation-city": "San Miguel de Tucuman",
+            "affiliation-country": "Argentina"
+          }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "22653",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85046080807"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85046080807?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85046080807&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85046080807&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85046080807",
+        "dc:identifier": "SCOPUS_ID:85046080807",
+        "eid": "2-s2.0-85046080807",
+        "dc:title": "Difficulty in visual sex identification: A case study on bank voles",
+        "dc:creator": "Bartolommei P.",
+        "prism:publicationName": "Mammalia",
+        "prism:issn": "00251461",
+        "prism:eIssn": "18641547",
+        "prism:volume": "83",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "70-73",
+        "prism:coverDate": "2019-12-19",
+        "prism:coverDisplayDate": "19 December 2019",
+        "prism:doi": "10.1515/mammalia-2017-0170",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Fondazione Ethoikos",
+            "affiliation-city": "Siena",
+            "affiliation-country": "Italy"
+          }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "22653",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060164297"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060164297?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85060164297&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85060164297&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85060164297",
+        "dc:identifier": "SCOPUS_ID:85060164297",
+        "eid": "2-s2.0-85060164297",
+        "dc:title": "Biotin-functionalized copolymeric PEG-PCL micelles for in vivo tumour-targeted delivery of artemisinin",
+        "dc:creator": "Nosrati H.",
+        "prism:publicationName": "Artificial Cells, Nanomedicine and Biotechnology",
+        "prism:issn": "21691401",
+        "prism:eIssn": "2169141X",
+        "prism:volume": "47",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "104-114",
+        "prism:coverDate": "2019-12-04",
+        "prism:coverDisplayDate": "4 December 2019",
+        "prism:doi": "10.1080/21691401.2018.1543199",
+        "citedby-count": "1",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Zanjan University of Medical Sciences",
+            "affiliation-city": "Zanjan",
+            "affiliation-country": "Iran"
+          }
+        ],
+        "pubmed-id": "30663422",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "21100241807",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060151657"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060151657?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85060151657&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85060151657&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "full-text",
+            "@href": "https://api.elsevier.com/content/article/eid/1-s2.0-S1369800118313209"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85060151657",
+        "dc:identifier": "SCOPUS_ID:85060151657",
+        "eid": "2-s2.0-85060151657",
+        "dc:title": "Flot2 targeted by miR-449 acts as a prognostic biomarker in glioma",
+        "dc:creator": "Huang S.",
+        "prism:publicationName": "Artificial Cells, Nanomedicine and Biotechnology",
+        "prism:issn": "21691401",
+        "prism:eIssn": "2169141X",
+        "prism:volume": "47",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "250-255",
+        "prism:coverDate": "2019-12-04",
+        "prism:coverDisplayDate": "4 December 2019",
+        "prism:doi": "10.1080/21691401.2018.1549062",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Fujian Provincial Hospital",
+            "affiliation-city": "Fuzhou",
+            "affiliation-country": "China"
+          }
+        ],
+        "pubmed-id": "30663389",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "21100241807",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060128010"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060128010?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85060128010&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85060128010&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85060128010",
+        "dc:identifier": "SCOPUS_ID:85060128010",
+        "eid": "2-s2.0-85060128010",
+        "dc:title": "Riboflavin immobilized Fe <inf>3</inf> O <inf>4</inf> magnetic nanoparticles carried with n-butylidenephthalide as targeting-based anticancer agents",
+        "dc:creator": "Wu C.",
+        "prism:publicationName": "Artificial Cells, Nanomedicine and Biotechnology",
+        "prism:issn": "21691401",
+        "prism:eIssn": "2169141X",
+        "prism:volume": "47",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "210-220",
+        "prism:coverDate": "2019-12-04",
+        "prism:coverDisplayDate": "4 December 2019",
+        "prism:doi": "10.1080/21691401.2018.1548473",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "National Chiao Tung University Taiwan",
+            "affiliation-city": "Hsin-chu",
+            "affiliation-country": "Taiwan"
+          }
+        ],
+        "pubmed-id": "30663404",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "21100241807",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060148885"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060148885?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85060148885&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85060148885&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85060148885",
+        "dc:identifier": "SCOPUS_ID:85060148885",
+        "eid": "2-s2.0-85060148885",
+        "dc:title": "Cytotoxicity, dose-enhancement and radiosensitization of glioblastoma cells with rare earth nanoparticles",
+        "dc:creator": "Lu V.",
+        "prism:publicationName": "Artificial Cells, Nanomedicine and Biotechnology",
+        "prism:issn": "21691401",
+        "prism:eIssn": "2169141X",
+        "prism:volume": "47",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "132-143",
+        "prism:coverDate": "2019-12-04",
+        "prism:coverDisplayDate": "4 December 2019",
+        "prism:doi": "10.1080/21691401.2018.1544564",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "University of Oxford",
+            "affiliation-city": "Oxford",
+            "affiliation-country": "United Kingdom"
+          }
+        ],
+        "pubmed-id": "30663430",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "21100241807",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060135656"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060135656?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85060135656&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85060135656&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85060135656",
+        "dc:identifier": "SCOPUS_ID:85060135656",
+        "eid": "2-s2.0-85060135656",
+        "dc:title": "In-vitro haemocompatibility of dextran-protein submicron particles",
+        "dc:creator": "Kloypan C.",
+        "prism:publicationName": "Artificial Cells, Nanomedicine and Biotechnology",
+        "prism:issn": "21691401",
+        "prism:eIssn": "2169141X",
+        "prism:volume": "47",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "241-249",
+        "prism:coverDate": "2019-12-04",
+        "prism:coverDisplayDate": "4 December 2019",
+        "prism:doi": "10.1080/21691401.2018.1548476",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Charité – Universitätsmedizin Berlin",
+            "affiliation-city": "Berlin",
+            "affiliation-country": "Germany"
+          },
+          {
+            "@_fa": "true",
+            "affilname": "University of Phayao",
+            "affiliation-city": "Phayao",
+            "affiliation-country": "Thailand"
+          }
+        ],
+        "pubmed-id": "30663396",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "21100241807",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060137573"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060137573?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85060137573&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85060137573&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85060137573",
+        "dc:identifier": "SCOPUS_ID:85060137573",
+        "eid": "2-s2.0-85060137573",
+        "dc:title": "Effect of exposure of osteoblast-like cells to low-dose silver nanoparticles: uptake, retention and osteogenic activity",
+        "dc:creator": "Xie H.",
+        "prism:publicationName": "Artificial Cells, Nanomedicine and Biotechnology",
+        "prism:issn": "21691401",
+        "prism:eIssn": "2169141X",
+        "prism:volume": "47",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "260-267",
+        "prism:coverDate": "2019-12-04",
+        "prism:coverDisplayDate": "4 December 2019",
+        "prism:doi": "10.1080/21691401.2018.1552594",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Linyi People’s Hospital",
+            "affiliation-city": "Linyi",
+            "affiliation-country": "China"
+          }
+        ],
+        "pubmed-id": "30663398",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "21100241807",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060576613"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060576613?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85060576613&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85060576613&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85060576613",
+        "dc:identifier": "SCOPUS_ID:85060576613",
+        "eid": "2-s2.0-85060576613",
+        "dc:title": "Gold nanoparticles and hepatitis B virus",
+        "dc:creator": "Negahdari B.",
+        "prism:publicationName": "Artificial Cells, Nanomedicine and Biotechnology",
+        "prism:issn": "21691401",
+        "prism:eIssn": "2169141X",
+        "prism:volume": "47",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "469-474",
+        "prism:coverDate": "2019-12-04",
+        "prism:coverDisplayDate": "4 December 2019",
+        "prism:doi": "10.1080/21691401.2018.1546185",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Tehran University of Medical Sciences",
+            "affiliation-city": "Tehran",
+            "affiliation-country": "Iran"
+          },
+          {
+            "@_fa": "true",
+            "affilname": "Tehran University of Medical Sciences",
+            "affiliation-city": "Tehran",
+            "affiliation-country": "Iran"
+          }
+        ],
+        "pubmed-id": "30686057",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "21100241807",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060159867"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060159867?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85060159867&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85060159867&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85060159867",
+        "dc:identifier": "SCOPUS_ID:85060159867",
+        "eid": "2-s2.0-85060159867",
+        "dc:title": "Synthesis and characterization of PEG-functionalized graphene oxide as an effective pH-sensitive drug carrier",
+        "dc:creator": "Kazempour M.",
+        "prism:publicationName": "Artificial Cells, Nanomedicine and Biotechnology",
+        "prism:issn": "21691401",
+        "prism:eIssn": "2169141X",
+        "prism:volume": "47",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "90-94",
+        "prism:coverDate": "2019-12-04",
+        "prism:coverDisplayDate": "4 December 2019",
+        "prism:doi": "10.1080/21691401.2018.1543196",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "University of Tabriz",
+            "affiliation-city": "Tabriz",
+            "affiliation-country": "Iran"
+          }
+        ],
+        "pubmed-id": "30663418",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "21100241807",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060148231"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060148231?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85060148231&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85060148231&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85060148231",
+        "dc:identifier": "SCOPUS_ID:85060148231",
+        "eid": "2-s2.0-85060148231",
+        "dc:title": "Fluorescent labelling in living dental pulp stem cells by graphene oxide quantum dots",
+        "dc:creator": "Li X.",
+        "prism:publicationName": "Artificial Cells, Nanomedicine and Biotechnology",
+        "prism:issn": "21691401",
+        "prism:eIssn": "2169141X",
+        "prism:volume": "47",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "115-122",
+        "prism:coverDate": "2019-12-04",
+        "prism:coverDisplayDate": "4 December 2019",
+        "prism:doi": "10.1080/21691401.2018.1544141",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Nanjing University, School of Medicine",
+            "affiliation-city": "Nanjing",
+            "affiliation-country": "China"
+          }
+        ],
+        "pubmed-id": "30663424",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "21100241807",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060184759"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85060184759?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85060184759&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85060184759&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85060184759",
+        "dc:identifier": "SCOPUS_ID:85060184759",
+        "eid": "2-s2.0-85060184759",
+        "dc:title": "Fabrication and evaluation a transferrin receptor targeting nano-drug carrier for cerebral infarction treatment",
+        "dc:creator": "Shen J.",
+        "prism:publicationName": "Artificial Cells, Nanomedicine and Biotechnology",
+        "prism:issn": "21691401",
+        "prism:eIssn": "2169141X",
+        "prism:volume": "47",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "192-200",
+        "prism:coverDate": "2019-12-04",
+        "prism:coverDisplayDate": "4 December 2019",
+        "prism:doi": "10.1080/21691401.2018.1548471",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Nanjing University",
+            "affiliation-city": "Nanjing",
+            "affiliation-country": "China"
+          }
+        ],
+        "pubmed-id": "30663409",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "source-id": "21100241807",
+        "openaccess": "1",
+        "openaccessFlag": true
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85059175023"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85059175023?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85059175023&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85059175023&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "full-text",
+            "@href": "https://api.elsevier.com/content/article/eid/1-s2.0-S0958166918302088"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85059175023",
+        "dc:identifier": "SCOPUS_ID:85059175023",
+        "eid": "2-s2.0-85059175023",
+        "dc:title": "Gene therapy for blood diseases",
+        "dc:creator": "Kohn D.",
+        "prism:publicationName": "Current Opinion in Biotechnology",
+        "prism:issn": "09581669",
+        "prism:eIssn": "18790429",
+        "prism:volume": "60",
+        "prism:pageRange": "39-45",
+        "prism:coverDate": "2019-12-01",
+        "prism:coverDisplayDate": "December 2019",
+        "prism:doi": "10.1016/j.copbio.2018.11.016",
+        "pii": "S0958166918302088",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "David Geffen School of Medicine at UCLA",
+            "affiliation-city": "Los Angeles",
+            "affiliation-country": "United States"
+          },
+          {
+            "@_fa": "true",
+            "affilname": "David Geffen School of Medicine at UCLA",
+            "affiliation-city": "Los Angeles",
+            "affiliation-country": "United States"
+          },
+          {
+            "@_fa": "true",
+            "affilname": "David Geffen School of Medicine at UCLA",
+            "affiliation-city": "Los Angeles",
+            "affiliation-country": "United States"
+          }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "re",
+        "subtypeDescription": "Review",
+        "source-id": "15579",
+        "openaccess": "0",
+        "openaccessFlag": false
+      },
+      {
+        "@_fa": "true",
+        "link": [
+          {
+            "@_fa": "true",
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85063060850"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "author-affiliation",
+            "@href": "https://api.elsevier.com/content/abstract/scopus_id/85063060850?field=author,affiliation"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus",
+            "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85063060850&origin=inward"
+          },
+          {
+            "@_fa": "true",
+            "@ref": "scopus-citedby",
+            "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85063060850&origin=inward"
+          }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85063060850",
+        "dc:identifier": "SCOPUS_ID:85063060850",
+        "eid": "2-s2.0-85063060850",
+        "dc:title": "Genome-wide association analysis reveals KCTD12 and miR-383-binding genes in the background of rumination",
+        "dc:creator": "Eszlari N.",
+        "prism:publicationName": "Translational Psychiatry",
+        "prism:eIssn": "21583188",
+        "prism:volume": "9",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": null,
+        "prism:coverDate": "2019-12-01",
+        "prism:coverDisplayDate": "1 December 2019",
+        "prism:doi": "10.1038/s41398-019-0454-1",
+        "citedby-count": "0",
+        "affiliation": [
+          {
+            "@_fa": "true",
+            "affilname": "Semmelweis Egyetem",
+            "affiliation-city": "Budapest",
+            "affiliation-country": "Hungary"
+          },
+          {
+            "@_fa": "true",
+            "affilname": "Semmelweis Egyetem",
+            "affiliation-city": "Budapest",
+            "affiliation-country": "Hungary"
+          }
+        ],
+        "pubmed-id": "30886212",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "article-number": "119",
+        "source-id": "19900191866",
+        "openaccess": "1",
+        "openaccessFlag": true
+      }
+    ]
+  }
+}

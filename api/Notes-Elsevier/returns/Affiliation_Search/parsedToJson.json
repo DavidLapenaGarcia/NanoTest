@@ -1,0 +1,104 @@
+{
+   "search-results": {
+      "totalResults": "46",
+      "startIndex": "0",
+      "itemsPerPage": "25",
+      "Query": {
+         "@role": "request",
+         "@searchTerms": "affil(IBEC)",
+         "@startPage": "0"
+      },
+      "link": [
+         {
+            "@ref": "self",
+            "@href": "https://api-elsevier-com.sire.ub.edu/content/search/affiliation?start=0&count=25&query=affil%28IBEC%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a"
+         },
+         {
+            "@ref": "first",
+            "@href": "https://api-elsevier-com.sire.ub.edu/content/search/affiliation?start=0&count=25&query=affil%28IBEC%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a"
+         },
+         {
+            "@ref": "next",
+            "@href": "https://api-elsevier-com.sire.ub.edu/content/search/affiliation?start=25&count=25&query=affil%28IBEC%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a"
+         },
+         {
+            "@ref": "last",
+            "@href": "https://api-elsevier-com.sire.ub.edu/content/search/affiliation?start=21&count=25&query=affil%28IBEC%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a"
+         }
+      ],
+      "entry": [
+         {
+            "link": [
+               {
+                  "@ref": "self",
+                  "@href": "https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/60104011"
+               },
+               {
+                  "@ref": "search",
+                  "@href": "https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%2860104011%29"
+               },
+               {
+                  "@ref": "scopus-affiliation",
+                  "@href": "https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=60104011&partnerID=HzOxMe3b&origin=inward"
+               }
+            ],
+            "url": "https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/60104011",
+            "identifier": "AFFILIATION_ID:60104011",
+            "eid": "10-s2.0-60104011",
+            "affiliation-name": "Institut de Bioenginyeria de Catalunya",
+            "name-variant": "Institute For Bioengineering Of Catalonia (ibec)",
+            "document-count": "1453",
+            "city": "Barcelona",
+            "country": "Spain",
+            "parent-affiliation-id": "0"
+         },
+         {
+            "link": [
+               {
+                  "@ref": "self",
+                  "@href": "https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/105310469"
+               },
+               {
+                  "@ref": "search",
+                  "@href": "https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28105310469%29"
+               },
+               {
+                  "@ref": "scopus-affiliation",
+                  "@href": "https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=105310469&partnerID=HzOxMe3b&origin=inward"
+               }
+            ],
+            "url": "https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/105310469",
+            "identifier": "AFFILIATION_ID:105310469",
+            "eid": "10-s2.0-105310469",
+            "affiliation-name": "IBEC",
+            "name-variant": "Ibec",
+            "document-count": "8",
+            "city": "Barcelona",
+            "country": "Spain",
+            "parent-affiliation-id": "0"
+         },
+         {
+            "link": [
+               {
+                  "@ref": "self",
+                  "@href": "https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/112852679"
+               },
+               {
+                  "@ref": "search",
+                  "@href": "https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28112852679%29"
+               }
+            ],
+            "#text": "&partnerID=HzOxMe3b&origin=inward\"/>",
+            "url": "https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/112852679",
+            "identifier": "AFFILIATION_ID:112852679",
+            "eid": "10-s2.0-112852679",
+            "affiliation-name": "Institute of Bioengineering of Catalonia (IBEC)",
+            "name-variant": "Institute Of Bioengineering Of Catalonia (ibec)",
+            "document-count": "7",
+            "city": "Barcelona",
+            "country": "Spain",
+            "parent-affiliation-id": "0"
+         }
+      ]
+   }
+}

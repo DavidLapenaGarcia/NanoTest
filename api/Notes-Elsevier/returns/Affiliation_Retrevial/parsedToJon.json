@@ -1,0 +1,108 @@
+{
+    "affiliation-retrieval-response": {
+        "coredata": {
+            "url": "https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/60016849",
+            "identifier": "AFFILIATION_ID:60016849",
+            "eid": "10-s2.0-60016849",
+            "author-count": "57642",
+            "document-count": "293690",
+            "link": [
+                {
+                    "@href": "https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/60016849",
+                    "@rel": "self"
+                },
+                {
+                    "@href": "https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%2860016849%29",
+                    "@rel": "search"
+                },
+                {
+                    "@href": "https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=60016849'&'partnerID=HzOxMe3b'&'origin=inward",
+                    "@rel": "scopus-affiliation"
+                }
+            ]
+        },
+        "affiliation-name": "University of Toronto",
+        "name-variants": [
+            {
+                "@doc-count": "338000",
+                "@source": "internal-ani",
+                "#text": "University Of Toronto"
+            },
+            {
+                "@doc-count": "6509",
+                "@source": "internal-ani",
+                "#text": "Univ Of Toronto"
+            },
+            {
+                "@doc-count": "5432",
+                "@source": "internal-ani",
+                "#text": "Univ. Toronto"
+            },
+            {
+                "@doc-count": "2443",
+                "@source": "internal-ani",
+                "#text": "Univ. Of Toronto"
+            },
+            {
+                "@doc-count": "2023",
+                "@source": "internal-ani",
+                "#text": "University Of Toronto Scarborough"
+            }
+        ],
+        "address": "27 King's College Circle",
+        "city": "Toronto",
+        "country": "Canada",
+        "institution-profile": {
+            "@affiliation-id": "60016849",
+            "status": "update",
+            "date-created": {
+                "@day": "03",
+                "@month": "02",
+                "@year": "2008"
+            },
+            "preferred-name": {
+                "@source": "internal-ani",
+                "#text": "University of Toronto"
+            },
+            "sort-name": "Toronto, University of",
+            "name-variant": [
+                {
+                    "@doc-count": "338000",
+                    "@source": "internal-ani",
+                    "#text": "University Of Toronto"
+                },
+                {
+                    "@doc-count": "6509",
+                    "@source": "internal-ani",
+                    "#text": "Univ Of Toronto"
+                },
+                {
+                    "@doc-count": "5432",
+                    "@source": "internal-ani",
+                    "#text": "Univ. Toronto"
+                },
+                {
+                    "@doc-count": "2443",
+                    "@source": "internal-ani",
+                    "#text": "Univ. Of Toronto"
+                },
+                {
+                    "@doc-count": "2023",
+                    "@source": "internal-ani",
+                    "#text": "University Of Toronto Scarborough"
+                }
+            ],
+            "address": {
+                "@country": "can",
+                "address-part": "27 King's College Circle",
+                "city": "Toronto",
+                "state": "ON",
+                "postal-code": "M5S 1A1",
+                "country": "Canada"
+            },
+            "org-type": "univ",
+            "org-domain": "utoronto.ca",
+            "org-URL": "http://www.utoronto.ca"
+        }
+    }
+}

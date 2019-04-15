@@ -1,0 +1,61 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<search-results xmlns="http://www.w3.org/2005/Atom" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/"
+    xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" 
+    xmlns:atom="http://www.w3.org/2005/Atom">
+    <opensearch:totalResults>1</opensearch:totalResults>
+    <opensearch:startIndex>0</opensearch:startIndex>
+    <opensearch:itemsPerPage>1</opensearch:itemsPerPage>
+    <opensearch:Query 
+        role="request" 
+        searchTerms="authlast(Gorostiza) and authfirst(Pau)" 
+        startPage="0"/>
+    <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/search/author?start=0&count=25&query=authlast%28Gorostiza%29+and+authfirst%28Pau%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a"type="application/xml"/>
+    <link ref="first" href="https://api-elsevier-com.sire.ub.edu/content/search/author?start=0&count=25&query=authlast%28Gorostiza%29+and+authfirst%28Pau%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a"type="application/xml"/>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/author/author_id/7003410246"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/author?query=au-id%287003410246%29"/>
+        <link ref="scopus-citedby" href="https://www-scopus-com.sire.ub.edu/author/citedby.uri?partnerID=HzOxMe3b&citedAuthorId=7003410246&origin=inward"/>
+        <link ref="scopus-author" href="https://www-scopus-com.sire.ub.edu/authid/detail.uri?partnerID=HzOxMe3b&authorId=7003410246&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/author/author_id/7003410246
+        </prism:url>
+        <dc:identifier>AUTHOR_ID:7003410246</dc:identifier>
+        <eid>9-s2.0-7003410246</eid>
+        <orcid>0000-0002-7268-5577</orcid>
+        <preferred-name>
+            <surname>Gorost́iza</surname>
+            <given-name>Pau</given-name>
+            <initials>P.</initials>
+        </preferred-name>
+        <name-variant>
+            <surname>Gorost́iza</surname>
+            <given-name>P.</given-name>
+            <initials>P.</initials>
+        </name-variant>
+        <name-variant>
+            <surname>Gorostiza</surname>
+            <given-name>P.</given-name>
+            <initials>P.</initials>
+        </name-variant>
+        <name-variant>
+            <surname>Gorostiza</surname>
+            <given-name>Pau</given-name>
+            <initials>P.</initials>
+        </name-variant>
+        <document-count>108</document-count>
+        <subject-area abbrev="CHEM" frequency="53">Chemistry (all)</subject-area>
+        <subject-area abbrev="PHYS" frequency="49">Physics and Astronomy (all)</subject-area>
+        <subject-area abbrev="MATE" frequency="40">Materials Science (all)</subject-area>
+        <affiliation-current>
+            <affiliation-url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/60085101
+            </affiliation-url>
+            <affiliation-id>60085101</affiliation-id>
+            <affiliation-name>CIBER Bioingenieria, Biomateriales y Nanomedicina</affiliation-name>
+            <affiliation-city>Zaragoza</affiliation-city>
+            <affiliation-country>Spain</affiliation-country>
+        </affiliation-current>
+    </entry>
+</search-results>

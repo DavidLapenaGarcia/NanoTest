@@ -1,0 +1,93 @@
+{
+   "search-results": {
+      "totalResults": "1",
+      "startIndex": "0",
+      "itemsPerPage": "1",
+      "Query": {
+         "@role": "request",
+         "@searchTerms": "authlast(Gorostiza) and authfirst(Pau)",
+         "@startPage": "0"
+      },
+      "link": [
+         {
+            "@ref": "self",
+            "@href": "https://api-elsevier-com.sire.ub.edu/content/search/author?start=0&count=25&query=authlast%28Gorostiza%29+and+authfirst%28Pau%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a"
+         },
+         {
+            "@ref": "first",
+            "@href": "https://api-elsevier-com.sire.ub.edu/content/search/author?start=0&count=25&query=authlast%28Gorostiza%29+and+authfirst%28Pau%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a"
+         }
+      ],
+      "entry": {
+         "link": [
+            {
+               "@ref": "self",
+               "@href": "https://api-elsevier-com.sire.ub.edu/content/author/author_id/7003410246"
+            },
+            {
+               "@ref": "search",
+               "@href": "https://api-elsevier-com.sire.ub.edu/content/search/author?query=au-id%287003410246%29"
+            },
+            {
+               "@ref": "scopus-citedby",
+               "@href": "https://www-scopus-com.sire.ub.edu/author/citedby.uri?partnerID=HzOxMe3b&citedAuthorId=7003410246&origin=inward"
+            },
+            {
+               "@ref": "scopus-author",
+               "@href": "https://www-scopus-com.sire.ub.edu/authid/detail.uri?partnerID=HzOxMe3b&authorId=7003410246&origin=inward"
+            }
+         ],
+         "url": "https://api-elsevier-com.sire.ub.edu/content/author/author_id/7003410246",
+         "identifier": "AUTHOR_ID:7003410246",
+         "eid": "9-s2.0-7003410246",
+         "orcid": "0000-0002-7268-5577",
+         "preferred-name": {
+            "surname": "Gorost́iza",
+            "given-name": "Pau",
+            "initials": "P."
+         },
+         "name-variant": [
+            {
+               "surname": "Gorost́iza",
+               "given-name": "P.",
+               "initials": "P."
+            },
+            {
+               "surname": "Gorostiza",
+               "given-name": "P.",
+               "initials": "P."
+            },
+            {
+               "surname": "Gorostiza",
+               "given-name": "Pau",
+               "initials": "P."
+            }
+         ],
+         "document-count": "108",
+         "subject-area": [
+            {
+               "@abbrev": "CHEM",
+               "@frequency": "53",
+               "#text": "Chemistry (all)"
+            },
+            {
+               "@abbrev": "PHYS",
+               "@frequency": "49",
+               "#text": "Physics and Astronomy (all)"
+            },
+            {
+               "@abbrev": "MATE",
+               "@frequency": "40",
+               "#text": "Materials Science (all)"
+            }
+         ],
+         "affiliation-current": {
+            "affiliation-url": "https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/60085101",
+            "affiliation-id": "60085101",
+            "affiliation-name": "CIBER Bioingenieria, Biomateriales y Nanomedicina",
+            "affiliation-city": "Zaragoza",
+            "affiliation-country": "Spain"
+         }
+      }
+   }
+}

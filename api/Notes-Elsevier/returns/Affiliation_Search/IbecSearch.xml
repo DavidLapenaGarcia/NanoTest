@@ -1,0 +1,411 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<search-results xmlns="http://www.w3.org/2005/Atom" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/" 
+    xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" 
+    xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" 
+    xmlns:atom="http://www.w3.org/2005/Atom">
+    <opensearch:totalResults>46</opensearch:totalResults>
+    <opensearch:startIndex>0</opensearch:startIndex>
+    <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+    <opensearch:Query role="request" searchTerms="affil(IBEC)" startPage="0"/>
+    <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/search/affiliation?start=0&count=25&query=affil%28IBEC%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a" type="application/xml"/>
+    <link ref="first" href="https://api-elsevier-com.sire.ub.edu/content/search/affiliation?start=0&count=25&query=affil%28IBEC%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a" type="application/xml"/>
+    <link ref="next" href="https://api-elsevier-com.sire.ub.edu/content/search/affiliation?start=25&count=25&query=affil%28IBEC%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a" type="application/xml"/>
+    <link ref="last" href="https://api-elsevier-com.sire.ub.edu/content/search/affiliation?start=21&count=25&query=affil%28IBEC%29&apiKey=7f59af901d2d86f78a1fd60c1bf9426a" type="application/xml"/>
+
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/60104011"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%2860104011%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=60104011&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/60104011</prism:url>
+        <dc:identifier>AFFILIATION_ID:60104011</dc:identifier>
+        <eid>10-s2.0-60104011</eid>
+        <affiliation-name>Institut de Bioenginyeria de Catalunya</affiliation-name>
+        <name-variant>Institute For Bioengineering Of Catalonia (ibec)</name-variant>
+        <document-count>1453</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/105310469"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28105310469%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=105310469&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/105310469
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:105310469</dc:identifier>
+        <eid>10-s2.0-105310469</eid>
+        <affiliation-name>IBEC</affiliation-name>
+        <name-variant>Ibec</name-variant>
+        <document-count>8</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/112852679"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28112852679%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=112852679&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/112852679
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:112852679</dc:identifier>
+        <eid>10-s2.0-112852679</eid>
+        <affiliation-name>Institute of Bioengineering of Catalonia (IBEC)</affiliation-name>
+        <name-variant>Institute Of Bioengineering Of Catalonia (ibec)</name-variant>
+        <document-count>7</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/110835228"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28110835228%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=110835228&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/110835228
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:110835228</dc:identifier>
+        <eid>10-s2.0-110835228</eid>
+        <affiliation-name>Institute for Bioengineering of Catalunya</affiliation-name>
+        <name-variant>Institute For Bioengineering Of Catalunya</name-variant>
+        <document-count>6</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/113489334"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28113489334%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=113489334&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/113489334
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:113489334</dc:identifier>
+        <eid>10-s2.0-113489334</eid>
+        <affiliation-name>IBEC</affiliation-name>
+        <name-variant>IBEC</name-variant>
+        <document-count>3</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/112634746"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28112634746%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=112634746&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/112634746
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:112634746</dc:identifier>
+        <eid>10-s2.0-112634746</eid>
+        <affiliation-name>Nanobioengineering Research Group</affiliation-name>
+        <name-variant>Nanobioengineering Group-ibec</name-variant>
+        <document-count>3</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/108439546"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28108439546%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=108439546&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/108439546
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:108439546</dc:identifier>
+        <eid>10-s2.0-108439546</eid>
+        <affiliation-name>IBEC and CIBER-BBN</affiliation-name>
+        <name-variant>IBEC and CIBER-BBN</name-variant>
+        <document-count>3</document-count>
+        <city>Pamplona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/113321183"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28113321183%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=113321183&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/113321183
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:113321183</dc:identifier>
+        <eid>10-s2.0-113321183</eid>
+        <affiliation-name>
+Instituto Brasileiro de Estudos Contemporâneos (IBEC)
+        </affiliation-name>
+        <name-variant>Instituto Brasileiro de Estudos Contemporâneos</name-variant>
+        <document-count>2</document-count>
+        <city>Sao Paulo</city>
+        <country>Brazil</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/109790980"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28109790980%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=109790980&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/109790980
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:109790980</dc:identifier>
+        <eid>10-s2.0-109790980</eid>
+        <affiliation-name>Institute for Bioengineering of Cataluña</affiliation-name>
+        <name-variant>Institute for Bioengineering of Cataluña</name-variant>
+        <document-count>2</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/107916095"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28107916095%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=107916095&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/107916095
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:107916095</dc:identifier>
+        <eid>10-s2.0-107916095</eid>
+        <affiliation-name>Catalonian Institute of Bioengineering (IBEC)</affiliation-name>
+        <name-variant>Catalonian Bioengineering Institute (IBEC)</name-variant>
+        <document-count>2</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/105949044"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28105949044%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=105949044&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/105949044
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:105949044</dc:identifier>
+        <eid>10-s2.0-105949044</eid>
+        <affiliation-name>Bioengineering Institute of Catalonia (IBEC)</affiliation-name>
+        <name-variant>Bioengineering Institute of Catalonia (IBEC)</name-variant>
+        <document-count>2</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/105590386"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28105590386%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=105590386&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/105590386
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:105590386</dc:identifier>
+        <eid>10-s2.0-105590386</eid>
+        <affiliation-name>IBEC-Institute of BioEngineering of Catalunya</affiliation-name>
+        <name-variant>IBEC-Institute of BioEngineering of Catalunya</name-variant>
+        <document-count>2</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/121492067"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28121492067%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=121492067&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/121492067
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:121492067</dc:identifier>
+        <eid>10-s2.0-121492067</eid>
+        <affiliation-name>Institut de Bioenginyeria de Catalaunya (IBEC)</affiliation-name>
+        <name-variant>Institut De Bioenginyeria De Catalaunya (ibec)</name-variant>
+        <document-count>1</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/117952375"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28117952375%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=117952375&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/117952375
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:117952375</dc:identifier>
+        <eid>10-s2.0-117952375</eid>
+        <affiliation-name>Nanobioenginery Laboratory-IBEC</affiliation-name>
+        <name-variant>Nanobioenginery Laboratory-IBEC</name-variant>
+        <document-count>1</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/116710421"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28116710421%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=116710421&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/116710421
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:116710421</dc:identifier>
+        <eid>10-s2.0-116710421</eid>
+        <affiliation-name>Anderson IBEC</affiliation-name>
+        <name-variant>Anderson IBEC</name-variant>
+        <document-count>1</document-count>
+        <country>United States</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/116697850"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28116697850%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=116697850&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/116697850
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:116697850</dc:identifier>
+        <eid>10-s2.0-116697850</eid>
+        <affiliation-name>Laboratory of Nanobioingéniery-IBEC</affiliation-name>
+        <name-variant>Laboratory of Nanobioingéniery-IBEC</name-variant>
+        <document-count>1</document-count>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/115366413"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28115366413%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=115366413&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/115366413
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:115366413</dc:identifier>
+        <eid>10-s2.0-115366413</eid>
+        <affiliation-name>IBEC</affiliation-name>
+        <name-variant>IBEC</name-variant>
+        <document-count>1</document-count>
+        <city>Dublin</city>
+        <country>Ireland</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/113854143"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28113854143%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=113854143&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/113854143
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:113854143</dc:identifier>
+        <eid>10-s2.0-113854143</eid>
+        <affiliation-name>Institut Bioenginyeria Catalunya (IBEC</affiliation-name>
+        <name-variant>Institut Bioenginyeria Catalunya (IBEC</name-variant>
+        <document-count>1</document-count>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/113652494"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28113652494%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=113652494&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/113652494
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:113652494</dc:identifier>
+        <eid>10-s2.0-113652494</eid>
+        <affiliation-name>Chairman IBEC Working Group</affiliation-name>
+        <name-variant>Chairman IBEC Working Group</name-variant>
+        <document-count>1</document-count>
+        <city>Birmingham</city>
+        <country>United Kingdom</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/113323998"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28113323998%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=113323998&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/113323998
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:113323998</dc:identifier>
+        <eid>10-s2.0-113323998</eid>
+        <affiliation-name>Nanobioelec Group-IBEC</affiliation-name>
+        <name-variant>Nanobioelec Group-IBEC</name-variant>
+        <document-count>1</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/113118462"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28113118462%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=113118462&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/113118462
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:113118462</dc:identifier>
+        <eid>10-s2.0-113118462</eid>
+        <affiliation-name>Institut de Bioingenyeria de Catalunya</affiliation-name>
+        <name-variant>Institut de Bioingenyeria de Catalunya</name-variant>
+        <document-count>1</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/112930990"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28112930990%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=112930990&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/112930990
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:112930990</dc:identifier>
+        <eid>10-s2.0-112930990</eid>
+        <affiliation-name>Catalonia Bioengineering Institute (IBEC)</affiliation-name>
+        <name-variant>Catalonia Bioengineering Institute (IBEC)</name-variant>
+        <document-count>1</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/112650187"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28112650187%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=112650187&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/112650187
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:112650187</dc:identifier>
+        <eid>10-s2.0-112650187</eid>
+        <affiliation-name>Instituto de Bioingeniería de Cataluña (IBEC)</affiliation-name>
+        <name-variant>Instituto de Bioingeniería de Cataluña (IBEC)</name-variant>
+        <document-count>1</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/112275523"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28112275523%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=112275523&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/112275523
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:112275523</dc:identifier>
+        <eid>10-s2.0-112275523</eid>
+        <affiliation-name>IBEC Brazilian Institute of Cost Engineering</affiliation-name>
+        <name-variant>IBEC Brazilian Institute of Cost Engineering</name-variant>
+        <document-count>1</document-count>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+    <entry>
+        <link ref="self" href="https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/108428219"/>
+        <link ref="search" href="https://api-elsevier-com.sire.ub.edu/content/search/scopus?query=af-id%28108428219%29"/>
+        <link ref="scopus-affiliation" href="https://www-scopus-com.sire.ub.edu/affil/profile.uri?afid=108428219&partnerID=HzOxMe3b&origin=inward"/>
+        <prism:url>
+https://api-elsevier-com.sire.ub.edu/content/affiliation/affiliation_id/108428219
+        </prism:url>
+        <dc:identifier>AFFILIATION_ID:108428219</dc:identifier>
+        <eid>10-s2.0-108428219</eid>
+        <affiliation-name>IBEC Institut de Biotecnologia de Barcelona</affiliation-name>
+        <name-variant>IBEC Institut de Biotecnologia de Barcelona</name-variant>
+        <document-count>1</document-count>
+        <city>Barcelona</city>
+        <country>Spain</country>
+        <parent-affiliation-id>0</parent-affiliation-id>
+    </entry>
+</search-results>

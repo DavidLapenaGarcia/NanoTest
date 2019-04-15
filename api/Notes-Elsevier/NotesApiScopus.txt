@@ -1,0 +1,87 @@
+APIkeys:
+http://93.176.128.130		bc66bc9795568400018ed3a922757ac0
+http://ibec.pcb.ub.edu      f312f43e792422b5e5615ef1a17d0ac9
+		                    8932ae370b77efdfd90cbe1e78f27211
+http://161.116.211.63		bb7fff0e6d635f92b383d507fd029a01
+
+
+Affiliation_Search:
+    Auth_false => no
+    Auth_true => yes 
+        Posible querys: 
+            /search/affiliation
+        URL:
+            https://api.elsevier.com/content/search/affiliation?query=affil(Broad%20Institute)&apiKey=8932ae370b77efdfd90cbe1e78f27211
+
+Author_Search:
+    Auth_false => no
+    Auth_true => yes 
+        Posible querys:
+            /search/author
+        URL:
+            https://api.elsevier.com/content/search/author?query=authlast(Einstein)%20and%20authfirst(Albert)%20and%20affil(Princeton)&apiKey=7f59af901d2d86f78a1fd60c1bf9426a
+
+Scopus_Search:
+    Auth_false => no
+    Auth_true => yes
+        Posible querys:
+            /search/scopus
+        URL:
+            https://api.elsevier.com/content/search/scopus?query=all(gene)&apiKey=bc66bc9795568400018ed3a922757ac0
+
+Abstract_Retrevial:
+    Auth_false => yes
+    Auth_true => yes
+        Posible querys: 
+            /abstract/doi/{doi}
+            /abstract/eid/{eid}
+            /abstract/pii/{pii}
+            /abstract/pubmed_id/{pubmed_id}
+            /abstract/pui/{pui}
+            /abstract/scopus_id/{scopus_id}
+        URL:
+            https://api.elsevier.com/content/abstract/doi/10.1016/S0014-5793(01)03313-0?apiKey=7f59af901d2d86f78a1fd60c1bf9426a
+                        
+Affiliation_Retrevial:
+    Auth_false => no
+    Auth_true => yes
+        Posible querys: 
+            /affiliation/affiliation_id/{affiliation_id}
+            /affiliation/eid/{eid}
+        URL:
+            https://api.elsevier.com/content/affiliation/eid/10-s2.0-60016849?apiKey=7f59af901d2d86f78a1fd60c1bf9426a&httpAccept=text%2Fxml
+
+Author_Retrevial:
+    Auth_false =>
+    Auth_true => yes
+        Posible querys: 
+             /author/eid/{eid}
+        URL:
+            https://api.elsevier.com/content/author/eid/9-s2.0-22988279600?apiKey=7f59af901d2d86f78a1fd60c1bf9426a&httpAccept=text%2Fxml
+            
+Abstract_Citation_COunt:
+    Auth_false =>
+    Auth_true => yes
+        Posible querys:
+            /abstract/citation-count
+        URL:
+            https://api.elsevier.com/content/abstract/citation-count?doi=10.1016%2FS0014-5793(01)03313-0&apiKey=7f59af901d2d86f78a1fd60c1bf9426a
+
+Citations_Overview:
+    Auth_false =>   /abstract/citations
+    Auth_true => yes
+        Posible querys:
+            /abstract/citations
+        URL:
+            https://api.elsevier.com/content/abstract/citations?doi=10.1016%2FS0014-5793(01)03313-0&apiKey=7f59af901d2d86f78a1fd60c1bf9426a&httpAccept=application%2Fjson
+
+Serial_TItle:
+    Auth_false =>
+    Auth_true => yes
+        Posible querys: 
+            /serial/title
+            /serial/title/issn/{issn}
+        URL:    
+            https://api.elsevier.com/content/serial/title?issn=03781119&apiKey=7f59af901d2d86f78a1fd60c1bf9426a
+            https://api.elsevier.com/content/serial/title/issn/03781119?apiKey=7f59af901d2d86f78a1fd60c1bf9426a
+

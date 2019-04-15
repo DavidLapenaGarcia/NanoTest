@@ -1,0 +1,68 @@
+<abstracts-retrieval-response xmlns="http://www.elsevier.com/xml/svapi/abstract/dtd" 
+    xmlns:dn="http://www.elsevier.com/xml/svapi/abstract/dtd" 
+    xmlns:ait="http://www.elsevier.com/xml/ani/ait" 
+    xmlns:ce="http://www.elsevier.com/xml/ani/common" 
+    xmlns:cto="http://www.elsevier.com/xml/cto/dtd" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/" 
+    xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" 
+    xmlns:xocs="http://www.elsevier.com/xml/xocs/dtd" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <coredata>
+        <prism:url>https://api.elsevier.com/content/abstract/scopus_id/0037070197</prism:url>
+        <dc:identifier>SCOPUS_ID:0037070197</dc:identifier>
+        <eid>2-s2.0-0037070197</eid>
+        <pubmed-id>11852050</pubmed-id>
+        <pii>S0014579301033130</pii>
+        <prism:doi>10.1016/S0014-5793(01)03313-0</prism:doi>
+        <dc:title>The orientation of the antibiotic peptide maculatin 1.1 in DMPG and DMPC lipid bilayers. Support for a pore-forming mechanism</dc:title>
+        <prism:aggregationType>Journal</prism:aggregationType>
+        <srctype>j</srctype>
+        <subtype>ar</subtype>
+        <subtypeDescription>Article</subtypeDescription>
+        <citedby-count>50</citedby-count>
+        <prism:publicationName>FEBS Letters</prism:publicationName>
+        <source-id>17481</source-id>
+        <prism:issn>00145793</prism:issn>
+        <prism:volume>512</prism:volume>
+        <prism:issueIdentifier>1-3</prism:issueIdentifier>
+        <prism:startingPage>47</prism:startingPage>
+        <prism:endingPage>51</prism:endingPage>
+        <prism:pageRange>47-51</prism:pageRange>
+        <prism:coverDate>2002-02-13</prism:coverDate>
+        <openaccess>1</openaccess>
+        <openaccessFlag>true</openaccessFlag>
+        <dc:creator>
+            <author seq="1" auid="57206430730">
+                <ce:initials>C.S.B.</ce:initials>
+                <ce:indexed-name>Chia C.S.B.</ce:indexed-name>
+                <ce:surname>Chia</ce:surname>
+                <preferred-name>
+                    <ce:initials>C.S.B.</ce:initials>
+                    <ce:indexed-name>Chia C.</ce:indexed-name>
+                    <ce:surname>Chia</ce:surname>
+                    <ce:given-name>C. S.B.</ce:given-name>
+                </preferred-name>
+                <author-url>https://api.elsevier.com/content/author/author_id/57206430730</author-url>
+                <affiliation id="60031101" href="https://api.elsevier.com/content/affiliation/affiliation_id/60031101"/>
+            </author>
+        </dc:creator>
+        <link href="https://api.elsevier.com/content/abstract/scopus_id/0037070197" rel="self"/>
+        <link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=0037070197&amp;origin=inward" rel="scopus"/>
+        <link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=0037070197&amp;origin=inward" rel="scopus-citedby"/>
+    </coredata>
+    <affiliation>
+        <affilname>University of Cambridge</affilname>
+        <affiliation-city>Cambridge</affiliation-city>
+        <affiliation-country>United Kingdom</affiliation-country>
+    </affiliation>
+    <affiliation>
+        <affilname>The University of Adelaide</affilname>
+        <affiliation-city>Adelaide</affiliation-city>
+        <affiliation-country>Australia</affiliation-country>
+    </affiliation>
+    <affiliation>
+        <affilname>Nanyang Technological University</affilname>
+        <affiliation-city>Singapore City</affiliation-city>
+        <affiliation-country>Singapore</affiliation-country>
+    </affiliation>
+</abstracts-retrieval-response>

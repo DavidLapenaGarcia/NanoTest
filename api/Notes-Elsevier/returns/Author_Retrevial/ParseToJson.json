@@ -1,0 +1,588 @@
+{
+    "author-retrieval-response": {
+        "@status": "found",
+        "coredata": {
+            "url": "http://api.elsevier.com.sire.ub.edu/content/author/author_id/22988279600",
+            "identifier": "AUTHOR_ID:22988279600",
+            "eid": "9-s2.0-22988279600",
+            "document-count": "102",
+            "cited-by-count": "19796",
+            "citation-count": "22598",
+            "link": [
+                {
+                    "@href": "https://www-scopus-com.sire.ub.edu/authid/detail.uri?partnerID=HzOxMe3b&authorId=22988279600&origin=inward",
+                    "@rel": "scopus-author"
+                },
+                {
+                    "@href": "http://api.elsevier.com.sire.ub.edu/content/author/author_id/22988279600",
+                    "@rel": "self"
+                },
+                {
+                    "@href": "http://api.elsevier.com.sire.ub.edu/content/search/scopus?query=au-id%2822988279600%29",
+                    "@rel": "search"
+                }
+            ]
+        },
+        "affiliation-current": {
+            "@id": "60027485",
+            "@href": "http://api.elsevier.com.sire.ub.edu/content/affiliation/affiliation_id/60027485"
+        },
+        "affiliation-history": [
+            {
+                "@id": "60027485",
+                "@href": "http://api.elsevier.com.sire.ub.edu/content/affiliation/affiliation_id/60027485"
+            },
+            {
+                "@id": "60003269",
+                "@href": "http://api.elsevier.com.sire.ub.edu/content/affiliation/affiliation_id/60003269"
+            },
+            {
+                "@id": "105286521",
+                "@href": "http://api.elsevier.com.sire.ub.edu/content/affiliation/affiliation_id/105286521"
+            },
+            {
+                "@id": "100782158",
+                "@href": "http://api.elsevier.com.sire.ub.edu/content/affiliation/affiliation_id/100782158"
+            },
+            {
+                "@id": "60031581",
+                "@href": "http://api.elsevier.com.sire.ub.edu/content/affiliation/affiliation_id/60031581"
+            },
+            {
+                "@id": "112366015",
+                "@href": "http://api.elsevier.com.sire.ub.edu/content/affiliation/affiliation_id/112366015"
+            }
+        ],
+        "subject-areas": [
+            {
+                "@abbrev": "PHYS",
+                "@code": "3100",
+                "#text": "Physics and Astronomy (all)"
+            },
+            {
+                "@abbrev": "ENGI",
+                "@code": "2207",
+                "#text": "Control and Systems Engineering"
+            },
+            {
+                "@abbrev": "PHYS",
+                "@code": "3106",
+                "#text": "Nuclear and High Energy Physics"
+            },
+            {
+                "@abbrev": "BIOC",
+                "@code": "1300",
+                "#text": "Biochemistry, Genetics and Molecular Biology (all)"
+            },
+            {
+                "@abbrev": "MATE",
+                "@code": "2505",
+                "#text": "Materials Chemistry"
+            },
+            {
+                "@abbrev": "CHEM",
+                "@code": "1606",
+                "#text": "Physical and Theoretical Chemistry"
+            },
+            {
+                "@abbrev": "CENG",
+                "@code": "1505",
+                "#text": "Colloid and Surface Chemistry"
+            },
+            {
+                "@abbrev": "EART",
+                "@code": "1912",
+                "#text": "Space and Planetary Science"
+            },
+            {
+                "@abbrev": "DECI",
+                "@code": "1802",
+                "#text": "Information Systems and Management"
+            },
+            {
+                "@abbrev": "ENVI",
+                "@code": "2303",
+                "#text": "Ecology"
+            },
+            {
+                "@abbrev": "MEDI",
+                "@code": "2700",
+                "#text": "Medicine (all)"
+            },
+            {
+                "@abbrev": "MATH",
+                "@code": "2611",
+                "#text": "Modeling and Simulation"
+            },
+            {
+                "@abbrev": "MATH",
+                "@code": "2600",
+                "#text": "Mathematics (all)"
+            },
+            {
+                "@abbrev": "MULT",
+                "@code": "1000",
+                "#text": "Multidisciplinary"
+            },
+            {
+                "@abbrev": "ARTS",
+                "@code": "1211",
+                "#text": "Philosophy"
+            },
+            {
+                "@abbrev": "MATE",
+                "@code": "2507",
+                "#text": "Polymers and Plastics"
+            },
+            {
+                "@abbrev": "MATH",
+                "@code": "2606",
+                "#text": "Control and Optimization"
+            },
+            {
+                "@abbrev": "PHYS",
+                "@code": "3103",
+                "#text": "Astronomy and Astrophysics"
+            },
+            {
+                "@abbrev": "COMP",
+                "@code": "1711",
+                "#text": "Signal Processing"
+            },
+            {
+                "@abbrev": "ENGI",
+                "@code": "2208",
+                "#text": "Electrical and Electronic Engineering"
+            },
+            {
+                "@abbrev": "MATH",
+                "@code": "2604",
+                "#text": "Applied Mathematics"
+            }
+        ],
+        "author-profile": {
+            "status": "update",
+            "date-created": {
+                "@day": "26",
+                "@month": "11",
+                "@year": "2007"
+            },
+            "preferred-name": {
+                "@source": "internal-ani",
+                "initials": "A.",
+                "indexed-name": "Einstein A.",
+                "surname": "Einstein",
+                "given-name": "Albert"
+            },
+            "name-variant": [
+                {
+                    "@doc-count": "3",
+                    "@source": "internal-ani",
+                    "initials": "A.",
+                    "indexed-name": "EINSTEIN A.",
+                    "surname": "EINSTEIN",
+                    "given-name": "A."
+                },
+                {
+                    "@doc-count": "76",
+                    "@source": "internal-ani",
+                    "initials": "A.",
+                    "indexed-name": "Einstein A.",
+                    "surname": "Einstein",
+                    "given-name": "A."
+                }
+            ],
+            "classificationgroup": {
+                "classifications": [
+                    {
+                        "@frequency": "64",
+                        "#text": "3100"
+                    },
+                    {
+                        "@frequency": "3",
+                        "#text": "2207"
+                    },
+                    {
+                        "@frequency": "5",
+                        "#text": "3106"
+                    },
+                    {
+                        "@frequency": "13",
+                        "#text": "1300"
+                    },
+                    {
+                        "@frequency": "1",
+                        "#text": "2505"
+                    },
+                    {
+                        "@frequency": "1",
+                        "#text": "1606"
+                    },
+                    {
+                        "@frequency": "1",
+                        "#text": "1505"
+                    },
+                    {
+                        "@frequency": "2",
+                        "#text": "1912"
+                    },
+                    {
+                        "@frequency": "3",
+                        "#text": "1802"
+                    },
+                    {
+                        "@frequency": "13",
+                        "#text": "2303"
+                    },
+                    {
+                        "@frequency": "5",
+                        "#text": "2700"
+                    },
+                    {
+                        "@frequency": "3",
+                        "#text": "2611"
+                    },
+                    {
+                        "@frequency": "3",
+                        "#text": "2600"
+                    },
+                    {
+                        "@frequency": "10",
+                        "#text": "1000"
+                    },
+                    {
+                        "@frequency": "1",
+                        "#text": "1211"
+                    },
+                    {
+                        "@frequency": "1",
+                        "#text": "2507"
+                    },
+                    {
+                        "@frequency": "3",
+                        "#text": "2606"
+                    },
+                    {
+                        "@frequency": "2",
+                        "#text": "3103"
+                    },
+                    {
+                        "@frequency": "3",
+                        "#text": "1711"
+                    },
+                    {
+                        "@frequency": "3",
+                        "#text": "2208"
+                    },
+                    {
+                        "@frequency": "4",
+                        "#text": "2604"
+                    }
+                ]
+            },
+            "publication-range": {
+                "@end": "1953",
+                "@start": "1901"
+            },
+            "journal-history": {
+                "journal": [
+                    {
+                        "sourcetitle": "Physical Review",
+                        "issn": "0031899X"
+                    },
+                    {
+                        "sourcetitle": "Zeitschrift für Physik",
+                        "sourcetitle-abbrev": "Z. Physik",
+                        "issn": "14346001"
+                    },
+                    {
+                        "sourcetitle": "The Journal of the International College of Surgeons",
+                        "sourcetitle-abbrev": "J Int Coll Surg",
+                        "issn": "0096557X"
+                    },
+                    {
+                        "sourcetitle": "Zeitschrift für Physik",
+                        "sourcetitle-abbrev": "Z. Physik",
+                        "issn": "00443328"
+                    },
+                    {
+                        "sourcetitle": "Annalen der Physik",
+                        "sourcetitle-abbrev": "Ann Phys Leipzig",
+                        "issn": "15213889"
+                    },
+                    {
+                        "sourcetitle": "Die Naturwissenschaften",
+                        "sourcetitle-abbrev": "Naturwissenschaften",
+                        "issn": "00281042"
+                    },
+                    {
+                        "sourcetitle": "Physics Today",
+                        "sourcetitle-abbrev": "Phys. Today",
+                        "issn": "19450699"
+                    },
+                    {
+                        "sourcetitle": "British Medical Journal",
+                        "sourcetitle-abbrev": "Brit. Med. J.",
+                        "issn": "00071447"
+                    },
+                    {
+                        "sourcetitle": "The Bulletin of the atomic scientists",
+                        "sourcetitle-abbrev": "Bull At Sci",
+                        "issn": "00963402"
+                    },
+                    {
+                        "sourcetitle": "Astronomische Nachrichten",
+                        "sourcetitle-abbrev": "Astron. Nachr.",
+                        "issn": "15213994"
+                    },
+                    {
+                        "sourcetitle": "Deutsche Medizinische Wochenschrift",
+                        "sourcetitle-abbrev": "Dtsch. Med. Wochenschr.",
+                        "issn": "14394413"
+                    },
+                    {
+                        "sourcetitle": "Dialectica",
+                        "sourcetitle-abbrev": "Dialectica",
+                        "issn": "17468361"
+                    },
+                    {
+                        "sourcetitle": "Reviews of Modern Physics",
+                        "issn": "00346861"
+                    },
+                    {
+                        "sourcetitle": "Science",
+                        "issn": "00368075"
+                    },
+                    {
+                        "sourcetitle": "The Bulletin of the atomic scientists",
+                        "sourcetitle-abbrev": "Bull At Sci",
+                        "issn": "00965243"
+                    },
+                    {
+                        "sourcetitle": "Mathematische Annalen",
+                        "sourcetitle-abbrev": "Math. Ann.",
+                        "issn": "00255831"
+                    },
+                    {
+                        "sourcetitle": "Journal of the Franklin Institute",
+                        "sourcetitle-abbrev": "J Franklin Inst",
+                        "issn": "00160032"
+                    },
+                    {
+                        "sourcetitle": "Nature",
+                        "issn": "00280836"
+                    },
+                    {
+                        "sourcetitle": "Bulletin of the American Mathematical Society",
+                        "sourcetitle-abbrev": "Bull. Am. Math. Soc.",
+                        "issn": "02730979"
+                    },
+                    {
+                        "sourcetitle": "Kolloid-Zeitschrift",
+                        "sourcetitle-abbrev": "Kolloid-Zeitschrift",
+                        "issn": "0303402X"
+                    }
+                ]
+            },
+            "affiliation-current": {
+                "affiliation": {
+                    "@affiliation-id": "60027485",
+                    "@source": "internal-ani",
+                    "ip-doc": {
+                        "@id": "60027485",
+                        "@relationship": "author",
+                        "afnameid": "Institute for Advanced Studies#60027485",
+                        "afdispname": "Institute for Advanced Studies",
+                        "preferred-name": {
+                            "@source": "internal-ani",
+                            "#text": "Institute for Advanced Studies"
+                        },
+                        "sort-name": "Institute for Advanced Studies",
+                        "address": {
+                            "@country": "usa",
+                            "address-part": "Einstein Drive",
+                            "city": "Princeton",
+                            "state": "NJ",
+                            "postal-code": "8540",
+                            "country": "United States"
+                        },
+                        "org-domain": "ias.edu",
+                        "org-URL": "http://www.ias.edu/"
+                    }
+                }
+            },
+            "affiliation-history": {
+                "affiliation": [
+                    {
+                        "@affiliation-id": "60027485",
+                        "@source": "internal-ani",
+                        "ip-doc": {
+                            "@id": "60027485",
+                            "@relationship": "author",
+                            "afnameid": "Institute for Advanced Studies#60027485",
+                            "afdispname": "Institute for Advanced Studies",
+                            "preferred-name": {
+                                "@source": "internal-ani",
+                                "#text": "Institute for Advanced Studies"
+                            },
+                            "sort-name": "Institute for Advanced Studies",
+                            "address": {
+                                "@country": "usa",
+                                "address-part": "Einstein Drive",
+                                "city": "Princeton",
+                                "state": "NJ",
+                                "postal-code": "8540",
+                                "country": "United States"
+                            },
+                            "org-domain": "ias.edu",
+                            "org-URL": "http://www.ias.edu/"
+                        }
+                    },
+                    {
+                        "@affiliation-id": "60003269",
+                        "@source": "internal-ani",
+                        "ip-doc": {
+                            "@id": "60003269",
+                            "@relationship": "author",
+                            "afnameid": "Princeton University#60003269",
+                            "afdispname": "Princeton University",
+                            "preferred-name": {
+                                "@source": "internal-ani",
+                                "#text": "Princeton University"
+                            },
+                            "sort-name": "Princeton University",
+                            "address": {
+                                "@country": "usa",
+                                "city": "Princeton",
+                                "state": "NJ",
+                                "postal-code": "8544",
+                                "country": "United States"
+                            },
+                            "org-domain": "princeton.edu",
+                            "org-URL": "http://www.princeton.edu/main/"
+                        }
+                    },
+                    {
+                        "@affiliation-id": "105286521",
+                        "@source": "internal-ani",
+                        "ip-doc": {
+                            "@id": "105286521",
+                            "@relationship": "author",
+                            "afnameid": "Committee of the Federation of American Scientists#105286521",
+                            "afdispname": "Committee of the Federation of American Scientists",
+                            "preferred-name": {
+                                "@source": "internal-ani",
+                                "#text": "Committee of the Federation of American Scientists"
+                            },
+                            "sort-name": "Committee of the Federation of American Scientists",
+                            "address": {
+                                "@country": "usa",
+                                "address-part": "14 Battle Road",
+                                "city": "Princeton",
+                                "state": "NJ",
+                                "country": "United States"
+                            }
+                        }
+                    },
+                    {
+                        "@affiliation-id": "106217279",
+                        "@parent": "60003269",
+                        "@source": "internal-ani",
+                        "ip-doc": {
+                            "@id": "106217279",
+                            "@relationship": "author",
+                            "afdispname": "Princeton University, Institute for Advanced Study",
+                            "preferred-name": {
+                                "@source": "internal-ani",
+                                "#text": "Institute for Advanced Study"
+                            },
+                            "parent-preferred-name": {
+                                "@source": "internal-ani",
+                                "#text": "Princeton University"
+                            },
+                            "sort-name": "Institute for Advanced Study",
+                            "address": {
+                                "@country": "usa",
+                                "city": "Princeton",
+                                "state": "NJ",
+                                "postal-code": "8544",
+                                "country": "United States"
+                            },
+                            "org-domain": "princeton.edu",
+                            "org-URL": "http://www.princeton.edu/main/"
+                        }
+                    },
+                    {
+                        "@affiliation-id": "100782158",
+                        "@source": "internal-ani",
+                        "ip-doc": {
+                            "@id": "100782158",
+                            "@relationship": "author",
+                            "afnameid": "Institute for Advanced Study#100782158",
+                            "afdispname": "Institute for Advanced Study",
+                            "preferred-name": {
+                                "@source": "internal-ani",
+                                "#text": "Institute for Advanced Study"
+                            },
+                            "sort-name": "Institute for Advanced Study",
+                            "address": {
+                                "@country": "usa",
+                                "address-part": "Princeton, NJ, null08540",
+                                "city": "Princeton",
+                                "state": "NJ",
+                                "postal-code": "08540",
+                                "country": "United States"
+                            }
+                        }
+                    },
+                    {
+                        "@affiliation-id": "60031581",
+                        "@source": "internal-ani",
+                        "ip-doc": {
+                            "@id": "60031581",
+                            "@relationship": "author",
+                            "afnameid": "California Institute of Technology#60031581",
+                            "afdispname": "California Institute of Technology",
+                            "preferred-name": {
+                                "@source": "internal-ani",
+                                "#text": "California Institute of Technology"
+                            },
+                            "sort-name": "California Institute of Technology",
+                            "address": {
+                                "@country": "usa",
+                                "address-part": "1200 East California Blvd.",
+                                "city": "Pasadena",
+                                "state": "CA",
+                                "postal-code": "91125",
+                                "country": "United States"
+                            },
+                            "org-domain": "caltech.edu",
+                            "org-URL": "http://www.caltech.edu/"
+                        }
+                    },
+                    {
+                        "@affiliation-id": "112366015",
+                        "@source": "internal-ani",
+                        "ip-doc": {
+                            "@id": "112366015",
+                            "@relationship": "author",
+                            "afnameid": "Dahlem#112366015",
+                            "afdispname": "Dahlem",
+                            "preferred-name": {
+                                "@source": "internal-ani",
+                                "#text": "Dahlem"
+                            },
+                            "sort-name": "Dahlem",
+                            "address": {
+                                "@country": "deu",
+                                "address-part": "33 Reichensteiner Weg 21",
+                                "city": "Berlin",
+                                "country": "Germany"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

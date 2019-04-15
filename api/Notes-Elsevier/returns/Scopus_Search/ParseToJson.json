@@ -1,0 +1,156 @@
+{
+   "search-results": 
+   {
+      "totalResults": "6452813",
+      "startIndex": "0",
+      "itemsPerPage": "25",
+      "Query": 
+      {
+         "@role": "request",
+         "@searchTerms": "all(gene)",
+         "@startPage": "0"
+      },
+      "link": 
+      [         
+         {
+            "@ref": "self",
+            "@href": "https://api.elsevier.com/content/search/scopus?"
+         },         
+         {
+            "@ref": "first",
+            "@href": "https://api.elsevier.com/content/search/scopus?"
+         },         
+         {
+            "@ref": "next",
+            "@href": "https://api.elsevier.com/content/search/scopus?"
+         },         
+         {
+            "@ref": "last",
+            "@href": "https://api.elsevier.com/content/search/scopus?"
+         }
+      ],
+      "entry": 
+      [         
+         {
+            "link": 
+            [               
+               {
+                  "@ref": "self",
+                  "@href": "https://api.elsevier.com/content/abstract/scopus_id/85059175023"
+               },               
+               {
+                  "@ref": "author-affiliation",
+                  "@href": "https://api.elsevier.com/content/abstract/scopus_id/85059175023?field=author,affiliation"
+               },               
+               {
+                  "@ref": "scopus",
+                  "@href": "https://www.scopus.com/inward/record.uri?"
+               },               
+               {
+                  "@ref": "scopus-citedby",
+                  "@href": "https://www.scopus.com/inward/citedby.uri?"
+               },               
+               {
+                  "@ref": "full-text",
+                  "@href": "https://api.elsevier.com/content/article/eid/1-s2.0-S0958166918302088"
+               }
+            ],
+            "url": "https://api.elsevier.com/content/abstract/scopus_id/85059175023",
+            "identifier": "SCOPUS_ID:85059175023",
+            "eid": "2-s2.0-85059175023",
+            "title": "Gene therapy for blood diseases",
+            "creator": "Kohn D.",
+            "publicationName": "Current Opinion in Biotechnology",
+            "issn": "09581669",
+            "eIssn": "18790429",
+            "volume": "60",
+            "pageRange": "39-45",
+            "coverDate": "2019-12-01",
+            "coverDisplayDate": "December 2019",
+            "doi": "10.1016/j.copbio.2018.11.016",
+            "pii": "S0958166918302088",
+            "citedby-count": "0",
+            "affiliation": 
+            [               
+               {
+                  "affilname": "David Geffen School of Medicine at UCLA",
+                  "affiliation-city": "Los Angeles",
+                  "affiliation-country": "United States"
+               },               
+               {
+                  "affilname": "David Geffen School of Medicine at UCLA",
+                  "affiliation-city": "Los Angeles",
+                  "affiliation-country": "United States"
+               },               
+               {
+                  "affilname": "David Geffen School of Medicine at UCLA",
+                  "affiliation-city": "Los Angeles",
+                  "affiliation-country": "United States"
+               }
+            ],
+            "aggregationType": "Journal",
+            "subtype": "re",
+            "subtypeDescription": "Review",
+            "source-id": "15579",
+            "openaccess": "0",
+            "openaccessFlag": "false"
+         },         
+         {
+            "link": 
+            [               
+               {
+                  "@ref": "self",
+                  "@href": "https://api.elsevier.com/content/abstract/scopus_id/85063060850"
+               },               
+               {
+                  "@ref": "author-affiliation",
+                  "@href": "https://api.elsevier.com/content/abstract/scopus_id/85063060850?field=author,affiliation"
+               },               
+               {
+                  "@ref": "scopus",
+                  "@href": "https://www.scopus.com/inward/record.uri?"
+               },               
+               {
+                  "@ref": "scopus-citedby",
+                  "@href": "https://www.scopus.com/inward/citedby.uri?"
+               }
+            ],
+            "url": "https://api.elsevier.com/content/abstract/scopus_id/85063060850",
+            "identifier": "SCOPUS_ID:85063060850",
+            "eid": "2-s2.0-85063060850",
+            "title": "Genome-wide association analysis reveals KCTD12 and miR-383-binding genes in the background of rumination",
+            "creator": "Eszlari N.",
+            "publicationName": "Translational Psychiatry",
+            "eIssn": "21583188",
+            "volume": "9",
+            "issueIdentifier": "1",
+            "pageRange": null,
+            "coverDate": "2019-12-01",
+            "coverDisplayDate": "1 December 2019",
+            "doi": "10.1038/s41398-019-0454-1",
+            "citedby-count": "0",
+            "affiliation": 
+            [               
+               {
+                  "affilname": "Semmelweis Egyetem",
+                  "affiliation-city": "Budapest",
+                  "affiliation-country": "Hungary"
+               },               
+               {
+                  "affilname": "Semmelweis Egyetem",
+                  "affiliation-city": "Budapest",
+                  "affiliation-country": "Hungary"
+               }
+            ],
+            "pubmed-id": "30886212",
+            "aggregationType": "Journal",
+            "subtype": "ar",
+            "subtypeDescription": "Article",
+            "article-number": "119",
+            "source-id": "19900191866",
+            "openaccess": "1",
+            "openaccessFlag": "true"
+         }
+      ]
+   }
+}
