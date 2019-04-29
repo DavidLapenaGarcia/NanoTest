@@ -21,35 +21,76 @@ class ElsevierDAO  {
     }
 
     public function abstractRetrevial($toSearch, $searchAs) {
+        // TODO validate bouth parametters
         $query;
-
-        $subApi = "abstract/";
+        $api = "abstract/";
         $searchAs = "doi";
 
         switch ($searchAs){
             case "doi":
-                $subApi = $subApi . "doi/";
+                $api = $api . "doi/";
                 break;
-            case "elsevier":
-                $controlLogin = new ElsevierController();
-                $controlLogin->processRequest();
+            case "pii":
+                $api = $api . "pii/";
+                break;
+            case "doi":
+                $api = $api . "doi/";
+                break;
+            case "pubmed_id":
+                $api = $subApi . "pubmed_id/";
+                break;
+            case "pui":
+                $api = $api . "pui/";
+                break;
+            case "scopus_id":
+                $api = $api . "scopus_id/";
                 break;
             default:
-                array_push($_SESSION['error'], "Fail on ElsevierDAO");
+                array_push($_SESSION['error'], "Invalid option to search");
                 return NULL;
                 break; 
         }
-        $query = $this->url . $subApi . $toSearch . $this->apiKey;
-        
-        file_put_contents('api/cache/cache.json', file_get_contents($query));
-        /* 
-        $file = fopen("api/cache/cache.json", "w");
-        fwrite($file, file_get_contents($query));
-        fclose($file)
-        */;
+        $query = $this->url . $api . $toSearch . '?' . $this->apiKey;
+        $result = $this->getJsonByQuery($query);
 
-        $apiData = json_decode( file_get_contents($query) );
+        return $result;
+    }
 
+    public function scopusAbstract($toSearch){
+        $query;
+        $api = "search/scopus?query=";
+
+        $toSearch = 'ABS(' . urlencode($toSearch) . ')' . '&';
+        $query = $this->url . $api . $toSearch . $this->apiKey;
+        $result = $this->getJsonByQuery($query);
+
+        return $result;
+
+    }
+    
+    function getJsonByQuery($query) { 
+        $headers = array("Accept: application/json"); 
+
+        $ch = curl_init(); 
+        curl_setopt($ch, CURLOPT_URL,$query);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET'); 
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+        curl_setopt($ch, CURLOPT_TIMEOUT, 60); 
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+
+        $data = curl_exec($ch); 
+
+        if (!curl_errno($ch)) { 
+            $apiData = $data;
+            // var_dump($data); 
+        } else {
+            // TODO : Add errors message
+            // var_dump( curl_error($ch) ); 
+            array_push($_SESSION['error'], curl_error($ch));
+            $apiData = NULL;
+        } 
+        curl_close($ch); 
         return $apiData;
     }
 

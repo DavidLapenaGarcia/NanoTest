@@ -9,27 +9,32 @@
             }
             ?>" />
             <label>* Required fields</label>
-            <input type="submit" name="action" value="by_doi" />
+            <input type="submit" name="action" value="abstract_retrevial" />
             <input type="reset" name="reset" value="reset" />
         </fieldset>
     </form>
     <div>
-        <p>
+        <table style="width:50%">
+            <tr>
+                <th>who am i:</th>
+                <td><?php echo exec('whoami');?></td>
+            </tr>
+            <tr>
+                <th>current user:</th>
+                <td><?php echo get_current_user(); ?></td> 
+            </tr>
+
+        </table>
+        <div>
         <?php
-        // FIXME
-        var_dump($content);
-                echo "<p> current user:</p>";
-                echo get_current_user();
-                echo "<p> who am i:</p>";
-                echo exec('whoami');
+        //FIX ME
             if (isset($content['result'])) {
                 echo "<pre>";
-                    var_dump($content['result']["abstracts-retrieval-response"]["affiliation"]["affiliation-city"]);
+                    var_dump($content['result']);
                 echo "</pre>";
-                echo $content['result']["abstracts-retrieval-response"]["affiliation"]["affiliation-city"];
                    //admin
             }
             ?>
-        </p>
+        </div>
     </div>
 </div>

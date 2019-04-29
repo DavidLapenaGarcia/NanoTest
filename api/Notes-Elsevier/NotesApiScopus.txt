@@ -28,7 +28,10 @@ Scopus_Search:
             /search/scopus
         URL:
             https://api.elsevier.com/content/search/scopus?query=all(gene)&apiKey=bc66bc9795568400018ed3a922757ac0
-
+                    AUTHOR-NAME(Gorost́iza, P) AND AFFIL(AFFILCITY(Zaragoza)AFFILCOUNTRY(Spain))
+                    https://api.elsevier.com/content/search/scopus?query=
+                    AUTHOR-NAME(Gorost%CC%81iza%2C%20P)%20AND%20AFFIL(AFFILCITY(Zaragoza)AFFILCOUNTRY(Spain))
+                    &apiKey=7f59af901d2d86f78a1fd60c1bf9426a
 Abstract_Retrevial:
     Auth_false => yes
     Auth_true => yes
