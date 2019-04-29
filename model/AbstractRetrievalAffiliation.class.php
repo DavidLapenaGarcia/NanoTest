@@ -1,5 +1,5 @@
 <?php
-class AffiliationAbstract {
+class AbstractRetrievalAffiliation {
     
     private $doi;
     private $city;
