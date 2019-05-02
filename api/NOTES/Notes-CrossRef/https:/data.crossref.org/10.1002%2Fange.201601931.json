@@ -1,0 +1,2184 @@
+{
+    "indexed": {
+        "date-parts": [
+            [
+                2019,
+                4,
+                25
+            ]
+        ],
+        "date-time": "2019-04-25T15:23:14Z",
+        "timestamp": 1556205794262
+    },
+    "reference-count": 199,
+    "publisher": "Wiley",
+    "issue": "37",
+    "license": [
+        {
+            "URL": "http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1",
+            "start": {
+                "date-parts": [
+                    [
+                        2015,
+                        9,
+                        1
+                    ]
+                ],
+                "date-time": "2015-09-01T00:00:00Z",
+                "timestamp": 1441065600000
+            },
+            "delay-in-days": 0,
+            "content-version": "tdm"
+        }
+    ],
+    "funder": [
+        {
+            "DOI": "10.13039\/501100001722",
+            "name": "Koninklijke Nederlandse Akademie van Wetenschappen",
+            "doi-asserted-by": "crossref",
+            "award": []
+        },
+        {
+            "DOI": "10.13039\/501100005992",
+            "name": "Ministry of Education and Science",
+            "doi-asserted-by": "crossref",
+            "award": [
+                "024.001.035"
+            ]
+        },
+        {
+            "DOI": "10.13039\/501100000781",
+            "name": "European Research Council",
+            "doi-asserted-by": "publisher",
+            "award": [
+                "227897"
+            ]
+        },
+        {
+            "name": "NanoNext",
+            "award": [
+                "723.014.001"
+            ]
+        },
+        {
+            "name": "Koninklijke Nederlandse Akademie van Wetenschappen (KNAW)",
+            "award": []
+        }
+    ],
+    "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+    },
+    "published-print": {
+        "date-parts": [
+            [
+                2016,
+                9,
+                5
+            ]
+        ]
+    },
+    "DOI": "10.1002\/ange.201601931",
+    "type": "article-journal",
+    "created": {
+        "date-parts": [
+            [
+                2016,
+                7,
+                4
+            ]
+        ],
+        "date-time": "2016-07-04T16:42:09Z",
+        "timestamp": 1467650529000
+    },
+    "page": "11140-11163",
+    "source": "Crossref",
+    "is-referenced-by-count": 44,
+    "title": "Neue Ziele f\u00fcr die Photopharmakologie",
+    "prefix": "10.1002",
+    "volume": "128",
+    "author": [
+        {
+            "ORCID": "http:\/\/orcid.org\/0000-0003-1765-0301",
+            "authenticated-orcid": false,
+            "given": "Michael M.",
+            "family": "Lerch",
+            "sequence": "first",
+            "affiliation": [
+                {
+                    "name": "Stratingh Institute for Chemistry; University of Groningen; Nijenborgh 4 9747 AG Groningen Niederlande"
+                }
+            ]
+        },
+        {
+            "ORCID": "http:\/\/orcid.ohttps://data.crossref.org/10.1002%2Fange.201601931rg\/0000-0002-7597-1229",
+            "authenticated-orcid": false,
+            "given": "Mickel J.",
+            "family": "Hansen",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Stratingh Institute for Chemistry; University of Groningen; Nijenborgh 4 9747 AG Groningen Niederlande"
+                },
+                {
+                    "name": "Zernike Institute for Advanced Materials; University of Groningen; Nijenborgh 7 9747 AG Groningen Niederlande"
+                }
+            ]
+        },
+        {
+            "ORCID": "http:\/\/orcid.org\/0000-0002-7248-8696",
+            "authenticated-orcid": false,
+            "given": "Gooitzen M.",
+            "family": "van\u2005Dam",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Department of Surgery, Nuclear Medicine and Molecular Imaging and Intensive Care, University of Groningen; University Medical Center Groningen; Hanzeplein 1, P.O. Box 30001 9700 RB Groningen Niederlande"
+                }
+            ]
+        },
+        {
+            "ORCID": "http:\/\/orcid.org\/0000-0002-9754-9248",
+            "authenticated-orcid": false,
+            "given": "Wiktor",
+            "family": "Szymanski",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Stratingh Institute for Chemistry; University of Groningen; Nijenborgh 4 9747 AG Groningen Niederlande"
+                },
+                {
+                    "name": "Department of Radiology, University of Groningen; University Medical Center Groningen; Hanzeplein 1, P.O. Box 30001 9700 RB Groningen Niederlande"
+                }
+            ]
+        },
+        {
+            "given": "Ben L.",
+            "family": "Feringa",
+            "sequence": "additional",
+            "affiliation": [
+                {
+                    "name": "Stratingh Institute for Chemistry; University of Groningen; Nijenborgh 4 9747 AG Groningen Niederlande"
+                },
+                {
+                    "name": "Zernike Institute for Advanced Materials; University of Groningen; Nijenborgh 7 9747 AG Groningen Niederlande"
+                },
+                {
+                    "name": "Department of Radiology, University of Groningen; University Medical Center Groningen; Hanzeplein 1, P.O. Box 30001 9700 RB Groningen Niederlande"
+                }
+            ]
+        }
+    ],
+    "member": "311",
+    "published-online": {
+        "date-parts": [
+            [
+                2016,
+                7,
+                4
+            ]
+        ]
+    },
+    "reference": [
+        {
+            "key": "10.1002\/ange.201601931-BIB0001|ange201601931-cit-0001",
+            "author": "Rang",
+            "year": "2015",
+            "volume-title": "Rang & Dale's Pharmacology"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0002|ange201601931-cit-0002",
+            "author": "Edwards",
+            "volume": "356",
+            "first-page": "1255",
+            "year": "2000",
+            "journal-title": "Lancet",
+            "DOI": "10.1016\/S0140-6736(00)02799-9",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0003|ange201601931-cit-0003",
+            "author": "Lewis",
+            "volume": "12",
+            "first-page": "371",
+            "year": "2013",
+            "journal-title": "Nat. Rev. Drug Discovery",
+            "DOI": "10.1038\/nrd3975",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0004|ange201601931-cit-0004",
+            "author": "Hanahan",
+            "volume": "144",
+            "first-page": "646",
+            "year": "2011",
+            "journal-title": "Cell",
+            "DOI": "10.1016\/j.cell.2011.02.013",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0005|ange201601931-cit-0005",
+            "author": "Gaudana",
+            "volume": "12",
+            "first-page": "348",
+            "year": "2010",
+            "journal-title": "AAPS J.",
+            "DOI": "10.1208\/s12248-010-9183-3",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0006|ange201601931-cit-0006",
+            "author": "Gerber",
+            "volume": "77",
+            "first-page": "311",
+            "year": "2008",
+            "journal-title": "Am. Fam. Physician"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0007|ange201601931-cit-0007",
+            "author": "Velema",
+            "volume": "136",
+            "first-page": "2178",
+            "year": "2014",
+            "journal-title": "J. Am. Chem. Soc.",
+            "DOI": "10.1021\/ja413063e",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0008|ange201601931-cit-0008",
+            "author": "Broichhagen",
+            "volume": "48",
+            "first-page": "1947",
+            "year": "2015",
+            "journal-title": "Acc. Chem. Res.",
+            "DOI": "10.1021\/acs.accounts.5b00129",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0009|ange201601931-cit-0009",
+            "author": "Szyma\u0144ski",
+            "volume": "113",
+            "first-page": "6114",
+            "year": "2013",
+            "journal-title": "Chem. Rev.",
+            "DOI": "10.1021\/cr300179f",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0010|ange201601931-cit-0010",
+            "author": "Dougherty",
+            "volume": "90",
+            "first-page": "889",
+            "year": "1998",
+            "journal-title": "JNCI J. Natl. Cancer Inst.",
+            "DOI": "10.1093\/jnci\/90.12.889",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0011|ange201601931-cit-0011",
+            "author": "Huang",
+            "volume": "4",
+            "first-page": "283",
+            "year": "2005",
+            "journal-title": "Technol. Cancer Res. Treat.",
+            "DOI": "10.1177\/153303460500400308",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0012|ange201601931-cit-0012",
+            "author": "Agostinis",
+            "volume": "61",
+            "first-page": "250",
+            "year": "2011",
+            "journal-title": "Ca-Cancer J. Clin.",
+            "DOI": "10.3322\/caac.20114",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0013|ange201601931-cit-0013",
+            "author": "Tour",
+            "volume": "21",
+            "first-page": "1505",
+            "year": "2003",
+            "journal-title": "Nat. Biotechnol.",
+            "DOI": "10.1038\/nbt914",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0014|ange201601931-cit-0014",
+            "author": "Fenno",
+            "volume": "34",
+            "first-page": "389",
+            "year": "2011",
+            "journal-title": "Annu. Rev. Neurosci.",
+            "DOI": "10.1146\/annurev-neuro-061010-113817",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0015|ange201601931-cit-0015",
+            "author": "Zemelman",
+            "volume": "100",
+            "first-page": "1352",
+            "year": "2003",
+            "journal-title": "Proc. Natl. Acad. Sci. USA",
+            "DOI": "10.1073\/pnas.242738899",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0016|ange201601931-cit-0016",
+            "author": "Zemelman",
+            "volume": "33",
+            "first-page": "15",
+            "year": "2002",
+            "journal-title": "Neuron",
+            "DOI": "10.1016\/S0896-6273(01)00574-8",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0017|ange201601931-cit-0017",
+            "author": "Smith",
+            "volume": "371",
+            "first-page": "20120519",
+            "year": "2013",
+            "journal-title": "Philos. Trans. R. Soc. London Ser. A",
+            "DOI": "10.1098\/rsta.2012.0519",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0018|ange201601931-cit-0018",
+            "author": "Brieke",
+            "volume": "51",
+            "first-page": "8446",
+            "year": "2012",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201202134",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0018.2|ange201601931-cit-0019",
+            "volume": "124",
+            "first-page": "8572",
+            "year": "2012",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201202134",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0019|ange201601931-cit-0020",
+            "author": "Stern",
+            "volume": "357",
+            "first-page": "682",
+            "year": "2007",
+            "journal-title": "N. Engl. J. Med.",
+            "DOI": "10.1056\/NEJMct072317",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0020|ange201601931-cit-0021",
+            "author": "Hansen",
+            "volume": "15",
+            "first-page": "2053",
+            "year": "2014",
+            "journal-title": "ChemBioChem",
+            "DOI": "10.1002\/cbic.201402237",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0021|ange201601931-cit-0022",
+            "author": "Borowiak",
+            "volume": "162",
+            "first-page": "403",
+            "year": "2015",
+            "journal-title": "Cell",
+            "DOI": "10.1016\/j.cell.2015.06.049",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0022|ange201601931-cit-0023",
+            "author": "Szymanski",
+            "volume": "21",
+            "first-page": "16517",
+            "year": "2015",
+            "journal-title": "Chem. Eur. J.",
+            "DOI": "10.1002\/chem.201502809",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0023|ange201601931-cit-0024",
+            "author": "Falenczyk",
+            "volume": "5",
+            "first-page": "4794",
+            "year": "2014",
+            "journal-title": "Chem. Sci.",
+            "DOI": "10.1039\/C4SC01346H",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0024|ange201601931-cit-0025",
+            "author": "Ferreira",
+            "volume": "5",
+            "first-page": "9769",
+            "year": "2015",
+            "journal-title": "Sci. Rep.",
+            "DOI": "10.1038\/srep09769",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0025|ange201601931-cit-0026",
+            "author": "Banghart",
+            "volume": "7",
+            "first-page": "1381",
+            "year": "2004",
+            "journal-title": "Nat. Neurosci.",
+            "DOI": "10.1038\/nn1356",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0026|ange201601931-cit-0027",
+            "author": "Polosukhina",
+            "volume": "75",
+            "first-page": "271",
+            "year": "2012",
+            "journal-title": "Neuron",
+            "DOI": "10.1016\/j.neuron.2012.05.022",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0027|ange201601931-cit-0028",
+            "author": "Broichhagen",
+            "volume": "53",
+            "first-page": "7657",
+            "year": "2014",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201403666",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0027.2|ange201601931-cit-0029",
+            "volume": "126",
+            "first-page": "7788",
+            "year": "2014",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201403666",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0028|ange201601931-cit-0030",
+            "author": "Broichhagen",
+            "volume": "5",
+            "first-page": "5116",
+            "year": "2014",
+            "journal-title": "Nat. Commun.",
+            "DOI": "10.1038\/ncomms6116",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0029|ange201601931-cit-0031",
+            "author": "Velema",
+            "volume": "5",
+            "first-page": "924",
+            "year": "2013",
+            "journal-title": "Nat. Chem.",
+            "DOI": "10.1038\/nchem.1750",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0030|ange201601931-cit-0032",
+            "author": "Taruttis",
+            "volume": "75",
+            "first-page": "1548",
+            "year": "2015",
+            "journal-title": "Cancer Res.",
+            "DOI": "10.1158\/0008-5472.CAN-14-2522",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0031|ange201601931-cit-0033",
+            "author": "Kelkar",
+            "volume": "22",
+            "first-page": "1879",
+            "year": "2011",
+            "journal-title": "Bioconjugate Chem.",
+            "DOI": "10.1021\/bc200151q",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0032|ange201601931-cit-0034",
+            "author": "Kalka",
+            "volume": "42",
+            "first-page": "389",
+            "year": "2000",
+            "journal-title": "J. Am. Acad. Dermatol.",
+            "DOI": "10.1016\/S0190-9622(00)90209-3",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0033|ange201601931-cit-0035",
+            "author": "Brash",
+            "volume": "88",
+            "first-page": "10124",
+            "year": "1991",
+            "journal-title": "Proc. Natl. Acad. Sci. USA",
+            "DOI": "10.1073\/pnas.88.22.10124",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0034|ange201601931-cit-0036",
+            "author": "Yoon",
+            "volume": "46",
+            "first-page": "7",
+            "year": "2013",
+            "journal-title": "Clin. Endosc.",
+            "DOI": "10.5946\/ce.2013.46.1.7",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0035|ange201601931-cit-0037",
+            "author": "Mazhar",
+            "volume": "15",
+            "first-page": "010506",
+            "year": "2010",
+            "journal-title": "J. Biomed. Opt.",
+            "DOI": "10.1117\/1.3299321",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0036|ange201601931-cit-0038",
+            "author": "Liu",
+            "volume": "8",
+            "first-page": "141",
+            "year": "2015",
+            "journal-title": "Front. Optoelectron.",
+            "DOI": "10.1007\/s12200-014-0415-5",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0037|ange201601931-cit-0039",
+            "author": "Pei",
+            "volume": "6",
+            "first-page": "145",
+            "year": "2015",
+            "journal-title": "Indian Dermatol. Online J.",
+            "DOI": "10.4103\/2229-5178.156379",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0038|ange201601931-cit-0040",
+            "author": "Weissleder",
+            "volume": "9",
+            "first-page": "123",
+            "year": "2003",
+            "journal-title": "Nat. Med.",
+            "DOI": "10.1038\/nm0103-123",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0039|ange201601931-cit-0041",
+            "author": "Bl\u00e9ger",
+            "volume": "54",
+            "first-page": "11338",
+            "year": "2015",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201500628",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0039.2|ange201601931-cit-0042",
+            "volume": "127",
+            "first-page": "11494",
+            "year": "2015",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201500628",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0040|ange201601931-cit-0043",
+            "author": "Dong",
+            "volume": "48",
+            "first-page": "2662",
+            "year": "2015",
+            "journal-title": "Acc. Chem. Res.",
+            "DOI": "10.1021\/acs.accounts.5b00270",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0041|ange201601931-cit-0044",
+            "author": "Owens",
+            "volume": "6",
+            "first-page": "187",
+            "year": "2007",
+            "journal-title": "Nat. Rev. Drug Discovery",
+            "DOI": "10.1038\/nrd2275",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0042|ange201601931-cit-0045",
+            "author": "Zhao",
+            "volume": "10",
+            "first-page": "1797",
+            "year": "2010",
+            "journal-title": "Expert Rev. Anticancer Ther.",
+            "DOI": "10.1586\/era.10.154",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0043|ange201601931-cit-0046",
+            "author": "Bessler",
+            "volume": "24",
+            "first-page": "512",
+            "year": "2004",
+            "journal-title": "Retina",
+            "DOI": "10.1097\/00006982-200408000-00003",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0044|ange201601931-cit-0047",
+            "author": "Nanashima",
+            "volume": "16",
+            "first-page": "3434",
+            "year": "2015",
+            "journal-title": "Int. J. Mol. Sci.",
+            "DOI": "10.3390\/ijms16023434",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0045|ange201601931-cit-0048",
+            "author": "Sobaniec",
+            "volume": "28",
+            "first-page": "311",
+            "year": "2013",
+            "journal-title": "Lasers\/Medical Sci."
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0046|ange201601931-cit-0049",
+            "author": "Lorenz",
+            "volume": "3",
+            "first-page": "5",
+            "year": "2014",
+            "journal-title": "J. Otol. Rhinol."
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0047|ange201601931-cit-0050",
+            "author": "Simone",
+            "volume": "4",
+            "first-page": "63",
+            "year": "2011",
+            "journal-title": "J. Thorac. Dis."
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0048|ange201601931-cit-0051",
+            "author": "Soergel",
+            "volume": "40",
+            "first-page": "611",
+            "year": "2008",
+            "journal-title": "Lasers Surg. Med.",
+            "DOI": "10.1002\/lsm.20686",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0049|ange201601931-cit-0052",
+            "author": "Baron",
+            "volume": "6",
+            "first-page": "266",
+            "year": "2008",
+            "journal-title": "Clin. Gastroenterol. Hepatol.",
+            "DOI": "10.1016\/j.cgh.2008.01.015",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0050|ange201601931-cit-0053",
+            "author": "Bozzini",
+            "volume": "9",
+            "first-page": "261",
+            "year": "2012",
+            "journal-title": "Photodiagn. Photodyn. Ther.",
+            "DOI": "10.1016\/j.pdpdt.2012.01.005",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0051|ange201601931-cit-0054",
+            "author": "Cengel",
+            "volume": "134",
+            "first-page": "493",
+            "year": "2007",
+            "journal-title": "Cancer Treat. Res."
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0052|ange201601931-cit-0055",
+            "author": "Bown",
+            "volume": "50",
+            "first-page": "549",
+            "year": "2002",
+            "journal-title": "Gut",
+            "DOI": "10.1136\/gut.50.4.549",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0053|ange201601931-cit-0056",
+            "author": "Vogl",
+            "volume": "14",
+            "first-page": "1063",
+            "year": "2004",
+            "journal-title": "Eur. Radiol.",
+            "DOI": "10.1007\/s00330-004-2290-8",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0054|ange201601931-cit-0057",
+            "author": "Nathan",
+            "volume": "168",
+            "first-page": "1427",
+            "year": "2002",
+            "journal-title": "J. Urol.",
+            "DOI": "10.1016\/S0022-5347(05)64466-7",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0055|ange201601931-cit-0058",
+            "author": "Kereiakes",
+            "volume": "108",
+            "first-page": "1310",
+            "year": "2003",
+            "journal-title": "Circulation",
+            "DOI": "10.1161\/01.CIR.0000087602.91755.19",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0056|ange201601931-cit-0059",
+            "author": "Quirk",
+            "volume": "12",
+            "first-page": "530",
+            "year": "2015",
+            "journal-title": "Photodiagn. Photodyn. Ther.",
+            "DOI": "10.1016\/j.pdpdt.2015.04.009",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0057|ange201601931-cit-0060",
+            "author": "Irwin",
+            "year": "2015",
+            "volume-title": "The Neuron: Cell and Molecular Biology"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0058|ange201601931-cit-0061",
+            "author": "Lemoine",
+            "volume": "112",
+            "first-page": "6285",
+            "year": "2012",
+            "journal-title": "Chem. Rev.",
+            "DOI": "10.1021\/cr3000829",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0059|ange201601931-cit-0062",
+            "author": "Kumar",
+            "first-page": "97",
+            "year": "2015",
+            "journal-title": "Adv. Protein Chem. Struct. Biol."
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0060|ange201601931-cit-0063",
+            "author": "Bean",
+            "volume": "8",
+            "first-page": "451",
+            "year": "2007",
+            "journal-title": "Nat. Rev. Neurosci.",
+            "DOI": "10.1038\/nrn2148",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0061|ange201601931-cit-0064",
+            "author": "Hille",
+            "year": "2001",
+            "volume-title": "Ion Channels of Excitable Membranes"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0062|ange201601931-cit-0065",
+            "author": "Rodriguez-Larrea",
+            "volume": "8",
+            "first-page": "288",
+            "year": "2013",
+            "journal-title": "Nat. Nanotechnol.",
+            "DOI": "10.1038\/nnano.2013.22",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0063|ange201601931-cit-0066",
+            "author": "Chang",
+            "volume": "2",
+            "first-page": "391",
+            "year": "1995",
+            "journal-title": "Chem. Biol.",
+            "DOI": "10.1016\/1074-5521(95)90220-1",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0064|ange201601931-cit-0067",
+            "author": "Harrington",
+            "volume": "110",
+            "first-page": "4417",
+            "year": "2013",
+            "journal-title": "Proc. Natl. Acad. Sci. USA",
+            "DOI": "10.1073\/pnas.1312739110",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0065|ange201601931-cit-0068",
+            "author": "Huang",
+            "volume": "10",
+            "first-page": "986",
+            "year": "2015",
+            "journal-title": "Nat. Nanotechnol.",
+            "DOI": "10.1038\/nnano.2015.189",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0066|ange201601931-cit-0069",
+            "author": "Bayley",
+            "volume": "61",
+            "first-page": "25",
+            "year": "2015",
+            "journal-title": "Clin. Chem.",
+            "DOI": "10.1373\/clinchem.2014.223016",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0067|ange201601931-cit-0070",
+            "author": "Thottumkara",
+            "volume": "53",
+            "first-page": "5760",
+            "year": "2014",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201308235",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0067.2|ange201601931-cit-0071",
+            "volume": "126",
+            "first-page": "5868",
+            "year": "2014",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201308235",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0068|ange201601931-cit-0072",
+            "author": "Eberlin",
+            "volume": "136",
+            "first-page": "6401",
+            "year": "2014",
+            "journal-title": "J. Am. Chem. Soc.",
+            "DOI": "10.1021\/ja501635u",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0069|ange201601931-cit-0073",
+            "author": "Walker",
+            "volume": "109",
+            "first-page": "18102",
+            "year": "2012",
+            "journal-title": "Proc. Natl. Acad. Sci. USA",
+            "DOI": "10.1073\/pnas.1206952109",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0070|ange201601931-cit-0074",
+            "author": "Palczewski",
+            "volume": "75",
+            "first-page": "743",
+            "year": "2006",
+            "journal-title": "Annu. Rev. Biochem.",
+            "DOI": "10.1146\/annurev.biochem.75.103004.142743",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0071|ange201601931-cit-0075",
+            "author": "Zhang",
+            "volume": "8",
+            "first-page": "577",
+            "year": "2007",
+            "journal-title": "Nat. Rev. Neurosci.",
+            "DOI": "10.1038\/nrn2192",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0072|ange201601931-cit-0076",
+            "author": "Deisseroth",
+            "volume": "8",
+            "first-page": "26",
+            "year": "2011",
+            "journal-title": "Nat. Methods",
+            "DOI": "10.1038\/nmeth.f.324",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0073|ange201601931-cit-0077",
+            "author": "Deisseroth",
+            "volume": "18",
+            "first-page": "1213",
+            "year": "2015",
+            "journal-title": "Nat. Neurosci.",
+            "DOI": "10.1038\/nn.4091",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0074|ange201601931-cit-0078",
+            "author": "Kianianmomeni",
+            "volume": "40",
+            "first-page": "624",
+            "year": "2015",
+            "journal-title": "Trends Biochem. Sci.",
+            "DOI": "10.1016\/j.tibs.2015.09.004",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0075|ange201601931-cit-0079",
+            "author": "Ko\u00e7er",
+            "volume": "309",
+            "first-page": "755",
+            "year": "2005",
+            "journal-title": "Science",
+            "DOI": "10.1126\/science.1114760",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0076|ange201601931-cit-0080",
+            "author": "Szyma\u0144ski",
+            "volume": "46",
+            "first-page": "2910",
+            "year": "2013",
+            "journal-title": "Acc. Chem. Res.",
+            "DOI": "10.1021\/ar4000357",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0077|ange201601931-cit-0081",
+            "author": "Ko\u00e7er",
+            "volume": "2",
+            "first-page": "1426",
+            "year": "2007",
+            "journal-title": "Nat. Protoc.",
+            "DOI": "10.1038\/nprot.2007.196",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0078|ange201601931-cit-0082",
+            "author": "Bonardi",
+            "volume": "49",
+            "first-page": "7234",
+            "year": "2010",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201002243",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0078.2|ange201601931-cit-0083",
+            "volume": "122",
+            "first-page": "7392",
+            "year": "2010",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201002243",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0079|ange201601931-cit-0084",
+            "author": "Broichhagen",
+            "volume": "21",
+            "first-page": "121",
+            "year": "2014",
+            "journal-title": "Curr. Opin. Chem. Biol.",
+            "DOI": "10.1016\/j.cbpa.2014.07.008",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0080|ange201601931-cit-0085",
+            "author": "Kramer",
+            "volume": "19",
+            "first-page": "544",
+            "year": "2009",
+            "journal-title": "Curr. Opin. Neurobiol.",
+            "DOI": "10.1016\/j.conb.2009.09.004",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0081|ange201601931-cit-0086",
+            "author": "Caporale",
+            "volume": "19",
+            "first-page": "1212",
+            "year": "2011",
+            "journal-title": "Mol. Ther.",
+            "DOI": "10.1038\/mt.2011.103",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0082|ange201601931-cit-0087",
+            "author": "Volgraf",
+            "volume": "2",
+            "first-page": "47",
+            "year": "2006",
+            "journal-title": "Nat. Chem. Biol.",
+            "DOI": "10.1038\/nchembio756",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0083|ange201601931-cit-0088",
+            "author": "Gorostiza",
+            "volume": "104",
+            "first-page": "10865",
+            "year": "2007",
+            "journal-title": "Proc. Natl. Acad. Sci. USA",
+            "DOI": "10.1073\/pnas.0701274104",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0084|ange201601931-cit-0089",
+            "author": "Carter",
+            "volume": "3",
+            "first-page": "533",
+            "year": "1992",
+            "journal-title": "Curr. Opin. Biotechnol.",
+            "DOI": "10.1016\/0958-1669(92)90082-T",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0085|ange201601931-cit-0090",
+            "author": "Beems",
+            "volume": "50",
+            "first-page": "393",
+            "year": "1990",
+            "journal-title": "Exp. Eye Res.",
+            "DOI": "10.1016\/0014-4835(90)90140-P",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0086|ange201601931-cit-0091",
+            "author": "Banghart",
+            "volume": "48",
+            "first-page": "9097",
+            "year": "2009",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.200904504",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0086.2|ange201601931-cit-0092",
+            "volume": "121",
+            "first-page": "9261",
+            "year": "2009",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.200904504",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0087|ange201601931-cit-0093",
+            "author": "Fortin",
+            "volume": "5",
+            "first-page": "331",
+            "year": "2008",
+            "journal-title": "Nat. Methods"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0088|ange201601931-cit-0094",
+            "author": "Tochitsky",
+            "volume": "81",
+            "first-page": "800",
+            "year": "2014",
+            "journal-title": "Neuron",
+            "DOI": "10.1016\/j.neuron.2014.01.003",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0089|ange201601931-cit-0095",
+            "author": "Mourot",
+            "volume": "2",
+            "first-page": "536",
+            "year": "2011",
+            "journal-title": "ACS Chem. Neurosci.",
+            "DOI": "10.1021\/cn200037p",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0090|ange201601931-cit-0096",
+            "author": "Laprell",
+            "volume": "7",
+            "first-page": "15",
+            "year": "2016",
+            "journal-title": "ACS Chem. Neurosci.",
+            "DOI": "10.1021\/acschemneuro.5b00234",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0091|ange201601931-cit-0097",
+            "author": "Dunn",
+            "volume": "35",
+            "first-page": "2423",
+            "year": "2015",
+            "journal-title": "J. Neurosci.",
+            "DOI": "10.1523\/JNEUROSCI.4284-14.2015",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0092|ange201601931-cit-0098",
+            "author": "Lin",
+            "volume": "70",
+            "first-page": "889",
+            "year": "2002",
+            "journal-title": "Infect. Immun.",
+            "DOI": "10.1128\/IAI.70.2.889-898.2002",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0093|ange201601931-cit-0099",
+            "author": "Chua",
+            "volume": "514",
+            "first-page": "473",
+            "year": "2009",
+            "journal-title": "J. Comp. Neurol.",
+            "DOI": "10.1002\/cne.22029",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0094|ange201601931-cit-0100",
+            "author": "Samanta",
+            "volume": "52",
+            "first-page": "14127",
+            "year": "2013",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201306352",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0094.2|ange201601931-cit-0101",
+            "volume": "125",
+            "first-page": "14377",
+            "year": "2013",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201306352",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0095|ange201601931-cit-0102",
+            "author": "Bl\u00e9ger",
+            "volume": "134",
+            "first-page": "20597",
+            "year": "2012",
+            "journal-title": "J. Am. Chem. Soc.",
+            "DOI": "10.1021\/ja310323y",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0096|ange201601931-cit-0103",
+            "author": "Tjalma",
+            "volume": "57",
+            "first-page": "480",
+            "year": "2015",
+            "journal-title": "J. Nucl. Med.",
+            "DOI": "10.2967\/jnumed.115.166975",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0097|ange201601931-cit-0104",
+            "author": "Lawn",
+            "volume": "378",
+            "first-page": "57",
+            "year": "2011",
+            "journal-title": "Lancet",
+            "DOI": "10.1016\/S0140-6736(10)62173-3",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0098|ange201601931-cit-0105",
+            "author": "Barona-G\u00f3mez",
+            "volume": "4",
+            "first-page": "296",
+            "year": "2003",
+            "journal-title": "EMBO Rep.",
+            "DOI": "10.1038\/sj.embor.embor771",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0099|ange201601931-cit-0106",
+            "author": "Reisinger",
+            "volume": "53",
+            "first-page": "595",
+            "year": "2014",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201307207",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0099.2|ange201601931-cit-0107",
+            "volume": "126",
+            "first-page": "606",
+            "year": "2014",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201307207",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0100|ange201601931-cit-0108",
+            "author": "Due",
+            "volume": "108",
+            "first-page": "3554",
+            "year": "2011",
+            "journal-title": "Proc. Natl. Acad. Sci. USA",
+            "DOI": "10.1073\/pnas.1015996108",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0101|ange201601931-cit-0109",
+            "author": "Irie",
+            "volume": "100",
+            "first-page": "1685",
+            "year": "2000",
+            "journal-title": "Chem. Rev.",
+            "DOI": "10.1021\/cr980069d",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0102|ange201601931-cit-0110",
+            "author": "Schoenberger",
+            "volume": "5",
+            "first-page": "514",
+            "year": "2014",
+            "journal-title": "ACS Chem. Neurosci.",
+            "DOI": "10.1021\/cn500070w",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0103|ange201601931-cit-0111",
+            "author": "Karlsson",
+            "volume": "13",
+            "first-page": "2612",
+            "year": "2015",
+            "journal-title": "Org. Biomol. Chem.",
+            "DOI": "10.1039\/C4OB01926A",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0104|ange201601931-cit-0112",
+            "author": "Reichard",
+            "volume": "260",
+            "first-page": "1773",
+            "year": "1993",
+            "journal-title": "Science",
+            "DOI": "10.1126\/science.8511586",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0105|ange201601931-cit-0113",
+            "author": "Dawes",
+            "volume": "71",
+            "first-page": "6124",
+            "year": "2003",
+            "journal-title": "Infect. Immun.",
+            "DOI": "10.1128\/IAI.71.11.6124-6131.2003",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0106|ange201601931-cit-0114",
+            "author": "Nurbo",
+            "volume": "13",
+            "first-page": "822",
+            "year": "2007",
+            "journal-title": "J. Pept. Sci.",
+            "DOI": "10.1002\/psc.906",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0107|ange201601931-cit-0115",
+            "unstructured": "World Cancer Report 2014"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0108|ange201601931-cit-0116",
+            "author": "Bhattacharyya",
+            "volume": "28",
+            "first-page": "155",
+            "year": "2008",
+            "journal-title": "Med. Res. Rev.",
+            "DOI": "10.1002\/med.20097",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0109|ange201601931-cit-0117",
+            "author": "Tozer",
+            "volume": "83",
+            "first-page": "21",
+            "year": "2002",
+            "journal-title": "Int. J. Exp. Pathol.",
+            "DOI": "10.1046\/j.1365-2613.2002.00211.x",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0110|ange201601931-cit-0118",
+            "author": "Dumontet",
+            "volume": "9",
+            "first-page": "790",
+            "year": "2010",
+            "journal-title": "Nat. Rev. Drug Discovery",
+            "DOI": "10.1038\/nrd3253",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0111|ange201601931-cit-0119",
+            "author": "Peterson",
+            "volume": "9",
+            "first-page": "1275",
+            "year": "2002",
+            "journal-title": "Chem. Biol.",
+            "DOI": "10.1016\/S1074-5521(02)00284-3",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0112|ange201601931-cit-0120",
+            "author": "Griggs",
+            "volume": "84",
+            "first-page": "832",
+            "year": "2001",
+            "journal-title": "Br. J. Cancer",
+            "DOI": "10.1054\/bjoc.2000.1653",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0113|ange201601931-cit-0121",
+            "author": "Pettit",
+            "volume": "60",
+            "first-page": "1374",
+            "year": "1982",
+            "journal-title": "Can. J. Chem.",
+            "DOI": "10.1139\/v82-202",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0114|ange201601931-cit-0122",
+            "author": "Pettit",
+            "volume": "48",
+            "first-page": "4087",
+            "year": "2005",
+            "journal-title": "J. Med. Chem.",
+            "DOI": "10.1021\/jm0205797",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0115|ange201601931-cit-0123",
+            "author": "Mooney",
+            "volume": "19",
+            "first-page": "233",
+            "year": "2009",
+            "journal-title": "Thyroid",
+            "DOI": "10.1089\/thy.2008.0321",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0116|ange201601931-cit-0124",
+            "author": "Engdahl",
+            "volume": "17",
+            "first-page": "4546",
+            "year": "2015",
+            "journal-title": "Org. Lett.",
+            "DOI": "10.1021\/acs.orglett.5b02262",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0117|ange201601931-cit-0125",
+            "author": "Sheldon",
+            "volume": "14",
+            "first-page": "40",
+            "year": "2016",
+            "journal-title": "Org. Biomol. Chem.",
+            "DOI": "10.1039\/C5OB02005K",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0118|ange201601931-cit-0126",
+            "author": "Hamaguchi",
+            "first-page": "129",
+            "year": "2004",
+            "journal-title": "Diabetes Res. Clin. Pract.",
+            "DOI": "10.1016\/j.diabres.2003.12.012",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0119|ange201601931-cit-0127",
+            "author": "Broichhagen",
+            "volume": "51",
+            "first-page": "6018",
+            "year": "2015",
+            "journal-title": "Chem. Commun.",
+            "DOI": "10.1039\/C5CC01224D",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0120|ange201601931-cit-0128",
+            "author": "Broichhagen",
+            "volume": "54",
+            "first-page": "15565",
+            "year": "2015",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201506384",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0120.2|ange201601931-cit-0129",
+            "volume": "127",
+            "first-page": "15786",
+            "year": "2015",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201506384",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0121|ange201601931-cit-0130",
+            "author": "R\u00f6llig",
+            "volume": "385",
+            "first-page": "2197",
+            "year": "2015",
+            "journal-title": "Lancet",
+            "DOI": "10.1016\/S0140-6736(14)60493-1",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0122|ange201601931-cit-0131",
+            "author": "Arastu-Kapur",
+            "volume": "17",
+            "first-page": "2734",
+            "year": "2011",
+            "journal-title": "Clin. Cancer Res.",
+            "DOI": "10.1158\/1078-0432.CCR-10-1950",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0123|ange201601931-cit-0132",
+            "author": "Kisselev",
+            "volume": "8",
+            "first-page": "739",
+            "year": "2001",
+            "journal-title": "Chem. Biol.",
+            "DOI": "10.1016\/S1074-5521(01)00056-4",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0124|ange201601931-cit-0133",
+            "author": "Kisselev",
+            "volume": "19",
+            "first-page": "99",
+            "year": "2012",
+            "journal-title": "Chem. Biol.",
+            "DOI": "10.1016\/j.chembiol.2012.01.003",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0125|ange201601931-cit-0134",
+            "author": "Millard",
+            "volume": "64",
+            "first-page": "1909",
+            "year": "2002",
+            "journal-title": "J. Neurochem.",
+            "DOI": "10.1046\/j.1471-4159.1995.64051909.x",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0126|ange201601931-cit-0135",
+            "author": "Bieth",
+            "volume": "66",
+            "first-page": "850",
+            "year": "1970",
+            "journal-title": "Proc. Natl. Acad. Sci. USA",
+            "DOI": "10.1073\/pnas.66.3.850",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0127|ange201601931-cit-0136",
+            "author": "Bieth",
+            "volume": "12",
+            "first-page": "3023",
+            "year": "1973",
+            "journal-title": "Biochemistry",
+            "DOI": "10.1021\/bi00740a012",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0128|ange201601931-cit-0137",
+            "author": "Bieth",
+            "volume": "64",
+            "first-page": "1103",
+            "year": "1969",
+            "journal-title": "Proc. Natl. Acad. Sci. USA",
+            "DOI": "10.1073\/pnas.64.3.1103",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0129|ange201601931-cit-0138",
+            "author": "Deal",
+            "volume": "64",
+            "first-page": "1230",
+            "year": "1969",
+            "journal-title": "Proc. Natl. Acad. Sci. USA",
+            "DOI": "10.1073\/pnas.64.4.1230",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0130|ange201601931-cit-0139",
+            "author": "Wilson",
+            "volume": "237",
+            "first-page": "1323",
+            "year": "1962",
+            "journal-title": "J. Biol. Chem."
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0131|ange201601931-cit-0140",
+            "author": "Fehrentz",
+            "volume": "50",
+            "first-page": "12156",
+            "year": "2011",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201103236",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0131.2|ange201601931-cit-0141",
+            "volume": "123",
+            "first-page": "12362",
+            "year": "2011",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201103236",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0132|ange201601931-cit-0142",
+            "author": "Willner",
+            "volume": "35",
+            "first-page": "367",
+            "year": "1996",
+            "journal-title": "Angew. Chem. Int. Ed. Engl.",
+            "DOI": "10.1002\/anie.199603671",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0132.2|ange201601931-cit-0143",
+            "volume": "108",
+            "first-page": "419",
+            "year": "1996",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.19961080405",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0133|ange201601931-cit-0144",
+            "author": "Lester",
+            "volume": "75",
+            "first-page": "207",
+            "year": "1980",
+            "journal-title": "J. Gen. Physiol.",
+            "DOI": "10.1085\/jgp.75.2.207",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0134|ange201601931-cit-0145",
+            "author": "Freeman",
+            "volume": "36",
+            "first-page": "257",
+            "year": "1991",
+            "journal-title": "Prog. Neurobiol.",
+            "DOI": "10.1016\/0301-0082(91)90002-I",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0135|ange201601931-cit-0146",
+            "author": "Tumiatti",
+            "volume": "17",
+            "first-page": "1825",
+            "year": "2016",
+            "journal-title": "Curr. Med. Chem.",
+            "DOI": "10.2174\/092986710791111206",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0136|ange201601931-cit-0147",
+            "author": "Ballard",
+            "volume": "377",
+            "first-page": "1019",
+            "year": "2011",
+            "journal-title": "Lancet",
+            "DOI": "10.1016\/S0140-6736(10)61349-9",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0137|ange201601931-cit-0148",
+            "author": "Chen",
+            "volume": "5",
+            "first-page": "377",
+            "year": "2014",
+            "journal-title": "ACS Chem. Neurosci.",
+            "DOI": "10.1021\/cn500016p",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0138|ange201601931-cit-0149",
+            "author": "Bartolini",
+            "volume": "65",
+            "first-page": "407",
+            "year": "2003",
+            "journal-title": "Biochem. Pharmacol.",
+            "DOI": "10.1016\/S0006-2952(02)01514-9",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0139|ange201601931-cit-0150",
+            "author": "Carvajal",
+            "volume": "4",
+            "first-page": "19",
+            "year": "2011",
+            "journal-title": "Front. Mol. Neurosci.",
+            "DOI": "10.3389\/fnmol.2011.00019",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0140|ange201601931-cit-0151",
+            "author": "Garc\u00eda-Ayll\u00f3n",
+            "volume": "4",
+            "first-page": "22",
+            "year": "2011",
+            "journal-title": "Front. Mol. Neurosci.",
+            "DOI": "10.3389\/fnmol.2011.00022",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0141|ange201601931-cit-0152",
+            "author": "Carlyle",
+            "volume": "22",
+            "first-page": "126",
+            "year": "1964",
+            "journal-title": "Br. J. Pharmacol. Chemother.",
+            "DOI": "10.1111\/j.1476-5381.1964.tb01550.x",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0142|ange201601931-cit-0153",
+            "author": "Kwan",
+            "volume": "50",
+            "first-page": "277",
+            "year": "2006",
+            "journal-title": "Neuron",
+            "DOI": "10.1016\/j.neuron.2006.03.042",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0143|ange201601931-cit-0154",
+            "author": "Brain",
+            "volume": "1245",
+            "first-page": "36",
+            "year": "2011",
+            "journal-title": "Ann. N. Y. Acad. Sci.",
+            "DOI": "10.1111\/j.1749-6632.2011.06326.x",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0144|ange201601931-cit-0155",
+            "author": "Kokel",
+            "volume": "9",
+            "first-page": "257",
+            "year": "2013",
+            "journal-title": "Nat. Chem. Biol.",
+            "DOI": "10.1038\/nchembio.1183",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0145|ange201601931-cit-0156",
+            "author": "Fajardo",
+            "volume": "9",
+            "first-page": "219",
+            "year": "2013",
+            "journal-title": "Nat. Chem. Biol.",
+            "DOI": "10.1038\/nchembio.1203",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0146|ange201601931-cit-0157",
+            "author": "Wainger",
+            "volume": "18",
+            "first-page": "17",
+            "year": "2015",
+            "journal-title": "Nat. Neurosci.",
+            "DOI": "10.1038\/nn.3886",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0147|ange201601931-cit-0158",
+            "author": "Mart\u00ednez",
+            "volume": "321",
+            "first-page": "365",
+            "year": "2008",
+            "journal-title": "Science",
+            "DOI": "10.1126\/science.1159483",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0148|ange201601931-cit-0159",
+            "author": "Carlet",
+            "volume": "378",
+            "first-page": "369",
+            "year": "2011",
+            "journal-title": "Lancet",
+            "DOI": "10.1016\/S0140-6736(11)60401-7",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0149|ange201601931-cit-0160",
+            "author": "Mitscher",
+            "volume": "105",
+            "first-page": "559",
+            "year": "2005",
+            "journal-title": "Chem. Rev.",
+            "DOI": "10.1021\/cr030101q",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0150|ange201601931-cit-0161",
+            "author": "Drlica",
+            "volume": "61",
+            "first-page": "377",
+            "year": "1997",
+            "journal-title": "Microbiol. Mol. Biol. Rev."
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0151|ange201601931-cit-0162",
+            "author": "Babii",
+            "volume": "53",
+            "first-page": "3392",
+            "year": "2014",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201310019",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0151.2|ange201601931-cit-0163",
+            "volume": "126",
+            "first-page": "3460",
+            "year": "2014",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201310019",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0152|ange201601931-cit-0164",
+            "author": "Velema",
+            "volume": "26",
+            "first-page": "2592",
+            "year": "2015",
+            "journal-title": "Bioconjugate Chem.",
+            "DOI": "10.1021\/acs.bioconjchem.5b00591",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0153|ange201601931-cit-0165",
+            "author": "Julius",
+            "volume": "413",
+            "first-page": "203",
+            "year": "2001",
+            "journal-title": "Nature",
+            "DOI": "10.1038\/35093019",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0154|ange201601931-cit-0166",
+            "author": "Basbaum",
+            "volume": "139",
+            "first-page": "267",
+            "year": "2009",
+            "journal-title": "Cell",
+            "DOI": "10.1016\/j.cell.2009.09.028",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0155|ange201601931-cit-0167",
+            "author": "Mourot",
+            "volume": "9",
+            "first-page": "396",
+            "year": "2012",
+            "journal-title": "Nat. Methods",
+            "DOI": "10.1038\/nmeth.1897",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0156|ange201601931-cit-0168",
+            "author": "Jeal",
+            "volume": "53",
+            "first-page": "109",
+            "year": "1997",
+            "journal-title": "Drugs",
+            "DOI": "10.2165\/00003495-199753010-00011",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0157|ange201601931-cit-0169",
+            "author": "Muijsers",
+            "volume": "61",
+            "first-page": "2289",
+            "year": "2001",
+            "journal-title": "Drugs",
+            "DOI": "10.2165\/00003495-200161150-00014",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0158|ange201601931-cit-0170",
+            "author": "Connor",
+            "volume": "26",
+            "first-page": "493",
+            "year": "1999",
+            "journal-title": "Clin. Exp. Pharmacol. Physiol.",
+            "DOI": "10.1046\/j.1440-1681.1999.03049.x",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0159|ange201601931-cit-0171",
+            "author": "Sch\u00f6nberger",
+            "volume": "53",
+            "first-page": "3264",
+            "year": "2014",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201309633",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0159.2|ange201601931-cit-0172",
+            "volume": "126",
+            "first-page": "3329",
+            "year": "2014",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201309633",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0160|ange201601931-cit-0173",
+            "author": "Lagerstr\u00f6m",
+            "volume": "7",
+            "first-page": "339",
+            "year": "2008",
+            "journal-title": "Nat. Rev. Drug Discovery",
+            "DOI": "10.1038\/nrd2518",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0161|ange201601931-cit-0174",
+            "author": "Lappano",
+            "volume": "10",
+            "first-page": "47",
+            "year": "2011",
+            "journal-title": "Nat. Rev. Drug Discovery",
+            "DOI": "10.1038\/nrd3320",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0162|ange201601931-cit-0175",
+            "author": "Pittolo",
+            "volume": "10",
+            "first-page": "813",
+            "year": "2014",
+            "journal-title": "Nat. Chem. Biol.",
+            "DOI": "10.1038\/nchembio.1612",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0163|ange201601931-cit-0176",
+            "author": "Johnson",
+            "volume": "70",
+            "first-page": "676",
+            "year": "2006",
+            "journal-title": "Mol. Pharmacol.",
+            "DOI": "10.1124\/mol.106.022376",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0164|ange201601931-cit-0177",
+            "author": "Stein",
+            "volume": "52",
+            "first-page": "9845",
+            "year": "2013",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201302530",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0164.2|ange201601931-cit-0178",
+            "volume": "125",
+            "first-page": "10028",
+            "year": "2013",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201302530",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0165|ange201601931-cit-0179",
+            "author": "Venkatachalam",
+            "volume": "76",
+            "first-page": "387",
+            "year": "2007",
+            "journal-title": "Annu. Rev. Biochem.",
+            "DOI": "10.1146\/annurev.biochem.75.103004.142819",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0166|ange201601931-cit-0180",
+            "author": "Wu",
+            "volume": "62",
+            "first-page": "381",
+            "year": "2010",
+            "journal-title": "Pharmacol. Rev.",
+            "DOI": "10.1124\/pr.110.002725",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0167|ange201601931-cit-0181",
+            "author": "Benham",
+            "volume": "42",
+            "first-page": "873",
+            "year": "2002",
+            "journal-title": "Neuropharmacology",
+            "DOI": "10.1016\/S0028-3908(02)00047-3",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0168|ange201601931-cit-0182",
+            "author": "Caterina",
+            "volume": "389",
+            "first-page": "816",
+            "year": "1997",
+            "journal-title": "Nature",
+            "DOI": "10.1038\/39807",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0169|ange201601931-cit-0183",
+            "author": "Walpole",
+            "volume": "37",
+            "first-page": "1942",
+            "year": "1994",
+            "journal-title": "J. Med. Chem.",
+            "DOI": "10.1021\/jm00039a006",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0170|ange201601931-cit-0184",
+            "author": "Berglund",
+            "volume": "16",
+            "first-page": "2529",
+            "year": "2008",
+            "journal-title": "Bioorg. Med. Chem.",
+            "DOI": "10.1016\/j.bmc.2007.11.056",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0171|ange201601931-cit-0185",
+            "author": "Sun",
+            "volume": "13",
+            "first-page": "3611",
+            "year": "2003",
+            "journal-title": "Bioorg. Med. Chem. Lett.",
+            "DOI": "10.1016\/S0960-894X(03)00759-5",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0172|ange201601931-cit-0186",
+            "author": "Behrendt",
+            "volume": "141",
+            "first-page": "737",
+            "year": "2004",
+            "journal-title": "Br. J. Pharmacol.",
+            "DOI": "10.1038\/sj.bjp.0705652",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0173|ange201601931-cit-0187",
+            "author": "Frank",
+            "volume": "6",
+            "first-page": "7118",
+            "year": "2015",
+            "journal-title": "Nat. Commun.",
+            "DOI": "10.1038\/ncomms8118",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0174|ange201601931-cit-0188",
+            "author": "Sieghart",
+            "volume": "47",
+            "first-page": "181",
+            "year": "1995",
+            "journal-title": "Pharmacol. Rev."
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0175|ange201601931-cit-0189",
+            "author": "Vanlersberghe",
+            "volume": "182",
+            "first-page": "227",
+            "year": "2008",
+            "journal-title": "Handb. Exp. Pharmacol.",
+            "DOI": "10.1007\/978-3-540-74806-9_11",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0176|ange201601931-cit-0190",
+            "author": "Stein",
+            "volume": "51",
+            "first-page": "10500",
+            "year": "2012",
+            "journal-title": "Angew. Chem. Int. Ed.",
+            "DOI": "10.1002\/anie.201205475",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0176.2|ange201601931-cit-0191",
+            "volume": "124",
+            "first-page": "10652",
+            "year": "2012",
+            "journal-title": "Angew. Chem.",
+            "DOI": "10.1002\/ange.201205475",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0177|ange201601931-cit-0192",
+            "author": "Stewart",
+            "volume": "54",
+            "first-page": "8124",
+            "year": "2011",
+            "journal-title": "J. Med. Chem.",
+            "DOI": "10.1021\/jm200943f",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0178|ange201601931-cit-0193",
+            "author": "Binshtok",
+            "volume": "449",
+            "first-page": "607",
+            "year": "2007",
+            "journal-title": "Nature",
+            "DOI": "10.1038\/nature06191",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0179|ange201601931-cit-0194",
+            "author": "Chung",
+            "volume": "11",
+            "first-page": "555",
+            "year": "2008",
+            "journal-title": "Nat. Neurosci.",
+            "DOI": "10.1038\/nn.2102",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0180|ange201601931-cit-0195",
+            "author": "Scholz",
+            "volume": "89",
+            "first-page": "52",
+            "year": "2002",
+            "journal-title": "Br. J. Anaesth.",
+            "DOI": "10.1093\/bja\/aef163",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0181|ange201601931-cit-0196",
+            "author": "de\u2005Castro",
+            "volume": "10",
+            "first-page": "146",
+            "year": "1998",
+            "journal-title": "Eur. J. Neurosci.",
+            "DOI": "10.1046\/j.1460-9568.1998.00037.x",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0182|ange201601931-cit-0197",
+            "author": "Fehrentz",
+            "volume": "13",
+            "first-page": "1746",
+            "year": "2012",
+            "journal-title": "ChemBioChem",
+            "DOI": "10.1002\/cbic.201200216",
+            "doi-asserted-by": "crossref"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0183|ange201601931-cit-0198",
+            "author": "Thorek",
+            "volume": "2",
+            "first-page": "163",
+            "year": "2012",
+            "journal-title": "Am. J. Nucl. Med. Mol. Imaging"
+        },
+        {
+            "key": "10.1002\/ange.201601931-BIB0184|ange201601931-cit-0199",
+            "author": "Kruttwig",
+            "volume": "17",
+            "first-page": "6605",
+            "year": "2012",
+            "journal-title": "Molecules",
+            "DOI": "10.3390\/molecules17066605",
+            "doi-asserted-by": "crossref"
+        }
+    ],
+    "container-title": "Angewandte Chemie",
+    "original-title": [],
+    "language": "en",
+    "link": [
+        {
+            "URL": "https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fange.201601931",
+            "content-type": "application\/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fange.201601931",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+        },
+        {
+            "URL": "https:\/\/onlinelibrary.wiley.com\/doi\/full\/10.1002\/ange.201601931",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+        }
+    ],
+    "deposited": {
+        "date-parts": [
+            [
+                2018,
+                8,
+                6
+            ]
+        ],
+        "date-time": "2018-08-06T21:00:28Z",
+        "timestamp": 1533589228000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+        "date-parts": [
+            [
+                2016,
+                7,
+                4
+            ]
+        ]
+    },
+    "references-count": 199,
+    "journal-issue": {
+        "published-print": {
+            "date-parts": [
+                [
+                    2016,
+                    9,
+                    5
+                ]
+            ]
+        },
+        "issue": "37"
+    },
+    "URL": "http:\/\/dx.doi.org\/10.1002\/ange.201601931",
+    "relation": {
+        "cites": []
+    },
+    "ISSN": [
+        "0044-8249"
+    ],
+    "container-title-short": "Angew. Chem."
+}
