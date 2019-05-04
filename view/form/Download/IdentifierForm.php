@@ -9,7 +9,7 @@
             }
             ?>" />
             <label>* Required fields</label>
-            <input type="submit" name="action" value="abstract_retrevial" />
+            <input type="submit" name="action" value="by_identifier" />
             <input type="reset" name="reset" value="reset" />
         </fieldset>
     </form>
@@ -37,4 +37,5 @@
             ?>
         </div>
     </div>
+    
 </div>

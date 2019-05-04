@@ -1,5 +1,5 @@
 <?php
-class ElsevierView {
+class DownloadView {
 
     public function __construct() {
 

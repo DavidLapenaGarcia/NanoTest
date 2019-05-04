@@ -12,11 +12,13 @@ class Publication {
     private $linkDownload;
     private $jsonRetieval;
     private $jsonCossref;
+    private $jsonArticle;
+    private $jsonScopus;
 
     public function __construct($pubId=NULL, $doi=NULL, $title=NULL,
                                 $abstract=NULL, $authors=NULL, $pubType=NULL,
                                 $linkWeb=NULL, $linkDownload=NULL, $jsonRetieval=NULL,
-                                $jsonCossref=NULL) {
+                                $jsonCossref=NULL, $jsonArticle = NULL, $jsonScopus=NULL) {
         $this->pubId;
         $this->doi;
         $this->title;
@@ -27,6 +29,8 @@ class Publication {
         $this->linkDownload;
         $this->jsonRetieval;
         $this->jsonCossref;
+        $this->jsonArticle;
+        $this->jsonScopus;
     }
 
     public function getId() {
@@ -98,9 +102,23 @@ class Publication {
     public function setJsonCossref($jsonCossref) {
         $this->jsonCossref=$jsonCossref;
     }
+
+    public function getJsonArticle() {
+        return $this->jsonArticle;
+    }
+    public function setJsonArticle($jsonArticle) {
+        $this->jsonArticle=$jsonArticle;
+    }
+
+    public function getJsonScopus() {
+        return $this->jsonScopus;
+    }
+    public function setJsonScopus($jsonScopus) {
+        $this->jsonScopus=$jsonScopus;
+    }
     
     public function __toString() {
-        return sprintf("%s;%s;%s;%s;%s;%s;%s;%s;\n%s;\n%s\n", 
+        return sprintf("%s;%s;%s;%s;%s;%s;%s;%s;\n%s;\n%s\n%s\n%s\n", 
             $this->pubId,
             $this->doi,
             $this->title,
@@ -110,7 +128,9 @@ class Publication {
             $this->linkWeb,
             $this->linkDownload,
             $this->jsonRetieval,
-            $this->jsonCossref
+            $this->jsonCossref,
+            $this->jsonArticle,
+            $this->jsonScopus
         );
     }
     

@@ -1,6 +1,6 @@
 <?php
 require_once "controller/UserController.class.php";
-require_once "controller/ElsevierController.class.php";
+require_once "controller/DownloadController.class.php";
 
 class MainController {
 
@@ -19,8 +19,12 @@ class MainController {
                 $controlLogin = new UserController();
                 $controlLogin->processRequest();
                 break;
-            case "elsevier":
-                $controlLogin = new ElsevierController();
+            case "search":
+                $controlLogin = new DownloadController();
+                $controlLogin->processRequest();
+                break;
+            case "nano":
+                $controlLogin = new NanoController();
                 $controlLogin->processRequest();
                 break;
             default:

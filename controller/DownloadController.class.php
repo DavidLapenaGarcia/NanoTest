@@ -1,16 +1,16 @@
 <?php
 
-require_once "view/ElsevierView.class.php";
-require_once "api/ElsevierApi.class.php";
-require_once "util/ElsevierMessage.class.php";
+require_once "view/DownloadView.class.php";
+require_once "DownloadApi/DownloadApi.class.php";
+require_once "util/DownloadMessage.class.php";
 
-class ElsevierController {
+class DownloadController {
     private $view;
-    private $elsevier;
+    private $dAPI;
 
     public function __construct() {
-        $this->view = new ElsevierView();
-        $this->elsevier = new ElsevierApi();
+        $this->view = new DownloadView();
+        $this->dAPI = new DownloadApi();
     }
     public function processRequest() {
 
@@ -26,20 +26,25 @@ class ElsevierController {
 
         if (isset($_SESSION['name'])) {
             switch ($request) {
-                case "abstract_retrevial_form":
-                    $this->abstractRetrevialForm();
+                case "by_identifier_form":
+                    $this->toIdentifierForm();
                     break;
-                case "abstract_retrevial":
-                     $this->abstractRetrevial();
+                case "by_identifier":
+                     $this->byIdentifier();
                     break;
+
                 
                 case "scopus_by_abstract_form":
-                    $this->scopusAbstractForm();
+                    $this->abstractForm();
                     break;
                 case "scopus_by_abstract":
+                    $this->byAbstract();
+                    break;
+                case "dfgh":
                     $this->scopusAbstract();
                     break;
-                        
+                    
+
                 case "scopus_search_author_form":   //search authors
                     $this->scopusAuthorForm();
                     break;
@@ -53,14 +58,7 @@ class ElsevierController {
                         $this->abstractRetrevial();
                     break;
 
-                /* TODO 
-                case "by_pdf_form":
-                    $this->abstractRetrevialForm();
-                    break;
-                case "by_pdf_form":
-                        $this->abstractRetrevial();
-                    break;
-                */
+
                 default:
                     $this->view->display();
                     break;
@@ -77,43 +75,47 @@ class ElsevierController {
     }
 
 
-    public function abstractRetrevialForm() {
+    public function toIdentifierForm() {
         $toSearch = trim(filter_input(INPUT_POST, 'to-search'));
         $content = array(
             "toSearch" =>$toSearch
         );
-        $this->view->display("view/form/Elsevier/ElsevierDoiForm.php", $content);
+        $this->view->display("view/form/Download/IdentifierForm.php", $content);
     }
-    public function abstractRetrevial() {
+
+    public function byIdentifier() {
         //TODO: validations
         $toSearch = trim(filter_input(INPUT_POST, 'to-search'));
         $searchAs = "doi";
         $content = array("toSearch" => $toSearch);
 
-        $result = $this->elsevier->abstractRetrevial($toSearch, $searchAs);
+        $result = $this->dAPI->byIdentifier($toSearch, $searchAs);
 
         if(!is_null($result)) {
+            // ToDo: control if there are more than 1 result.
             $content = array_merge($content, array("result"=>$result));
         } else {
             array_push($_SESSION['error'], "Fail on ElsevierController");
         } 
         
-        $this->view->display("view/form/Elsevier/ElsevierDoiForm.php", $content);
+        $this->view->display("view/form/Download/IdentifierForm.php", $content);
     }
 
-    public function scopusAbstractForm() {
+
+
+    public function abstractForm() {
         $toSearch = trim(filter_input(INPUT_POST, 'to-search'));
         $content = array(
             "toSearch" =>$toSearch
         );
         $this->view->display("view/form/Elsevier/ElsevierAbstractForm.php", $content);
     }
-    public function scopusAbstract() {
+    public function byAbstract() {
         //TODO: validations
         $abstract = trim(filter_input(INPUT_POST, 'abstract'));
         $content = array("abstract" => $abstract);
 
-        $result = $this->elsevier->scopusAbstract($abstract);
+        $result = $this->dAPI->byAbstract($abstract);
 
         if(!is_null($result)) {
             $content = array_merge($content, array("result"=>$result));
@@ -123,6 +125,7 @@ class ElsevierController {
         
         $this->view->display("view/form/Elsevier/ElsevierAbstractForm.php", $content);
     }
+
 
 
     public function scopusAuthorForm() {
@@ -139,7 +142,7 @@ class ElsevierController {
         $name = trim(filter_input(INPUT_POST, 'name'));
         $content = array("abstract" => $abstract);
 
-        $result = $this->elsevier->scopusAbstract($abstract);
+        $result = $this->dAPI->scopusAbstract($abstract);
 
         if(!is_null($result)) {
             $content = array_merge($content, array("result"=>$result));
@@ -149,6 +152,8 @@ class ElsevierController {
         
         $this->view->display("view/form/Elsevier/ElsevierAbstractForm.php", $content);
     }
+
+
 
 
 }

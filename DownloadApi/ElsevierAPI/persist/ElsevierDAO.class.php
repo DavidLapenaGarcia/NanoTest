@@ -1,15 +1,15 @@
 <?php
-require_once "api/persist/ConnectApi.class.php";
+require_once "DownloadApi/ElsevierAPI/persist/ConnectElsevier.class.php";
 
 class ElsevierDAO  {
     
     private static $instance = NULL; 
-    private $url;
+    private $elsevierUrl;
     private $apiKey;
 
     public function __construct() {
-        $this->url = (new ConnectApi())->getUrl();
-        $this->apiKey = (new ConnectApi())->getApiKey();
+        $this->elsevierUrl = (new ConnectElsevier())->getUrl();
+        $this->apiKey = (new ConnectElsevier())->getApiKey();
     }
 
 
@@ -20,7 +20,7 @@ class ElsevierDAO  {
         return self::$instance;
     }
 
-    public function abstractRetrevial($toSearch, $searchAs) {
+    public function getAbstractRetrieval($toSearch, $searchAs) {
         // TODO validate bouth parametters
         $query;
         $api = "abstract/";
@@ -32,9 +32,6 @@ class ElsevierDAO  {
                 break;
             case "pii":
                 $api = $api . "pii/";
-                break;
-            case "doi":
-                $api = $api . "doi/";
                 break;
             case "pubmed_id":
                 $api = $subApi . "pubmed_id/";
@@ -50,18 +47,36 @@ class ElsevierDAO  {
                 return NULL;
                 break; 
         }
-        $query = $this->url . $api . $toSearch . '?' . $this->apiKey;
+        $query = $this->elsevierUrl . $api . $toSearch . '?' . $this->apiKey;
         $result = $this->getJsonByQuery($query);
 
         return $result;
     }
 
-    public function scopusAbstract($toSearch){
+    public function getArticleRetrieval($toSearch) {
+        $api = "article/doi/";
+
+        $query = $this->elsevierUrl . $api . $toSearch . '?' . $this->apiKey;
+        $result = $this->getJsonByQuery($query);
+        return $result;
+    }
+
+    public function getScopusByDoi($toSearch) {
+        $api = "search/scopus?query=";
+
+        $toSearch = 'DOI(' . urlencode($toSearch) . ')' . '&';
+        $query = $this->elsevierUrl . $api . $toSearch . $this->apiKey;
+        var_dump($query);
+        $result = $this->getJsonByQuery($query);
+        return $result;
+    }
+
+    public function getScopusSearchAbstract($toSearch){
         $query;
         $api = "search/scopus?query=";
 
         $toSearch = 'ABS(' . urlencode($toSearch) . ')' . '&';
-        $query = $this->url . $api . $toSearch . $this->apiKey;
+        $query = $this->elsevierUrl . $api . $toSearch . $this->apiKey;
         $result = $this->getJsonByQuery($query);
 
         return $result;
@@ -69,20 +84,25 @@ class ElsevierDAO  {
     }
     
     function getJsonByQuery($query) { 
-        $headers = array("Accept: application/json"); 
-
+        // FIXIT
+        $headers = array(   'Accept: application/json'); 
+        /*
+        $headers = array(   'Accept:'       => 'application/json', 
+                            'X-ELS-APIKey:' => $this->apiKey);
+        */
         $ch = curl_init(); 
-        curl_setopt($ch, CURLOPT_URL,$query);
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET'); 
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-        curl_setopt($ch, CURLOPT_TIMEOUT, 60); 
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
-
+        curl_setopt($ch,    CURLOPT_URL,               $query);
+        curl_setopt($ch,    CURLOPT_CUSTOMREQUEST,     'GET'); 
+        curl_setopt($ch,    CURLOPT_RETURNTRANSFER,    1); 
+        curl_setopt($ch,    CURLOPT_TIMEOUT,           60); 
+        curl_setopt($ch,    CURLOPT_HTTPHEADER,        $headers);
         $data = curl_exec($ch); 
+
+        // var_dump($data);
 
         if (!curl_errno($ch)) { 
             $apiData = $data;
+            $apiData = json_decode($apiData, true);
             // var_dump($data); 
         } else {
             // TODO : Add errors message

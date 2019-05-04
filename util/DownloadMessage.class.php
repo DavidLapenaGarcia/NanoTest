@@ -1,6 +1,6 @@
 <?php
 
-class ElsevierMessage {
+class DownloadMessage {
 
     const INF_FORM =
         array(

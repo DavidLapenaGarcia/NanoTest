@@ -90,6 +90,17 @@ Serial_TItle:
 
 
 
+Article_Retrieval:
+    Auth_false =>
+    Auth_true => yes
+        Posible querys: 
+            /article/doi/{doi}
+            /article/eid/{eid}
+            /article/pii/{pii} 
+            /article/pubmed_id/{pubmed_id}
+        URL:
+            https://api.elsevier.com/content/article/doi/10.1016/S0014-5793(01)03313-0?apiKey=7f59af901d2d86f78a1fd60c1bf9426a&httpAccept=application%2Fjson
+            curl -X GET --header 'Accept: application/json' 'https://api.elsevier.com/content/article/doi/10.1016/S0014-5793(01)03313-0?apiKey=7f59af901d2d86f78a1fd60c1bf9426a&httpAccept=application%2Fjson'
 
 
 
