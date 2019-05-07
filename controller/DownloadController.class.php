@@ -39,25 +39,14 @@ class DownloadController {
                     break;
                 case "by_abstract":
                     $this->byAbstract();
-                    break;
-                case "dfgh":
-                    $this->scopusAbstract();
-                    break;
-                    
+                    break;                   
 
-                case "scopus_search_author_form":   //search authors
-                    $this->scopusAuthorForm();
+                case "by_author_form":   //search authors
+                        $this->toAuthorForm();
                     break;
-                case "choose_author_form":          // Choose author
-                        $this->abstractRetrevial();
+                case "by_author":          // Choose author
+                        $this->byAuthor();
                     break;
-                case "scopus_author_works_form":    // Choose author's work[s]
-                        $this->abstractRetrevial();
-                    break;
-                case "scopus_author_work":          // Get author's work[s]
-                        $this->abstractRetrevial();
-                    break;
-
 
                 default:
                     $this->view->display();
@@ -125,21 +114,45 @@ class DownloadController {
 
 
 
-    public function scopusAuthorForm() {
-        $toSearch = trim(filter_input(INPUT_POST, 'to-search'));
+    public function toAuthorForm() {
+        $auid = trim(filter_input(INPUT_POST, 'auid'));
+        $name = trim(filter_input(INPUT_POST, 'name'));
+        $surname = trim(filter_input(INPUT_POST, 'surname'));
+        $afid = trim(filter_input(INPUT_POST, 'afid'));
+        $city = trim(filter_input(INPUT_POST, 'city'));
+        $country = trim(filter_input(INPUT_POST, 'country'));
+        
         $content = array(
-            "toSearch" =>$toSearch
+            "auid" =>$auid,
+            "name" =>$name,
+            "surname" =>$surname,
+            "afid" =>$afid,
+            "city" =>$city,
+            "country" =>$country
         );
-        $this->view->display("view/form/Elsevier/ElsevierAbstractForm.php", $content);
-    }
-    public function scopusAuthor() {
-        //TODO: validations
-        $name = trim(filter_input(INPUT_POST, 'name'));
-        $name = trim(filter_input(INPUT_POST, 'name'));
-        $name = trim(filter_input(INPUT_POST, 'name'));
-        $content = array("abstract" => $abstract);
 
-        $result = $this->dAPI->scopusAbstract($abstract);
+        $this->view->display("view/form/Download/AuthorForm.php", $content);
+    }
+    public function byAuthor() {
+        //TODO: validations
+        $auid = trim(filter_input(INPUT_POST, 'auid'));
+        $name = trim(filter_input(INPUT_POST, 'name'));
+        $surname = trim(filter_input(INPUT_POST, 'surname'));
+        $afid = trim(filter_input(INPUT_POST, 'afid'));
+        $city = trim(filter_input(INPUT_POST, 'city'));
+        $country = trim(filter_input(INPUT_POST, 'country'));
+        
+        $content = array(
+            "auid" =>$auid,
+            "name" =>$name,
+            "surname" =>$surname,
+            "afid" =>$afid,
+            "city" =>$city,
+            "country" =>$country
+        );
+        $result="there is no credentials for use /search/author";
+        // Here we need /search/author 
+        // $result = $this->dAPI->byAuthor($auid, $name, $surname, $afid, $city, $country);
 
         if(!is_null($result)) {
             $content = array_merge($content, array("result"=>$result));
@@ -147,7 +160,7 @@ class DownloadController {
             array_push($_SESSION['error'], "Fail on ElsevierController");
         } 
         
-        $this->view->display("view/form/Elsevier/ElsevierAbstractForm.php", $content);
+        $this->view->display("view/form/Download/AuthorForm.php", $content);
     }
 
 

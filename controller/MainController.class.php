@@ -1,6 +1,7 @@
 <?php
 require_once "controller/UserController.class.php";
 require_once "controller/DownloadController.class.php";
+require_once "controller/NanoController.class.php";
 
 class MainController {
 

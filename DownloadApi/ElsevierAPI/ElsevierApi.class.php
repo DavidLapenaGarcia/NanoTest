@@ -21,7 +21,7 @@ class ElsevierApi {
 
 
     public function articleRetrieval($toSearch) {
-        var_dump($toSearch);
+        // var_dump($toSearch);
         $result = $this->elsevier->getArticleRetrieval($toSearch);
         if(!is_null($result)){
             return  $result;
@@ -45,6 +45,16 @@ class ElsevierApi {
 
     public function scopusAbstract($toSearch) {
         $result = $this->elsevier->getScopusSearchAbstract($toSearch);
+        if(!is_null($result)){
+            return  $result;
+        }else {
+            array_push($_SESSION['error'], "Fail on ElsevierAPI scopusAbstract");
+            return NULL;
+        }
+    }
+
+    public function scopusAuthor($auid, $name, $surname, $afid, $city, $country) {
+        $result = $this->elsevier->getPubByScopusSearchAuthor($auid, $name, $surname, $afid, $city, $country);
         if(!is_null($result)){
             return  $result;
         }else {

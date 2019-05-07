@@ -12,7 +12,6 @@ class ElsevierDAO  {
         $this->apiKey = (new ConnectElsevier())->getApiKey();
     }
 
-
     public static function getInstance(): ElsevierDAO {
         if (self::$instance == NULL) {
             self::$instance = new self();
@@ -84,6 +83,17 @@ class ElsevierDAO  {
 
         return $result;
 
+    }
+
+    public function getPubByScopusSearchAuthor($auid, $name, $surname, $afid, $city, $country){
+        //AUTHFIRST(j) and AUTHLASTNAME(barney) and AU-ID(100038831) and AF-ID(3000604) and AFFILCITY(beijing) and AFFILCOUNTRY(japan)
+        $query;
+        $api = "search/scopus?query=";
+        $toSearch = 'ABS(' . urlencode($toSearch) . ')' . '&';
+        $query = $this->elsevierUrl . $api . $toSearch . $this->apiKey;
+        $result = $this->getJsonByQuery($query);
+
+        return $result;
     }
     
     function getJsonByQuery($query) { 

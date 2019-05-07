@@ -41,15 +41,28 @@ class DownloadApi {
         $scopusAbstract = $this->elsevier->scopusAbstract($toSearch);
 
         if(!is_null($scopusAbstract)){
-            /* toSearch example:
-                For DMPG membranes, our results show insertion of ∼70% of the maculatin 1.1 molecules, with an angle of insertion of approximately 35° to the membrane normal and with a predominant α-helical structure. These results suggest that maculatin 1.1 acts through a pore-forming mechanism to lyse bacterial membranes.
-             */
             $doi = $scopusAbstract["search-results"]["entry"][0]["prism:doi"];
             // TODO Validate doi
             $pub = $this->byIdentifier($doi);
             return  $pub;
         }else {
             array_push($_SESSION['error'], "Fail on DownloadAPI / byAbstract");
+            return NULL;
+        }
+    }
+    public function byAuthor($auid=NULL, $name=NULL, $surname=NULL, $afid=NULL, $city=NULL, $country=NULL) {
+        $scopusAbstract = $this->elsevier->scopusAuthor($auid, $name, $surname, $afid, $city, $country);
+        if(!is_null($scopusAbstract)){
+            /**
+            * toSearch example:
+            * doi = $scopusAbstract["search-results"]["entry"][0]["prism:doi"];
+            * TODO Validate doi
+            * $pub = $this->byIdentifier($doi);
+            **/
+            
+            return  $scopusAbstract;
+        }else {
+            array_push($_SESSION['error'], "Fail on DownloadAPI / scopusAuthor");
             return NULL;
         }
     }
