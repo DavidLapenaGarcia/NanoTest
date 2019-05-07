@@ -14,7 +14,7 @@ class CrossrefApi {
         if(!is_null($result)){
             return  $result;
         }else {
-            array_push($_SESSION['error'], "Fail on crossrefAPI");
+            array_push($_SESSION['error'], "Fail on crossrefAPI" );
             return NULL;
         }
     }

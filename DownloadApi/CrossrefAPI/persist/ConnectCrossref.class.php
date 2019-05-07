@@ -29,13 +29,12 @@ class ConnectCrossref {
         if (!curl_errno($ch)) { 
             $apiData = $data;
             $apiData = json_decode($apiData, true);
-            // var_dump($data); 
         } else {
             // TODO : Add errors message
             // var_dump( curl_error($ch) ); 
             array_push($_SESSION['error'], curl_error($ch));
             $apiData = NULL;
-        } 
+        }// 
         curl_close($ch); 
         return $apiData;
     }

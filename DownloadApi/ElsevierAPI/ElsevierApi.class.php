@@ -21,6 +21,7 @@ class ElsevierApi {
 
 
     public function articleRetrieval($toSearch) {
+        var_dump($toSearch);
         $result = $this->elsevier->getArticleRetrieval($toSearch);
         if(!is_null($result)){
             return  $result;

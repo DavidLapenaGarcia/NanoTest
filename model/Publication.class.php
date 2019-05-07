@@ -2,18 +2,18 @@
 
 class Publication {
     
-    private $pubId;
-    private $doi;
-    private $title;
-    private $abstract;
-    private $authors;
-    private $pubType;
-    private $linkWeb;
-    private $linkDownload;
-    private $jsonRetieval;
-    private $jsonCossref;
-    private $jsonArticle;
-    private $jsonScopus;
+    public $pubId;
+    public $doi;
+    public $title;
+    public $abstract;
+    public $authors;
+    public $pubType;
+    public $linkWeb;
+    public $linkDownload;
+    public $jsonRetieval;
+    public $jsonCossref;
+    public $jsonArticle;
+    public $jsonScopus;
 
     public function __construct($pubId=NULL, $doi=NULL, $title=NULL,
                                 $abstract=NULL, $authors=NULL, $pubType=NULL,

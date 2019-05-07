@@ -34,10 +34,10 @@ class DownloadController {
                     break;
 
                 
-                case "scopus_by_abstract_form":
+                case "by_abstract_form":
                     $this->abstractForm();
                     break;
-                case "scopus_by_abstract":
+                case "by_abstract":
                     $this->byAbstract();
                     break;
                 case "dfgh":
@@ -82,7 +82,6 @@ class DownloadController {
         );
         $this->view->display("view/form/Download/IdentifierForm.php", $content);
     }
-
     public function byIdentifier() {
         //TODO: validations
         $toSearch = trim(filter_input(INPUT_POST, 'to-search'));
@@ -95,35 +94,33 @@ class DownloadController {
             // ToDo: control if there are more than 1 result.
             $content = array_merge($content, array("result"=>$result));
         } else {
-            array_push($_SESSION['error'], "Fail on ElsevierController");
+            array_push($_SESSION['error'], "Fail on DownloadController / biIdentifier");
         } 
         
         $this->view->display("view/form/Download/IdentifierForm.php", $content);
     }
 
-
-
     public function abstractForm() {
-        $toSearch = trim(filter_input(INPUT_POST, 'to-search'));
+        $abstract = trim(filter_input(INPUT_POST, 'abstract'));
         $content = array(
-            "toSearch" =>$toSearch
+            "abstract" =>$abstract
         );
-        $this->view->display("view/form/Elsevier/ElsevierAbstractForm.php", $content);
+        $this->view->display("view/form/Download/AbstractForm.php", $content);
     }
     public function byAbstract() {
         //TODO: validations
+
         $abstract = trim(filter_input(INPUT_POST, 'abstract'));
         $content = array("abstract" => $abstract);
-
         $result = $this->dAPI->byAbstract($abstract);
 
         if(!is_null($result)) {
             $content = array_merge($content, array("result"=>$result));
         } else {
-            array_push($_SESSION['error'], "Fail on ElsevierController");
+            array_push($_SESSION['error'], "Fail on Download Controller / byAbstract");
         } 
         
-        $this->view->display("view/form/Elsevier/ElsevierAbstractForm.php", $content);
+        $this->view->display("view/form/Download/AbstractForm.php", $content);
     }
 
 

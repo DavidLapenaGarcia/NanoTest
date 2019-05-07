@@ -34,7 +34,6 @@ class ConnectElsevier {
 
         if (!curl_errno($ch)) { 
             $apiData = $data;
-            // var_dump($data); 
         } else {
             // TODO : Add errors message
             // var_dump( curl_error($ch) ); 

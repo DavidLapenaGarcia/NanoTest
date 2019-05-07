@@ -24,7 +24,6 @@ class ElsevierDAO  {
         // TODO validate bouth parametters
         $query;
         $api = "abstract/";
-        $searchAs = "doi";
 
         switch ($searchAs){
             case "doi":
@@ -56,9 +55,14 @@ class ElsevierDAO  {
     public function getArticleRetrieval($toSearch) {
         $api = "article/doi/";
 
-        $query = $this->elsevierUrl . $api . $toSearch . '?' . $this->apiKey;
+        $query = $this->elsevierUrl . $api .  $toSearch . '?' . $this->apiKey;
         $result = $this->getJsonByQuery($query);
+        // var_dump($result);
         return $result;
+        // There must no to use urlencode() to the $toSearch attribute:
+        //Bad:   https://api.elsevier.com/content/article/doi/10.1016%2FS0014-5793%2801%2903313-0?apiKey=8932ae370b77efdfd90cbe1e78f27211
+        //Good:  https://api.elsevier.com/content/article/doi/10.1016/S0014-5793(01)03313-0?apiKey=8932ae370b77efdfd90cbe1e78f27211
+        
     }
 
     public function getScopusByDoi($toSearch) {
@@ -66,7 +70,6 @@ class ElsevierDAO  {
 
         $toSearch = 'DOI(' . urlencode($toSearch) . ')' . '&';
         $query = $this->elsevierUrl . $api . $toSearch . $this->apiKey;
-        var_dump($query);
         $result = $this->getJsonByQuery($query);
         return $result;
     }
@@ -98,12 +101,10 @@ class ElsevierDAO  {
         curl_setopt($ch,    CURLOPT_HTTPHEADER,        $headers);
         $data = curl_exec($ch); 
 
-        // var_dump($data);
 
         if (!curl_errno($ch)) { 
             $apiData = $data;
             $apiData = json_decode($apiData, true);
-            // var_dump($data); 
         } else {
             // TODO : Add errors message
             // var_dump( curl_error($ch) ); 

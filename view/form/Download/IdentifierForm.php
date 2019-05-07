@@ -7,11 +7,14 @@
             if (isset($content['toSearch'])) {
                 echo $content['toSearch'];
             }
-            ?>" />
+            ?>">
             <label>* Required fields</label>
             <input type="submit" name="action" value="by_identifier" />
             <input type="reset" name="reset" value="reset" />
         </fieldset>
+        <p>Doi Valid: 10.1016/S0014-5793(01)03313-0</p>
+        <p>DOI Not found Abstract: 10.1002/anie.201601931</p>
+        <p>Doi Invalid : 10.13039/501100001722</p>
     </form>
     <div>
         <table style="width:50%">
