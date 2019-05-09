@@ -1,21 +1,18 @@
 <?php
+define("__CROSSREF__", "https://data.crossref.org/");
 class ConnectCrossref {
 /** Query Example
     *   https://data.crossref.org/10.1002%2Fanie.201601931
 
-    https%3A%2F%2Fdata.crossref.org%2F10.1016%2FS0014-5793%2801%2903313-0
+    *   https%3A%2F%2Fdata.crossref.org%2F10.1016%2FS0014-5793%2801%2903313-0
 **/    
 
     public function __consrtuct() {
     }
 
-    public function getUrl():string {
-        return "https://data.crossref.org/";
-    }
-
     public function askJson( $query ) {
         $query = urlencode($query);
-        $query = "https://data.crossref.org/" . $query;
+        $query = __CROSSREF__ . $query;
         
         $headers = array(   "Accept: application/json"); 
         $ch = curl_init(); 

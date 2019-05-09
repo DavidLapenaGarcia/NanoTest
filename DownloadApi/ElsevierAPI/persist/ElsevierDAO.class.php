@@ -8,8 +8,7 @@ class ElsevierDAO  {
     private $apiKey;
 
     public function __construct() {
-        $this->elsevierUrl = (new ConnectElsevier())->getUrl();
-        $this->apiKey = (new ConnectElsevier())->getApiKey();
+        
     }
 
     public static function getInstance(): ElsevierDAO {
@@ -45,8 +44,10 @@ class ElsevierDAO  {
                 return NULL;
                 break; 
         }
-        $query = $this->elsevierUrl . $api . $toSearch . '?' . $this->apiKey;
-        $result = $this->getJsonByQuery($query);
+        // $query = $this->elsevierUrl . $api . $toSearch . '?' . $this->apiKey;
+        $query = $api . $toSearch;
+        $result = (new ConnectElsevier())->askJson($query);
+        // $result = $this->getJsonByQuery($query);
 
         return $result;
     }
@@ -54,8 +55,9 @@ class ElsevierDAO  {
     public function getArticleRetrieval($toSearch) {
         $api = "article/doi/";
 
-        $query = $this->elsevierUrl . $api .  $toSearch . '?' . $this->apiKey;
-        $result = $this->getJsonByQuery($query);
+        $query = $api . $toSearch;
+
+        $result = (new ConnectElsevier())->askJson($query);
         // var_dump($result);
         return $result;
         // There must no to use urlencode() to the $toSearch attribute:
@@ -66,20 +68,21 @@ class ElsevierDAO  {
 
     public function getScopusByDoi($toSearch) {
         $api = "search/scopus?query=";
+        $toSearch = 'DOI(' . urlencode($toSearch) . ')';
 
-        $toSearch = 'DOI(' . urlencode($toSearch) . ')' . '&';
-        $query = $this->elsevierUrl . $api . $toSearch . $this->apiKey;
-        $result = $this->getJsonByQuery($query);
+        $query = $api . $toSearch;
+
+        $result = (new ConnectElsevier())->askJson($query);
         return $result;
     }
 
     public function getScopusSearchAbstract($toSearch){
-        $query;
         $api = "search/scopus?query=";
 
-        $toSearch = 'ABS(' . urlencode($toSearch) . ')' . '&';
-        $query = $this->elsevierUrl . $api . $toSearch . $this->apiKey;
-        $result = $this->getJsonByQuery($query);
+        $toSearch = 'ABS(' . urlencode($toSearch) . ')';
+        $query = $api . $toSearch;
+
+        $result = (new ConnectElsevier())->askJson($query);
 
         return $result;
 
@@ -89,40 +92,12 @@ class ElsevierDAO  {
         //AUTHFIRST(j) and AUTHLASTNAME(barney) and AU-ID(100038831) and AF-ID(3000604) and AFFILCITY(beijing) and AFFILCOUNTRY(japan)
         $query;
         $api = "search/scopus?query=";
-        $toSearch = 'ABS(' . urlencode($toSearch) . ')' . '&';
-        $query = $this->elsevierUrl . $api . $toSearch . $this->apiKey;
+        $toSearch = 'ABS(' . urlencode($toSearch) . ')';
+        $query = $api . $toSearch;
         $result = $this->getJsonByQuery($query);
 
         return $result;
     }
     
-    function getJsonByQuery($query) { 
-        // FIXIT
-        $headers = array(   'Accept: application/json'); 
-        /*
-        $headers = array(   'Accept:'       => 'application/json', 
-                            'X-ELS-APIKey:' => $this->apiKey);
-        */
-        $ch = curl_init(); 
-        curl_setopt($ch,    CURLOPT_URL,               $query);
-        curl_setopt($ch,    CURLOPT_CUSTOMREQUEST,     'GET'); 
-        curl_setopt($ch,    CURLOPT_RETURNTRANSFER,    1); 
-        curl_setopt($ch,    CURLOPT_TIMEOUT,           60); 
-        curl_setopt($ch,    CURLOPT_HTTPHEADER,        $headers);
-        $data = curl_exec($ch); 
-
-
-        if (!curl_errno($ch)) { 
-            $apiData = $data;
-            $apiData = json_decode($apiData, true);
-        } else {
-            // TODO : Add errors message
-            // var_dump( curl_error($ch) ); 
-            array_push($_SESSION['error'], curl_error($ch));
-            $apiData = NULL;
-        } 
-        curl_close($ch); 
-        return $apiData;
-    }
 
 }

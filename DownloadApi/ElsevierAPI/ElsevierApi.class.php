@@ -14,7 +14,7 @@ class ElsevierApi {
         if(!is_null($result)){
             return  $result;
         }else {
-            array_push($_SESSION['error'], "Fail on ElsevierAPI abstract");
+            array_push($_SESSION['error'], "Fail on ElsevierAPI abstractRetrevial");
             return NULL;
         }
     }
@@ -26,7 +26,7 @@ class ElsevierApi {
         if(!is_null($result)){
             return  $result;
         }else {
-            array_push($_SESSION['error'], "Fail on ElsevierAPI article");
+            array_push($_SESSION['error'], "Fail on ElsevierAPI articleRetrevial");
             return NULL;
         }
     }
@@ -37,7 +37,7 @@ class ElsevierApi {
         if(!is_null($result)){
             return  $result;
         }else {
-            array_push($_SESSION['error'], "Fail on ElsevierAPI article");
+            array_push($_SESSION['error'], "Fail on ElsevierAPI ScopusSearch{doi}");
             return NULL;
         }
     }

@@ -1,29 +1,26 @@
 <?php
+define("__ELSEVIER__", "https://api.elsevier.com/content/");
 class ConnectElsevier {
-    private $elsevierUrl;
-    private $apiKey;
-
-    
     public function __consrtuct() {
-        //TODO:  set key user
+
     }
 
-    public function getUrl():string {
-        $url="https://api.elsevier.com/content/";
-        return $url;
-    }
-
-    public function getApiKey():string {
-        // TODO : Asign actual user's apiKey
-        // TODO : It needs add token?
-        $key="8932ae370b77efdfd90cbe1e78f27211";
-        $apiKey = 'apiKey='. $key;
-        return $apiKey;
+    private function getApiKey():string {
+        $key='8932ae370b77efdfd90cbe1e78f27211';
+        return $key;
     }
 
     public function askJson( $query ) {
-        $headers = array(   "Accept: application/json",
-                            "X-ELS-APIKey: " . $this->apiKey); 
+        $query = __ELSEVIER__ . $query;
+
+        $headers = array(   'Accept: application/json',
+                            'X-ELS-APIKey:' . $this->getApiKey());
+        /* //This does not work, why?
+        $headers1 = array( 
+            'Accept'       => "application/json",
+            'X-ELS-APIKey' => $this->getApiKey()
+        );  */
+        /* var_dump($headers1); */
         $ch = curl_init(); 
         curl_setopt($ch,    CURLOPT_URL,               $query);
         curl_setopt($ch,    CURLOPT_CUSTOMREQUEST,     'GET'); 
@@ -32,8 +29,10 @@ class ConnectElsevier {
         curl_setopt($ch,    CURLOPT_HTTPHEADER,        $headers);
         $data = curl_exec($ch); 
 
+
         if (!curl_errno($ch)) { 
             $apiData = $data;
+            $apiData = json_decode($apiData, true);
         } else {
             // TODO : Add errors message
             // var_dump( curl_error($ch) ); 
@@ -44,7 +43,6 @@ class ConnectElsevier {
         return $apiData;
     }
 }
-
 /**
  * Querys Examples
  * David's key (without authorization): 

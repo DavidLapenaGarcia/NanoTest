@@ -5,9 +5,7 @@ class CrossrefDAO  {
     private static $instance = NULL;
 
     public function __construct() {
-        
     }
-
 
     public static function getInstance(): CrossrefDAO {
         if (self::$instance == NULL) {
