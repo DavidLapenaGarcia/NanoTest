@@ -8,7 +8,7 @@ class ElsevierDAO  {
     private $apiKey;
 
     public function __construct() {
-        
+
     }
 
     public static function getInstance(): ElsevierDAO {
@@ -19,10 +19,8 @@ class ElsevierDAO  {
     }
 
     public function getAbstractRetrieval($toSearch, $searchAs) {
-        // TODO validate bouth parametters
         $query;
         $api = "abstract/";
-
         switch ($searchAs){
             case "doi":
                 $api = $api . "doi/";
@@ -44,21 +42,18 @@ class ElsevierDAO  {
                 return NULL;
                 break; 
         }
-        // $query = $this->elsevierUrl . $api . $toSearch . '?' . $this->apiKey;
         $query = $api . $toSearch;
-        $result = (new ConnectElsevier())->askJson($query);
-        // $result = $this->getJsonByQuery($query);
 
+        $result = (new ConnectElsevier())->askJson($query);
         return $result;
     }
 
     public function getArticleRetrieval($toSearch) {
         $api = "article/doi/";
-
         $query = $api . $toSearch;
 
         $result = (new ConnectElsevier())->askJson($query);
-        // var_dump($result);
+
         return $result;
         // There must no to use urlencode() to the $toSearch attribute:
         //Bad:   https://api.elsevier.com/content/article/doi/10.1016%2FS0014-5793%2801%2903313-0?apiKey=8932ae370b77efdfd90cbe1e78f27211
@@ -69,16 +64,15 @@ class ElsevierDAO  {
     public function getScopusByDoi($toSearch) {
         $api = "search/scopus?query=";
         $toSearch = 'DOI(' . urlencode($toSearch) . ')';
-
         $query = $api . $toSearch;
 
         $result = (new ConnectElsevier())->askJson($query);
+
         return $result;
     }
 
     public function getScopusSearchAbstract($toSearch){
         $api = "search/scopus?query=";
-
         $toSearch = 'ABS(' . urlencode($toSearch) . ')';
         $query = $api . $toSearch;
 
@@ -89,7 +83,9 @@ class ElsevierDAO  {
     }
 
     public function getPubByScopusSearchAuthor($auid, $name, $surname, $afid, $city, $country){
-        //AUTHFIRST(j) and AUTHLASTNAME(barney) and AU-ID(100038831) and AF-ID(3000604) and AFFILCITY(beijing) and AFFILCOUNTRY(japan)
+        //TODO
+        // AUTHFIRST(j) and AUTHLASTNAME(barney) and AU-ID(100038831) and 
+        // AF-ID(3000604) and AFFILCITY(beijing) and AFFILCOUNTRY(japan)
         $query;
         $api = "search/scopus?query=";
         $toSearch = 'ABS(' . urlencode($toSearch) . ')';

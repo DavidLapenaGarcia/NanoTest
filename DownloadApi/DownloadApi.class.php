@@ -60,7 +60,7 @@ class DownloadApi {
             * $pub = $this->byIdentifier($doi);
             **/
             
-            return  $scopusAbstract;
+            return  $pubs;
         }else {
             array_push($_SESSION['error'], "Fail on DownloadAPI / scopusAuthor");
             return NULL;

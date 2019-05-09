@@ -20,7 +20,7 @@ class ConnectElsevier {
             'Accept'       => "application/json",
             'X-ELS-APIKey' => $this->getApiKey()
         );  */
-        /* var_dump($headers1); */
+
         $ch = curl_init(); 
         curl_setopt($ch,    CURLOPT_URL,               $query);
         curl_setopt($ch,    CURLOPT_CUSTOMREQUEST,     'GET'); 
