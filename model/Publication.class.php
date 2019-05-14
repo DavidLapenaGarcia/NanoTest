@@ -11,14 +11,14 @@ class Publication {
     public $linkWeb;
     public $linkDownload;
     public $jsonRetieval;
-    public $jsonCossref;
+    public $jsonCrossref;
     public $jsonArticle;
     public $jsonScopus;
 
-    public function __construct($pubId=NULL, $doi=NULL, $title=NULL,
-                                $abstract=NULL, $authors=NULL, $pubType=NULL,
-                                $linkWeb=NULL, $linkDownload=NULL, $jsonRetieval=NULL,
-                                $jsonCossref=NULL, $jsonArticle = NULL, $jsonScopus=NULL) {
+    public function __construct($pubId=null, $doi=null, $title=null,
+                                $abstract=null, $authors=null, $pubType=null,
+                                $linkWeb=null, $linkDownload=null, $jsonRetieval=null,
+                                $jsonCrossref=null, $jsonArticle =null, $jsonScopus=null) {
         $this->pubId;
         $this->doi;
         $this->title;
@@ -28,7 +28,7 @@ class Publication {
         $this->linkWeb;
         $this->linkDownload;
         $this->jsonRetieval;
-        $this->jsonCossref;
+        $this->jsonCrossref;
         $this->jsonArticle;
         $this->jsonScopus;
     }
@@ -96,11 +96,11 @@ class Publication {
         $this->jsonRetieval=$jsonRetieval;
     }
 
-    public function getJsonCossref() {
-        return $this->jsonCossref;
+    public function getJsonCrossref() {
+        return $this->jsonCrossref;
     }
-    public function setJsonCossref($jsonCossref) {
-        $this->jsonCossref=$jsonCossref;
+    public function setJsonCrossref($jsonCrossref) {
+        $this->jsonCrossref=$jsonCrossref;
     }
 
     public function getJsonArticle() {
@@ -128,7 +128,7 @@ class Publication {
             $this->linkWeb,
             $this->linkDownload,
             $this->jsonRetieval,
-            $this->jsonCossref,
+            $this->jsonCrossref,
             $this->jsonArticle,
             $this->jsonScopus
         );

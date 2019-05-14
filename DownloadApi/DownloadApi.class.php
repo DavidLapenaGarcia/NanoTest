@@ -97,7 +97,7 @@ class DownloadApi {
 
         if (!is_null($rCrossref)){  
             $pub->setAuthors($rCrossref["author"]);
-            $pub->setJsonCossref($rCrossref);
+            $pub->setJsonCrossref($rCrossref);
         } else {
             array_push($_SESSION['error'], "Fail on DownloadAPI / rCrossref /");
         }

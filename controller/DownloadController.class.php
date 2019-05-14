@@ -17,6 +17,7 @@ class DownloadController {
         $request = NULL;
         $_SESSION['info'] = array();
         $_SESSION['error'] = array();
+        $_SESSION['publication'] = NULL;
 
         if (filter_has_var(INPUT_POST, 'action')) {
             $request = filter_has_var(INPUT_POST, 'action') ? filter_input(INPUT_POST, 'action') : NULL;
@@ -32,7 +33,6 @@ class DownloadController {
                 case "by_identifier":
                      $this->byIdentifier();
                     break;
-
                 
                 case "by_abstract_form":
                     $this->abstractForm();
@@ -47,7 +47,9 @@ class DownloadController {
                 case "by_author":          // Choose author
                         $this->byAuthor();
                     break;
-
+                
+                case "download":
+                        $this->download();
                 default:
                     $this->view->display();
                     break;
@@ -81,11 +83,12 @@ class DownloadController {
 
         if(!is_null($result)) {
             // ToDo: control if there are more than 1 result.
+            $_SESSION['publication'] = $result; 
             $content = array_merge($content, array("result"=>$result));
         } else {
+            $_SESSION['publication'] = NULL; 
             array_push($_SESSION['error'], "Fail on DownloadController / biIdentifier");
-        } 
-        
+        }
         $this->view->display("view/form/Download/IdentifierForm.php", $content);
     }
 
@@ -104,8 +107,10 @@ class DownloadController {
         $result = $this->dAPI->byAbstract($abstract);
 
         if(!is_null($result)) {
+            $_SESSION['publication'] = $result;
             $content = array_merge($content, array("result"=>$result));
         } else {
+            $_SESSION['publication'] = NULL;
             array_push($_SESSION['error'], "Fail on Download Controller / byAbstract");
         } 
         
@@ -161,6 +166,10 @@ class DownloadController {
         } 
         
         $this->view->display("view/form/Download/AuthorForm.php", $content);
+    }
+
+    public function download() {
+        $this->view->display("view/form/Nano/Downloading.php", $content);
     }
 
 

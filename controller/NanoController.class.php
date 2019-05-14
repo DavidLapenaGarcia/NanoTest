@@ -1,18 +1,17 @@
 <?php
-
 require_once "view/NanoView.class.php";
 require_once "model/Publication.class.php";
 require_once "model/PublicationModel.class.php";
-require_once "util/UserMessage.class.php";
-require_once "util/UserFormValidation.class.php";
+require_once "util/PubMessage.class.php";
+require_once "util/PubFormValidation.class.php";
 
 class NanoController {
     private $view;
-    private $model;
+    private $pModel;
 
     public function __construct() {
         $this->view = new NanoView();
-        $this->pub = new PublicationModel();
+        $this->pModel = new PublicationModel();
     }
     public function processRequest() {
 
@@ -29,23 +28,32 @@ class NanoController {
         if (isset($_SESSION['name'])) {
             switch ($request) {
             // Publication CRUD
-                case "add_pub":
-                    $this->addPub();
-                    break;
                 case "list_all":
                     $this->listAllPubs();
                     break;
                 
-                case "detail_pub":
-                    $this->detailPub();
+                case "add_pub_form":
+                    $this->toAddPub();
                     break;
-            /*  
+                case "add_pub":
+                    $this->addPub();
+                    break;
+
+                case "search_pub":
+                    $this->searchByDoi();
+                    break;
+                
+                case "detail_pub":
+                    $this->searchByDoi();
+                    break;
+              
                 case "update_pub":
-                    // $this->updatePub();
+                    $this->updatePub();
                     break;
                 case "delete_pub":
-                    //  $this->list_all();
+                    $this->deletePub();
                     break;
+            /*    
                 // Publications Search
                 case "search_pub_doi":
                     //  $this->searchPub();
@@ -90,7 +98,7 @@ class NanoController {
     }
 
     public function listAllPubs() {
-        $pubs = $this->pub->listAll();
+        $pubs = $this->pModel->listAll();
         if (empty($_SESSION['error'])){
             if(!empty($pubs)) {
                 $_SESSION['info'] = UserMessage::INF_FORM['found'];
@@ -101,24 +109,105 @@ class NanoController {
         $this->view->display("view/form/Nano/PubsList.php", $pubs);
     }
 
-    public function searchById() {
-        $userValid=UserFormValidation::checkData(UserFormValidation::SEARCH_FIELDS);
+    public function toAddPub() {
+
+        /* $pub_id= trim(filter_input(INPUT_POST, 'pub_id')); 
+        $doi = trim(filter_input(INPUT_POST, 'doi'));
+        $title= trim(filter_input(INPUT_POST, 'title'));;
+        $abstract= trim(filter_input(INPUT_POST, 'abstract'));;
+        $authors= trim(filter_input(INPUT_POST, 'authors'));;
+        $pubType= trim(filter_input(INPUT_POST, 'pubType'));;
+        $linkWeb= trim(filter_input(INPUT_POST, 'linkWeb'));;
+        $linkDownload= trim(filter_input(INPUT_POST, 'linkDownload'));;
+        $jsonRetrieval= trim(filter_input(INPUT_POST, 'jsonRetrieval'));;
+        $jsonCrossRef= trim(filter_input(INPUT_POST, 'jsonCrossRef'));;
+        $jsonArticle= trim(filter_input(INPUT_POST, 'jsonArticle'));;
+        $jsonScopus= trim(filter_input(INPUT_POST, 'jsonScopus'));;
+
+        $content = array(
+            "pub_id" =>$pub_id,               
+            "doi" => $doi ,
+            "title" => $title,
+            "abstract" => $abstract,
+            "authors" => $authors,
+            "pubType" => $pubType,
+            "linkWeb" => $linkWeb,
+            "linkDownload" => $linkDownload,
+            "jsonRetrieval" => $jsonRetrieval,
+            "jsonCrossRef" => $jsonCrossRef,
+            "jsonArticle" => $jsonArticle,
+            "jsonScopus" => $jsonScopus
+        ); */
+        $this->view->display("view/form/Nano/AddForm.php", $content);
+    }
+
+    public function searchByDoi() {
+        $content=PubFormValidation::checkData(PubFormValidation::SEARCH_FIELDS);
         
         if (empty($_SESSION['error'])) {
-            $user=$this->model->searchByName($userValid->getName());
+            $pub=$this->pModel->search($content->getDoi());
 
-            if (!is_null($user)) {
-                $_SESSION['info']=UserMessage::INF_FORM['found'];
-                $userValid=$user;
+            if (!is_null($pub)) {
+                $_SESSION['info']=PubMessage::INF_FORM['found'];
+                $content=$pub;
             }
             else {
-                $_SESSION['error']=UserMessage::ERR_FORM['not_found'];
+                $_SESSION['error']=PubMessage::ERR_FORM['not_found'];
             }
         }
         
-        $this->view->display("view/form/UserFormModify.php", $userValid);
+        $this->view->display("view/form/Nano/AddForm.php", $content);
     }
 
+    public function addPub() {
+        
+        $pubValid = PubFormValidation::checkData(PubFormValidation::ADD_FIELDS); 
+        var_dump('</br>');       
+        var_dump($pubValid);
+        var_dump('</br>');  
+        if (empty($_SESSION['error'])) {
+            $pub = $this->pModel->search($pubValid->getDoi());
+            
+
+            if (is_null($pub)) {
+                $result=$this->pModel->add($pubValid);
+                
+                if ($result == TRUE) {
+                    $_SESSION['info']=PubMessage::INF_FORM['insert'];
+                    $pubValid=NULL;
+                }
+            }
+            else {
+                $_SESSION['error']=PubMessage::ERR_FORM['exists_doi'];          
+            } 
+        }
+        $pubValid = $pubValid;
+        $this->view->display("view/form/Nano/AddForm.php", $pubValid);
+    }
+
+    public function deletePub() {
+        $pubValid=PubFormValidation::checkData(PubFormValidation::DELETE_FIELDS);
+        
+        if (empty($_SESSION['error'])) {
+            $pub=$this->pModel->search($pubValid->getDoi());
+
+            if (!is_null($pub)) {            
+                $result=$this->pModel->delete($pubValid->getId());
+
+                if ($result == TRUE) {
+                    $_SESSION['info']=PubMessage::INF_FORM['delete'];
+                    $pubValid=NULL;
+                }
+            }
+            else {
+                $_SESSION['error']=PubMessage::ERR_FORM['not_exists_doi'];
+            }
+        }
+        
+        //$this->view->display("view/form/Nano/AddForm.php");
+        $this->listAllPubs();
+        
+    }
     public function logout() {
         session_destroy();
         header("Location: index.php");

@@ -7,40 +7,45 @@ class PublicationModel {
     private $dataPub;
 
     public function __construct() {
-        // File
         $this->dataPub=PublicationDAO::getInstance();        
     }
 
-    public function add($pub):bool {
-        $result = $this->dataUser->add($user);
 
+
+    public function listAll():array {
+        $pubs = $this->dataPub->listAll();
+        return $pubs;
+    }
+
+    public function search($doi) {
+        $result = $this->dataPub->searchByDoi($doi);
+        return $result;
+    }
+
+    public function add($pub):bool {
+        $result = $this->dataPub->add($pub);
         if ($result == FALSE && empty($_SESSION['error'])) {
             $_SESSION['error'] = UserMessage::ERR_DAO['insert'];
         }
         return $result;
     }
     
-    public function listAll():array {
-        $pubs = $this->dataPub->listAll();
-
-        return $pubs;
-    }
-
-    public function modify($user):bool {
-        $result=$this->dataUser->modify($user);
-        
+    public function modify($pub):bool {
+        $result=$this->dataPub->modify($pub);
         if ($result==FALSE) {
             $_SESSION['error']=UserMessage::ERR_DAO['update'];
         } 
-        
+        return $result;
+    }
+    public function delete($pubId):bool {
+        $result=$this->dataPub->delete($pubId);
+        if ($result==FALSE) {
+            $_SESSION['error']=UserMessage::ERR_DAO['delete'];
+        } 
         return $result;
     }
 
-    public function searchByName($name) {
-        $result = $this->dataUser->searchByName($name);
-        
-        return $result;
-    }
+
 
     
     
