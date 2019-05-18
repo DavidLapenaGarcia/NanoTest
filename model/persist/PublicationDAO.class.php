@@ -52,7 +52,7 @@ SQL;
         };
         try {
             $sql = <<<SQL
-                SELECT pubId,doi,title,abstract,pubType,linkWeb,linkDownload,jsonRetieval,jsonCrossRef,jsonArticle,jsonScopus
+                SELECT pubId,doi,title,abstract,pubType,linkWeb,linkDownload,jsonRetieval,jsonCrossref,jsonArticle,jsonScopus
                 FROM Pubs WHERE doi=:doi;
 SQL;
 
@@ -72,6 +72,35 @@ SQL;
         }
     }
 
+    public function searchById($pubId) {
+        if ($this->connect == NULL) {
+            $_SESSION['error'] = "Unable to connect to database";
+            return NULL;
+        };
+        try {
+            $sql = <<<SQL
+                SELECT pubId,doi,title,abstract,pubType,linkWeb,linkDownload,jsonRetieval,jsonCrossref,jsonArticle,jsonScopus
+                FROM Pubs WHERE pubId=:pubId;
+SQL;
+
+            $stmt = $this->connect->prepare($sql);
+            $stmt->bindParam(":pubId", $pubId, PDO::PARAM_STR);
+
+            $stmt->execute();
+
+            if ($stmt->rowCount()) {
+                $stmt->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Publication');
+                return $stmt->fetch();
+            } else {
+                return NULL;
+            }
+        } catch (PDOException $e) {
+        //var_dump($e);
+            return NULL;
+        }
+    }
+
+    
     public function add($pub): bool {
         if ($this->connect == NULL) {
             $_SESSION['error'] = "Unable to connect to database";
@@ -79,8 +108,8 @@ SQL;
         };
         try {
             $sql = <<<SQL
-            INSERT INTO Pubs ( pubId,  doi,    title,  abstract,   pubType,   linkWeb,   linkDownload,  jsonRetieval,  jsonCrossref,  jsonArticle,   jsonScopus)
-                 VALUES     (NULL,      :doi,   :title, :abstract,  :pub_type,  :link_web,           NULL,  :json_retieval, :json_crossref, :json_article,  :json_scopus);
+            INSERT INTO Pubs ( pubId, doi, title, abstract, pubType, linkWeb, linkDownload, jsonRetieval, jsonCrossref, jsonArticle, jsonScopus)
+                 VALUES (NULL, :doi, :title, :abstract, :pub_type, :link_web, NULL, :json_retieval, :json_crossref, :json_article,  :json_scopus);
 
 SQL;
             $stmt = $this->connect->prepare($sql);
@@ -103,7 +132,7 @@ SQL;
                 return FALSE;
             }
         } catch (PDOException $e) {
-            var_dump($e);
+            //var_dump($e);
             return FALSE;
         }
         
@@ -149,7 +178,7 @@ SQL;
     }
 
     public function delete($pubId): bool {
-        var_dump($pubId);
+        //var_dump($pubId);
         if ($this->connect == NULL) {
             $_SESSION['error'] = "Unable to connect to database";
             return FALSE;
@@ -158,7 +187,7 @@ SQL;
             $sql = <<<SQL
                     DELETE FROM Pubs WHERE pubId=:pubId;
 SQL;
-
+var_dump($sql);
             $stmt = $this->connect->prepare($sql);
             $stmt->bindValue(":pubId", $pubId, PDO::PARAM_INT);
 
@@ -176,6 +205,49 @@ INSERT INTO `Pubs` (`pubId`, `doi`, `title`, `abstract`, `pubType`, `linkWeb`, `
          */
     }
 
+    public function update($pub): bool {
+        if ($this->connect == NULL) {
+            $_SESSION['error'] = "Unable to connect to database";
+            return FALSE;
+        };
+        try {
+            $sql = <<<SQL
+                UPDATE Pubs SET doi=:doi,                     title=:title,                 abstract=:abstract,
+                                pubType=:pubType,             linkWeb=:linkWeb,             linkDownload=:linkDownload,
+                                jsonRetieval=:jsonRetieval,   jsonCrossref=:jsonCrossref,   jsonArticle=:jsonArticle,
+                                jsonScopus=:jsonScopus
+                            WHERE pubId=:pubId;
+SQL;
+//var_dump($sql);
+            $stmt = $this->connect->prepare($sql);
+            $stmt->bindValue(":pubId", $pub, PDO::PARAM_INT);
+
+            $stmt->bindValue(":pubId",          $pub->getId(),              PDO::PARAM_INT);
+            $stmt->bindValue(":doi",            $pub->getDoi(),             PDO::PARAM_STR);
+            $stmt->bindValue(":title",          $pub->getTitle(),           PDO::PARAM_STR);
+            $stmt->bindValue(":abstract",       $pub->getAbstract(),        PDO::PARAM_STR);
+            $stmt->bindValue(":pubType",        $pub->getPubType(),         PDO::PARAM_STR);
+            $stmt->bindValue(":linkWeb",        $pub->getLinkWeb(),         PDO::PARAM_STR);
+            $stmt->bindValue(":linkDownload",   NULL,                       PDO::PARAM_STR);
+            $stmt->bindValue(":jsonRetieval",   $pub->getJsonRetieval(),    PDO::PARAM_STR);
+            $stmt->bindValue(":jsonCrossref",   $pub->getJsonCrossref(),    PDO::PARAM_STR);
+            $stmt->bindValue(":jsonArticle",    $pub->getJsonArticle(),     PDO::PARAM_STR);
+            $stmt->bindValue(":jsonScopus",     $pub->getJsonScopus(),      PDO::PARAM_STR);
+
+            $stmt->execute(); // devuelve TRUE o FALSE
+            /* if ($stmt->rowCount()) {
+                return TRUE;
+            } else {
+                return FALSE;
+            } */
+            return $stmt->execute();
+        } catch (Exception $ex) {
+            var_dump($ex);
+            return FALSE;
+        }
+    }
+
 
 
 }
+

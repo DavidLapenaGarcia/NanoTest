@@ -35,7 +35,7 @@ class ConnectElsevier {
             $apiData = json_decode($apiData, true);
         } else {
             // TODO : Add errors message
-            // var_dump( curl_error($ch) ); 
+            //var_dump( curl_error($ch) ); 
             array_push($_SESSION['error'], curl_error($ch));
             $apiData = NULL;
         } 

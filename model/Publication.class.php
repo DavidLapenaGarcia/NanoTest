@@ -15,7 +15,7 @@ class Publication {
     public $jsonArticle;
     public $jsonScopus;
 
-    public function __construct($pubId=null, $doi=null, $title=null,
+    public function __construct(int $pubId=null, $doi=null, $title=null,
                                 $abstract=null, $authors=null, $pubType=null,
                                 $linkWeb=null, $linkDownload=null, $jsonRetieval=null,
                                 $jsonCrossref=null, $jsonArticle =null, $jsonScopus=null) {
@@ -33,7 +33,7 @@ class Publication {
         $this->jsonScopus;
     }
 
-    public function getId() {
+    public function getId(): int {
         return $this->pubId;
     }
     public function setId($pubId) {

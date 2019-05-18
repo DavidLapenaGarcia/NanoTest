@@ -5,11 +5,11 @@ class PubFormValidation {
 
     const ADD_FIELDS    = array('doi', 'title', 'abstract', 'authors', 'pubType', 'linkWeb', 'linkDownload',
                                 'jsonRetrieval', 'jsonCrossRef', 'jsonArticle', 'jsonScopus');
-    const MODIFY_FIELDS = array('doi', 'title', 'abstract', 'authors', 'pubType', 'linkWeb', 'linkDownload',
+    const MODIFY_FIELDS = array('id', 'doi', 'title', 'abstract', 'authors', 'pubType', 'linkWeb', 'linkDownload',
                                 'jsonRetrieval', 'jsonCrossRef', 'jsonArticle', 'jsonScopus');
     const DELETE_FIELDS = array('doi');
     const SEARCH_FIELDS = array('doi');
-    //const NUMERIC = "/[^0-9]/";
+    const NUMERIC = "/[^0-9]/";
     //const ALPHABETIC = "/[^a-z A-Z]/";
 
     public static function checkData($fields) {
@@ -27,6 +27,19 @@ class PubFormValidation {
         $jsonScopus= NULL;
         foreach ($fields as $field) {
             switch ($field) {
+                case 'id': 
+                    $pub_id=trim(filter_input(INPUT_POST, 'id'));
+                    $idValid=!preg_match(self::NUMERIC, $pub_id);
+                    if(is_numeric($pub_id)) {
+                        $pub_id = (int) $pub_id;
+                    }
+                    if (empty($pub_id)) {
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_doi']);
+                    }
+                    else if ($idValid == FALSE) {
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_id']);
+                    }
+                    break;
                 case 'doi': 
                 // TODO : 
                     $doi = trim(filter_input(INPUT_POST, 'doi'));
@@ -117,7 +130,7 @@ class PubFormValidation {
 
                 case 'jsonCrossRef':   
                 // TODO : 
-                    $jsonCrossRef = trim(filter_input(INPUT_POST, 'jsonCrossRef'));
+                    $jsonCrossRef = trim(filter_input(INPUT_POST, 'jsonCrossref'));
                     $jsonCrossRefValid = filter_var($jsonCrossRef, FILTER_SANITIZE_STRING);
                     if (empty($jsonCrossRef)) {
                         array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_doi']);
@@ -165,7 +178,7 @@ class PubFormValidation {
         $pub = new Publication( $pub_id, $doi, $title, $abstract, $authors, $pubType, 
                                 $linkWeb, $linkDownload, $jsonRetrieval, $jsonCrossRef, 
                                 $jsonArticle, $jsonScopus);
-
+        $pub->setId($pub_id);
         $pub->setDoi($doi);
         $pub->setTitle($title);
         $pub->setLinkWeb($linkWeb);

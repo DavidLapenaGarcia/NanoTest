@@ -1,54 +1,60 @@
 <?php
 
-require_once "model/persist/PublicationDAO.class.php";
+require_once "model/persist/KeywordDAO.class.php";
 
 class PublicationModel {
 
-    private $pubDAO;
+    private $keyDAO;
 
     public function __construct() {
-        $this->pubDAO=PublicationDAO::getInstance();        
+        $this->keyDAO=PublicationDAO::getInstance();        
     }
 
 
     public function listAll():array {
-        $pubs = $this->pubDAO->listAll();
-        return $pubs;
+        $keyws = $this->keyDAO->listAll();
+        return $keyws;
     }
 
-    public function search($doi) {
+    public function listAllDistinct():array {
+        $keyws = $this->keyDAO->listAll();
+        return $keyws;
+    }
+
+    public function search($id) {
         /* var_dump('<br/>PubDAO:::update::<br/>');
         var_dump($pub);
         var_dump('<br/><br/>'); */
-        $result = $this->pubDAO->searchByDoi($doi);
+        $result = $this->keyDAO->searchId($id);
         return $result;
     }
-
-    public function searchId($id) {
+    /* 
+    //client
+    public function searchKeyValue($id) {
         //var_dump($id);
-        $result = $this->pubDAO->searchById($id);
+        $result = $this->keyDAO->searchById($id);
         //var_dump($result);
         return $result;
-    }
-    
-    public function add($pub):bool {
-        $result = $this->pubDAO->add($pub);
+    } */
+    public function add($keyw):bool {
+        $result = $this->keyDAO->add($keyw);
         if ($result == FALSE && empty($_SESSION['error'])) {
             $_SESSION['error'] = UserMessage::ERR_DAO['insert'];
         }
         return $result;
     }
     
-    public function update($pub):bool {
-        $result=$this->pubDAO->update($pub);
+    public function update($keyw):bool {
+        $result=$this->keyDAO->update($keyw);
         // var_dump($result);
         if ($result==FALSE) {
             $_SESSION['error']=UserMessage::ERR_DAO['update'];
         } 
         return $result;
     }
-    public function delete($pubId):bool {
-        $result=$this->pubDAO->delete($pubId);
+    
+    public function delete($id):bool {
+        $result=$this->keyDAO->delete($id);
         if ($result==FALSE) {
             $_SESSION['error']=UserMessage::ERR_DAO['delete'];
         } 

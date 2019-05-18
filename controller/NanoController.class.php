@@ -31,22 +31,18 @@ class NanoController {
                 case "list_all":
                     $this->listAllPubs();
                     break;
-                
                 case "add_pub_form":
                     $this->toAddPub();
                     break;
                 case "add_pub":
                     $this->addPub();
                     break;
-
                 case "search_pub":
                     $this->searchByDoi();
                     break;
-                
                 case "detail_pub":
                     $this->searchByDoi();
                     break;
-              
                 case "update_pub":
                     $this->updatePub();
                     break;
@@ -81,7 +77,28 @@ class NanoController {
                 case "get_citations":
                     //  $this->searchById();
                     break; 
-            */
+            */  
+                case "list_all":
+                $this->listAllKeys();
+                break;
+                case "add_key_form":
+                    $this->toAddKey();
+                    break;
+                case "add_key":
+                    $this->addKey();
+                    break;
+                case "search_keys":
+                    $this->searchKeys();
+                    break;
+                case "detail_key":
+                    $this->searchByKey();
+                    break;
+                case "update_key":
+                    $this->updateKey();
+                    break;
+                case "delete_key":
+                    $this->deleteKey();
+                    break;
             
                 default:
                     $this->view->display();
@@ -149,6 +166,7 @@ class NanoController {
 
             if (!is_null($pub)) {
                 $_SESSION['info']=PubMessage::INF_FORM['found'];
+                // ADD AUTHORS, KEYSW
                 $content=$pub;
             }
             else {
@@ -162,9 +180,6 @@ class NanoController {
     public function addPub() {
         
         $pubValid = PubFormValidation::checkData(PubFormValidation::ADD_FIELDS); 
-        var_dump('</br>');       
-        var_dump($pubValid);
-        var_dump('</br>');  
         if (empty($_SESSION['error'])) {
             $pub = $this->pModel->search($pubValid->getDoi());
             
@@ -192,7 +207,7 @@ class NanoController {
             $pub=$this->pModel->search($pubValid->getDoi());
 
             if (!is_null($pub)) {            
-                $result=$this->pModel->delete($pubValid->getId());
+                $result=$this->pModel->delete($pub->getId());
 
                 if ($result == TRUE) {
                     $_SESSION['info']=PubMessage::INF_FORM['delete'];
@@ -208,6 +223,31 @@ class NanoController {
         $this->listAllPubs();
         
     }
+
+    public function updatePub() {
+        $pubValid=PubFormValidation::checkData(PubFormValidation::MODIFY_FIELDS);
+
+        if (empty($_SESSION['error'])) {
+            if (!is_null($pubValid)) {    
+                $result=$this->pModel->update($pubValid);
+
+                if ($result == TRUE) {
+                    $_SESSION['info']=PubMessage::INF_FORM['delete'];
+                    $pubValid=NULL;
+                }
+            } else {
+                $_SESSION['error']=PubMessage::ERR_FORM['not_exists_id'];
+            }
+        }
+        
+        //$this->view->display("view/form/Nano/AddForm.php");
+        $this->listAllPubs();
+        
+    }
+
+
+
+
     public function logout() {
         session_destroy();
         header("Location: index.php");

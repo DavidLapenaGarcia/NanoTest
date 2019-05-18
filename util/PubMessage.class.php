@@ -13,13 +13,17 @@ class PubMessage {
     
     const ERR_FORM =
         array(
-            'empty_password'      => 'Password must be filled',
-            'empty_name'    => 'name must be filled',
+            'empty_doi'      => 'DOI must be filled',
+            'empty_doi'      => 'DOI must be filled',
+
             'invalid_password'    => 'Password must be valid values',
             'invalid_name'  => 'name must be valid values',
-            'exists_name'     => 'name already exists',
+
+            'exists_id'     => 'ID already exists',
             'exists_doi'     => 'DOI already exists',
+
             'not_exists_name' => 'name not exists',
+            
             'not_modify_name' => 'name cannot be modify',          
             'not_a_number'    => 'Age must be valid values',
             'not_a_string'    => 'Description must be valid values',
