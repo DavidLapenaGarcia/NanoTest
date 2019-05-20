@@ -26,13 +26,14 @@ class UserDbDAO  {
 
         try {
             $sql = <<<SQL
-                INSERT INTO Users (name,password)
-                    VALUES (:name,:password);
+                INSERT INTO Users (userId, name,password, mail)
+                    VALUES (NULL, :name,:password, :mail);
 SQL;
 
             $stmt = $this->connect->prepare($sql);
             $stmt->bindValue(":name", $user->getName(), PDO::PARAM_STR);
             $stmt->bindValue(":password", $user->getPassword(), PDO::PARAM_STR);
+            $stmt->bindValue(":mail", $user->getMail(), PDO::PARAM_STR);
 
             $stmt->execute();
 
@@ -57,7 +58,7 @@ SQL;
 
         try {
             $sql = <<<SQL
-                SELECT name,password FROM Users;
+                SELECT userId,name,password,mail FROM Users;
 SQL;
 
             $stmt = $this->connect->query($sql); 
@@ -72,36 +73,62 @@ SQL;
         return $result;
     }
 
-    public function modify($user): bool {
+    public function delete($userId): bool {
         if ($this->connect == NULL) {
             $_SESSION['error'] = "Unable to connect to database";
             return FALSE;
         };
-
         try {
             $sql = <<<SQL
-                UPDATE Users SET password=:password
-                    WHERE name=:name;
+                    DELETE FROM Users WHERE userId=:userId;
 SQL;
-
             $stmt = $this->connect->prepare($sql);
-            $stmt->bindValue(":password", $user->getPassword(), PDO::PARAM_STR);
-            $stmt->bindValue(":name", $user->getName(), PDO::PARAM_STR);
+            $stmt->bindValue(":userId", $userId, PDO::PARAM_INT);
 
-            $stmt->execute();
-            
+            $stmt->execute(); // devuelve TRUE o FALSE
             if ($stmt->rowCount()) {
                 return TRUE;
             } else {
                 return FALSE;
             }
-        } catch (PDOException $e) {
-            
+        } catch (Exception $ex) {
             return FALSE;
         }
     }
 
-    public function searchByName($username) {
+    public function update($user): bool {
+        var_dump($user);
+        var_dump("<br/>");
+        if ($this->connect == NULL) {
+            $_SESSION['error'] = "Unable to connect to database";
+            return FALSE;
+        };
+        try {
+            $sql = <<<SQL
+                UPDATE Users SET name=:name,   password=:password,  mail=:mail
+                            WHERE userId=:userId;
+SQL;
+var_dump($sql);
+            $stmt = $this->connect->prepare($sql);
+            $stmt->bindValue(":userId",     $user->getId(),         PDO::PARAM_INT);
+            $stmt->bindValue(":name",       $user->getName(),       PDO::PARAM_STR);
+            $stmt->bindValue(":password",   $user->getPassword(),   PDO::PARAM_STR);
+            $stmt->bindValue(":mail",       $user->getMail(),       PDO::PARAM_STR);
+
+            $stmt->execute(); // devuelve TRUE o FALSE
+            /* if ($stmt->rowCount()) {
+                return TRUE;
+            } else {
+                return FALSE;
+            } */
+            return $stmt->execute();
+        } catch (Exception $ex) {
+            var_dump($ex);
+            return FALSE;
+        }
+    }
+
+    public function searchById($userId) {
         if ($this->connect == NULL) {
             $_SESSION['error'] = "Unable to connect to database";
             return NULL;
@@ -109,11 +136,68 @@ SQL;
 
         try {
             $sql = <<<SQL
-                SELECT username,password,age,role,active FROM user WHERE username=:username;
+                SELECT userId, name, password, mail FROM Users WHERE userId=:userId;
 SQL;
 
             $stmt = $this->connect->prepare($sql);
-            $stmt->bindParam(":username", $username, PDO::PARAM_STR);
+            $stmt->bindParam(":userId", $userId, PDO::PARAM_STR);
+
+            $stmt->execute();
+
+            if ($stmt->rowCount()) {
+                $stmt->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'User');
+                return $stmt->fetch();
+            } else {
+                return NULL;
+            }
+        } catch (PDOException $e) {
+            return NULL;
+        }
+    }
+
+    public function searchName($name) {
+        if ($this->connect == NULL) {
+            $_SESSION['error'] = "Unable to connect to database";
+            return NULL;
+        };
+
+        try {
+            $sql = <<<SQL
+                SELECT * FROM Users 
+                WHERE name=:name;
+SQL;
+
+            $stmt = $this->connect->prepare($sql);
+            $stmt->bindParam(":name", $name, PDO::PARAM_STR);
+
+            $stmt->execute();
+
+            if ($stmt->rowCount()) {
+                $stmt->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'User');
+                return $stmt->fetch();
+            } else {
+                return NULL;
+            }
+        } catch (PDOException $e) {
+            return NULL;
+        }
+    }
+
+    public function searchValid($name, $password) {
+        if ($this->connect == NULL) {
+            $_SESSION['error'] = "Unable to connect to database";
+            return NULL;
+        };
+
+        try {
+            $sql = <<<SQL
+                SELECT userId, name, password, mail FROM Users 
+                WHERE name=:name AND password=:password;
+SQL;
+
+            $stmt = $this->connect->prepare($sql);
+            $stmt->bindParam(":name",       $name, PDO::PARAM_STR);
+            $stmt->bindParam(":password",   $password, PDO::PARAM_STR);
 
             $stmt->execute();
 

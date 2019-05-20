@@ -9,19 +9,30 @@
  */
 class UserFormValidation {
 
-    const ADD_FIELDS = array('name', 'password');
-    const MODIFY_FIELDS = array('name', 'password');
-    const DELETE_FIELDS = array('name');
-    const SEARCH_FIELDS = array('name');
+    const ADD_FIELDS = array('name', 'password', 'mail');
+    const MODIFY_FIELDS = array('userId', 'name', 'password', 'mail');
+    const DELETE_FIELDS = array('userId');
+    const SEARCH_FIELDS = array('userId');
     //const NUMERIC = "/[^0-9]/";
     //const ALPHABETIC = "/[^a-z A-Z]/";
 
     public static function checkData($fields) {
+        $userId = NULL;
         $name = NULL;
         $password = NULL;
+        $mail = NULL;
 
         foreach ($fields as $field) {
             switch ($field) {
+                case 'userId':  
+                    $userId = trim(filter_input(INPUT_POST, 'userId'));
+                    $userIdValid = filter_var($userId, FILTER_SANITIZE_STRING);
+                    if (empty($userId)) {
+                        array_push($_SESSION['error'], UserMessage::ERR_FORM['empty_id']);
+                    } else if ($userIdValid == FALSE) {
+                        array_push($_SESSION['error'], UserMessage::ERR_FORM['invalid_id']);
+                    }
+                    break;
                 case 'name':  
                     $name = trim(filter_input(INPUT_POST, 'name'));
                     $nameValid = filter_var($name, FILTER_SANITIZE_STRING);
@@ -40,17 +51,26 @@ class UserFormValidation {
                         array_push($_SESSION['error'], UserMessage::ERR_FORM['invalid_password']);
                     }
                     break;
+                case 'mail':
+                    $mail = trim(filter_input(INPUT_POST, 'mail')); 
+                    $mailValid = filter_var($mail, FILTER_SANITIZE_STRING);
+                    if (empty($mail)) {
+                        array_push($_SESSION['error'], UserMessage::ERR_FORM['empty_mail']);
+                    } else if ($mailValid == FALSE) {
+                        array_push($_SESSION['error'], UserMessage::ERR_FORM['invalid_mail']);
+                    }
+                    break;
                 case 'xx':
-                    $name = trim(filter_input(INPUT_POST, 'name'));
-                    $nameValid = filter_var($name, FILTER_SANITIZE_STRING);
-                    if ($nameValid == FALSE) {
-                        array_push($_SESSION['error'], UserMessage::ERR_FORM['invalid_name']);
+                    $userId = trim(filter_input(INPUT_POST, 'mail'));
+                    $userIdValid = filter_var($userId, FILTER_SANITIZE_STRING);
+                    if ($userIdValid == FALSE) {
+                        array_push($_SESSION['error'], UserMessage::ERR_FORM['invalid_id']);
                     }
                     break;
             }
         }
 
-        $user = new User($name, $password, $age, $role, $active);
+        $user = new User($userId,$name, $password, $mail);
 
         return $user;
     }

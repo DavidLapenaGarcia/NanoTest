@@ -6,7 +6,7 @@ class Publication {
     public $doi;
     public $title;
     public $abstract;
-    public $authors;
+    public $author;
     public $pubType;
     public $linkWeb;
     public $linkDownload;
@@ -15,15 +15,19 @@ class Publication {
     public $jsonArticle;
     public $jsonScopus;
 
+    public $authors;
+    public $keywords;
+
     public function __construct(int $pubId=null, $doi=null, $title=null,
-                                $abstract=null, $authors=null, $pubType=null,
+                                $abstract=null, $author=null, $pubType=null,
                                 $linkWeb=null, $linkDownload=null, $jsonRetieval=null,
-                                $jsonCrossref=null, $jsonArticle =null, $jsonScopus=null) {
+                                $jsonCrossref=null, $jsonArticle =null, $jsonScopus=null,
+                                $authors=null, $keywords =null) {
         $this->pubId;
         $this->doi;
         $this->title;
         $this->abstract;
-        $this->authors;
+        $this->author;
         $this->pubType;
         $this->linkWeb;
         $this->linkDownload;
@@ -31,6 +35,9 @@ class Publication {
         $this->jsonCrossref;
         $this->jsonArticle;
         $this->jsonScopus;
+
+        $this->authors;
+        $this->keywords;
     }
 
     public function getId(): int {
@@ -61,11 +68,11 @@ class Publication {
         $this->abstract=$abstract;
     }
 
-    public function getAuthors() {
-        return $this->authors;
+    public function getAuthor() {
+        return $this->author;
     }
-    public function setAuthors($authors) {
-        $this->authors=$authors;
+    public function setAuthor($author) {
+        $this->author=$author;
     }
 
     public function getPubType() {
@@ -117,6 +124,20 @@ class Publication {
         $this->jsonScopus=$jsonScopus;
     }
     
+    public function getAuthors() {
+        return $this->authors;
+    }
+    public function setAuthors($authors) {
+        $this->authors=$authors;
+    }
+
+    public function getKeywords() {
+        return $this->kaywords;
+    }
+    public function setKeywords($keywords) {
+        $this->keywords=$keywords;
+    }
+
     public function __toString() {
         return sprintf("%s;%s;%s;%s;%s;%s;%s;%s;\n%s;\n%s\n%s\n%s\n", 
             $this->pubId,

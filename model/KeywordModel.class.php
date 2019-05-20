@@ -2,12 +2,12 @@
 
 require_once "model/persist/KeywordDAO.class.php";
 
-class PublicationModel {
+class KeywordModel {
 
     private $keyDAO;
 
     public function __construct() {
-        $this->keyDAO=PublicationDAO::getInstance();        
+        $this->keyDAO=KeywordDAO::getInstance();        
     }
 
 
@@ -25,7 +25,7 @@ class PublicationModel {
         /* var_dump('<br/>PubDAO:::update::<br/>');
         var_dump($pub);
         var_dump('<br/><br/>'); */
-        $result = $this->keyDAO->searchId($id);
+        $result = $this->keyDAO->searchById($id);
         return $result;
     }
     /* 
@@ -39,7 +39,7 @@ class PublicationModel {
     public function add($keyw):bool {
         $result = $this->keyDAO->add($keyw);
         if ($result == FALSE && empty($_SESSION['error'])) {
-            $_SESSION['error'] = UserMessage::ERR_DAO['insert'];
+            $_SESSION['error'] = KeyMessage::ERR_DAO['insert'];
         }
         return $result;
     }
@@ -48,15 +48,15 @@ class PublicationModel {
         $result=$this->keyDAO->update($keyw);
         // var_dump($result);
         if ($result==FALSE) {
-            $_SESSION['error']=UserMessage::ERR_DAO['update'];
+            $_SESSION['error']=KeyMessage::ERR_DAO['update'];
         } 
         return $result;
     }
-    
+
     public function delete($id):bool {
         $result=$this->keyDAO->delete($id);
         if ($result==FALSE) {
-            $_SESSION['error']=UserMessage::ERR_DAO['delete'];
+            $_SESSION['error']=KeyMessage::ERR_DAO['delete'];
         } 
         return $result;
     }

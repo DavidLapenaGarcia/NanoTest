@@ -1,17 +1,25 @@
 <?php
 require_once "view/NanoView.class.php";
+
 require_once "model/Publication.class.php";
 require_once "model/PublicationModel.class.php";
 require_once "util/PubMessage.class.php";
 require_once "util/PubFormValidation.class.php";
 
+require_once "model/Keyword.class.php";
+require_once "model/KeywordModel.class.php";
+require_once "util/KeyMessage.class.php";
+require_once "util/KeyFormValidation.class.php";
+
 class NanoController {
     private $view;
     private $pModel;
+    private $kModel;
 
     public function __construct() {
         $this->view = new NanoView();
         $this->pModel = new PublicationModel();
+        $this->kModel = new KeywordModel();
     }
     public function processRequest() {
 
@@ -49,12 +57,11 @@ class NanoController {
                 case "delete_pub":
                     $this->deletePub();
                     break;
-            /*    
+            /*  // CLIENT  
                 // Publications Search
                 case "search_pub_doi":
                     //  $this->searchPub();
                     break;
-            
                 case "search_pub_title":
                     //  $this->searchPub();
                     break;
@@ -78,20 +85,20 @@ class NanoController {
                     //  $this->searchById();
                     break; 
             */  
-                case "list_all":
-                $this->listAllKeys();
+                case "list_all_keys":
+                    $this->listAllKeys();
                 break;
-                case "add_key_form":
-                    $this->toAddKey();
+                case "to_key_form":
+                    $this->toKeyForm();
                     break;
                 case "add_key":
                     $this->addKey();
                     break;
-                case "search_keys":
-                    $this->searchKeys();
+                case "search_key":
+                    $this->searchKeyword();
                     break;
                 case "detail_key":
-                    $this->searchByKey();
+                    $this->searchKeyword();
                     break;
                 case "update_key":
                     $this->updateKey();
@@ -247,6 +254,115 @@ class NanoController {
 
 
 
+
+
+    public function listAllKeys() {
+        $keyws = $this->kModel->listAll();
+        if (empty($_SESSION['error'])){
+            if(!empty($keyws)) {
+                $_SESSION['info'] = KeyMessage::INF_FORM['found'];
+            }else{
+                $_SESSION['info'] = UserMessage::ERR_FORM['not_found'];
+            }
+        }
+        $this->view->display("view/form/Nano/KeysList.php", $keyws);
+    }
+    public function toKeyForm() {
+
+        /* 
+        $pub_id= trim(filter_input(INPUT_POST, 'pub_id')); 
+        $doi = trim(filter_input(INPUT_POST, 'doi'));
+        $title= trim(filter_input(INPUT_POST, 'title'));;
+
+        $content = array(
+            "pub_id" =>$pub_id,               
+            "doi" => $doi ,
+            "title" => $title,
+        ); */
+        $this->view->display("view/form/Nano/KeyForm.php", $content);
+    }
+    public function searchKeyword() {
+        $content=KeyFormValidation::checkData(KeyFormValidation::SEARCH_FIELDS);
+
+        if (empty($_SESSION['error'])) {
+            $keyw=$this->kModel->search($content->getId());
+
+            if (!is_null($keyw)) {
+                $_SESSION['info']=KeyMessage::INF_FORM['found'];
+                // ADD AUTHORS, KEYSW
+                $content=$keyw;
+            }
+            else {
+                $_SESSION['error']=KeyMessage::ERR_FORM['not_found'];
+            }
+        }
+        
+        $this->view->display("view/form/Nano/KeyForm.php", $content);
+    }
+    public function addKey() {
+        $keywValid = KeyFormValidation::checkData(KeyFormValidation::ADD_FIELDS); 
+
+        if (empty($_SESSION['error'])) {
+            $keyw = $this->kModel->search($keywValid->getId());
+            if (is_null($keyw)) {
+                $result=$this->kModel->add($keywValid);
+                
+                if ($result == TRUE) {
+                    $_SESSION['info']=KeyMessage::INF_FORM['insert'];
+                    $keywValid=NULL;
+                }
+            }
+            else {
+                $_SESSION['error']=KeyMessage::ERR_FORM['exists_doi'];          
+            } 
+        }
+        $pubValid = $pubValid;
+        $this->view->display("view/form/Nano/KeyForm.php", $pubValid);
+    }
+    public function deleteKey() {
+        $keywValid=KeyFormValidation::checkData(KeyFormValidation::DELETE_FIELDS);
+        
+        if (empty($_SESSION['error'])) {
+            $keyw=$this->kModel->search($keywValid->getId());
+
+            if (!is_null($keyw)) {            
+                $result=$this->kModel->delete($keyw->getId());
+
+                if ($result == TRUE) {
+                    $_SESSION['info']=PubMessage::INF_FORM['delete'];
+                    $keywValid=NULL;
+                }
+            }
+            else {
+                $_SESSION['error']=PubMessage::ERR_FORM['not_exists_doi'];
+            }
+        }
+        
+        //$this->view->display("view/form/Nano/AddForm.php");
+        $this->listAllKeys();
+        
+    }
+
+    public function updateKey() {
+        $keywValid=KeyFormValidation::checkData(KeyFormValidation::MODIFY_FIELDS);
+
+        if (empty($_SESSION['error'])) {
+            if (!is_null($keywValid)) {    
+                $result=$this->kModel->update($keywValid);
+
+                if ($result == TRUE) {
+                    $_SESSION['info']=KeyMessage::INF_FORM['delete'];
+                    $keywValid=NULL;
+                }
+            } else {
+                $_SESSION['error']=KeyMessage::ERR_FORM['not_exists_id'];
+            }
+        }
+        
+        //$this->view->display("view/form/Nano/AddForm.php");
+        $this->listAllKeys();
+        
+    }
 
     public function logout() {
         session_destroy();

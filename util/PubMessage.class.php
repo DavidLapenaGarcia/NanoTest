@@ -13,22 +13,43 @@ class PubMessage {
     
     const ERR_FORM =
         array(
+            'invalid_id'  => 'Id  must be filled',
             'empty_doi'      => 'DOI must be filled',
-            'empty_doi'      => 'DOI must be filled',
+            'empty_title'    => 'DOI must be filled',
+            'empty_abstract'  => 'abstract must be filled',
+            'empty_author'  => 'author must be filled',
+            'empty_pubType'  => 'pubType must be filled',
+            'empty_linkWeb'  => 'LinkWeb must be filled',
+            'empty_linkDownload'  => 'LinkDownload must be filled',
+            'empty_jsonRetrieval'  => 'jsonRetrieval must be filled',
+            'empty_jsonCrossRef'  => 'jsonCrossRef must be filled',
+            'empty_jsonArticle'  => 'jsonArticle  must be filled',
+            'empty_jsonScopus'  => 'jsonScopus must be filled',
 
-            'invalid_password'    => 'Password must be valid values',
-            'invalid_name'  => 'name must be valid values',
+            'invalid_id'  => 'Id must be valid values',
+            'invalid_doi'    => 'Password must be valid values',
+            'invalid_title'  => 'title must be valid values',
+            'invalid_abstract'  => 'abstract must be valid values',
+            'invalid_author'  => 'author must be valid values',
+            'invalid_pubType'  => 'pubType must be valid values',
+            'invalid_linkWeb'  => 'LinkWeb must be valid values',
+            'invalid_linkDownload'  => 'LinkDownload must be valid values',
+            'invalid_jsonRetrieval'  => 'jsonRetrieval must be valid values',
+            'invalid_jsonCrossRef'  => 'jsonCrossRef must be valid values',
+            'invalid_jsonArticle'  => 'jsonArticle  must be valid values',
+            'invalid_jsonScopus'  => 'jsonScopus must be valid values',
+
 
             'exists_id'     => 'ID already exists',
-            'exists_doi'     => 'DOI already exists',
+            'exists_doi'    => 'DOI already exists',
 
-            'not_exists_name' => 'name not exists',
+            'not_exists_doi' => 'Doi not exists',
             
-            'not_modify_name' => 'name cannot be modify',          
+            'not_modify_doi' => 'DOI cannot be modify', 
+
             'not_a_number'    => 'Age must be valid values',
             'not_a_string'    => 'Description must be valid values',
-            'invalid_role'    => 'Role must be valid values',
-            'invalid_active'    => 'Active must be valid values',
+
             'not_found'     => 'No data found',
             '' => ''
         );

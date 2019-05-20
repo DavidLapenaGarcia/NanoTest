@@ -3,9 +3,9 @@
 
 class PubFormValidation {
 
-    const ADD_FIELDS    = array('doi', 'title', 'abstract', 'authors', 'pubType', 'linkWeb', 'linkDownload',
+    const ADD_FIELDS    = array('doi', 'title', 'abstract', 'author', 'pubType', 'linkWeb', 'linkDownload',
                                 'jsonRetrieval', 'jsonCrossRef', 'jsonArticle', 'jsonScopus');
-    const MODIFY_FIELDS = array('id', 'doi', 'title', 'abstract', 'authors', 'pubType', 'linkWeb', 'linkDownload',
+    const MODIFY_FIELDS = array('id', 'doi', 'title', 'abstract', 'author', 'pubType', 'linkWeb', 'linkDownload',
                                 'jsonRetrieval', 'jsonCrossRef', 'jsonArticle', 'jsonScopus');
     const DELETE_FIELDS = array('doi');
     const SEARCH_FIELDS = array('doi');
@@ -34,7 +34,7 @@ class PubFormValidation {
                         $pub_id = (int) $pub_id;
                     }
                     if (empty($pub_id)) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_id']);
                     }
                     else if ($idValid == FALSE) {
                         array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_id']);
@@ -56,9 +56,9 @@ class PubFormValidation {
                     $title = trim(filter_input(INPUT_POST, 'title'));
                     $titleValid = filter_var($title, FILTER_SANITIZE_STRING);
                     if (empty($title)) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_title']);
                     } else if ($titleValid == FALSE) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_title']);
                     }
                     break;
                 
@@ -67,20 +67,20 @@ class PubFormValidation {
                         $abstract = trim(filter_input(INPUT_POST, 'abstract'));
                         $abstractValid = filter_var($abstract, FILTER_SANITIZE_STRING);
                         if (empty($abstract)) {
-                            array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_doi']);
+                            array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_abstract']);
                         } else if ($abstractValid == FALSE) {
-                            array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_doi']);
+                            array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_abstract']);
                         }
                         break;
 
-                case 'authors':  
+                case 'author':  
                 // TODO : 
-                    $authors = trim(filter_input(INPUT_POST, 'authors'));
+                    $authors = trim(filter_input(INPUT_POST, 'author'));
                     $authorsValid = filter_var($authors, FILTER_SANITIZE_STRING);
                     if (empty($authors)) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_author']);
                     } else if ($authorsValid == FALSE) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_author']);
                     }
                     break;
 
@@ -89,9 +89,9 @@ class PubFormValidation {
                     $pubType = trim(filter_input(INPUT_POST, 'pubType'));
                     $pubTypeValid = filter_var($pubType, FILTER_SANITIZE_STRING);
                     if (empty($pubType)) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_pubType']);
                     } else if ($pubTypeValid == FALSE) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_pubType']);
                     }
                     break;
 
@@ -100,9 +100,9 @@ class PubFormValidation {
                     $linkWeb = trim(filter_input(INPUT_POST, 'linkWeb'));
                     $linkWebValid = filter_var($linkWeb, FILTER_SANITIZE_STRING);
                     if (empty($linkWeb)) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_linkWeb']);
                     } else if ($linkWebValid == FALSE) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_linkWeb']);
                     }
                     break;
 
@@ -111,9 +111,9 @@ class PubFormValidation {
                     $linkDownload = trim(filter_input(INPUT_POST, 'linkDownload'));
                     $linkDownloadValid = filter_var($linkDownload, FILTER_SANITIZE_STRING);
                     if (empty($linkDownload)) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_linkDownload']);
                     } else if ($linkDownloadValid == FALSE) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_linkDownload']);
                     }
                     break;
         
@@ -122,9 +122,9 @@ class PubFormValidation {
                     $jsonRetrieval = trim(filter_input(INPUT_POST, 'jsonRetrieval'));
                     $jsonRetrievalValid = filter_var($jsonRetrieval, FILTER_SANITIZE_STRING);
                     if (empty($jsonRetrieval)) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_jsonRetrieval']);
                     } else if ($jsonRetrievalValid == FALSE) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_jsonRetrieval']);
                     }
                     break;
 
@@ -133,9 +133,9 @@ class PubFormValidation {
                     $jsonCrossRef = trim(filter_input(INPUT_POST, 'jsonCrossref'));
                     $jsonCrossRefValid = filter_var($jsonCrossRef, FILTER_SANITIZE_STRING);
                     if (empty($jsonCrossRef)) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['empty_jsonCrossRef']);
                     } else if ($jsonCrossRefValid == FALSE) {
-                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_doi']);
+                        array_push($_SESSION['error'], PubMessage::ERR_FORM['invalid_jsonCrossRef']);
                     }
                     break;
 
@@ -144,9 +144,9 @@ class PubFormValidation {
                     $jsonArticle = trim(filter_input(INPUT_POST, 'jsonArticle'));
                     $jsonArticleValid = filter_var($jsonArticle, FILTER_SANITIZE_STRING);
                     if (empty($jsonArticle)) {
-                        array_push($_SESSION['error'], UserMessage::ERR_FORM['empty_doi']);
+                        array_push($_SESSION['error'], UserMessage::ERR_FORM['empty_jsonArticle']);
                     } else if ($jsonArticleValid == FALSE) {
-                        array_push($_SESSION['error'], UserMessage::ERR_FORM['invalid_doi']);
+                        array_push($_SESSION['error'], UserMessage::ERR_FORM['invalid_jsonArticle']);
                     }
                     break;
 
@@ -155,9 +155,9 @@ class PubFormValidation {
                     $jsonScopus = trim(filter_input(INPUT_POST, 'jsonScopus'));
                     $jsonScopusValid = filter_var($jsonScopus, FILTER_SANITIZE_STRING);
                     if (empty($jsonScopus)) {
-                        array_push($_SESSION['error'], UserMessage::ERR_FORM['empty_doi']);
+                        array_push($_SESSION['error'], UserMessage::ERR_FORM['empty_jsonScopus']);
                     } else if ($jsonScopusValid == FALSE) {
-                        array_push($_SESSION['error'], UserMessage::ERR_FORM['invalid_doi']);
+                        array_push($_SESSION['error'], UserMessage::ERR_FORM['invalid_jsonScopus']);
                     }
                     break;
 

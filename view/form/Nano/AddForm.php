@@ -23,9 +23,9 @@
                 <input  type="text" placeholder="abstract" name="abstract" 
                         value="<?php if (isset($content)) { echo $content->getAbstract(); } ?>" />
                 
-                <label>authors *:</label>
+                <label>author *:</label>
                 <input  type="text" placeholder="authors" name="authors" 
-                        value="<?php if (isset($content)) { echo $content->getAuthors(); } ?>" />
+                        value="<?php if (isset($content)) { echo $content->getAuthor(); } ?>" />
                 
                 <label>pubType *:</label>
                 <input  type="text" placeholder="pubType" name="pubType" 

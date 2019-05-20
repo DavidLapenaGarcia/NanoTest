@@ -187,7 +187,6 @@ SQL;
             $sql = <<<SQL
                     DELETE FROM Pubs WHERE pubId=:pubId;
 SQL;
-var_dump($sql);
             $stmt = $this->connect->prepare($sql);
             $stmt->bindValue(":pubId", $pubId, PDO::PARAM_INT);
 
@@ -200,9 +199,6 @@ var_dump($sql);
         } catch (Exception $ex) {
             return FALSE;
         }
-        /**
-INSERT INTO `Pubs` (`pubId`, `doi`, `title`, `abstract`, `pubType`, `linkWeb`, `linkDownload`, `jsonRetieval`, `jsonCrossref`, `jsonArticle`, `jsonScopus`) VALUES (NULL, 'test1', 'test1', 'test1', 'test1', 'test1', 'test1', 'test1', 'test1', 'test1', 'test1'), (NULL, 'test2', 'test2', 'test2', 'test2', 'test2', 'test2', 'test2', 'test2', 'test2', 'test2');
-         */
     }
 
     public function update($pub): bool {
@@ -220,8 +216,6 @@ INSERT INTO `Pubs` (`pubId`, `doi`, `title`, `abstract`, `pubType`, `linkWeb`, `
 SQL;
 //var_dump($sql);
             $stmt = $this->connect->prepare($sql);
-            $stmt->bindValue(":pubId", $pub, PDO::PARAM_INT);
-
             $stmt->bindValue(":pubId",          $pub->getId(),              PDO::PARAM_INT);
             $stmt->bindValue(":doi",            $pub->getDoi(),             PDO::PARAM_STR);
             $stmt->bindValue(":title",          $pub->getTitle(),           PDO::PARAM_STR);
@@ -235,11 +229,6 @@ SQL;
             $stmt->bindValue(":jsonScopus",     $pub->getJsonScopus(),      PDO::PARAM_STR);
 
             $stmt->execute(); // devuelve TRUE o FALSE
-            /* if ($stmt->rowCount()) {
-                return TRUE;
-            } else {
-                return FALSE;
-            } */
             return $stmt->execute();
         } catch (Exception $ex) {
             var_dump($ex);
@@ -247,7 +236,14 @@ SQL;
         }
     }
 
-
+   /*  SELECT DISTINCT K.keyWordId, K.totem, K.contented
+    FROM Key_words K JOIN pubs_keywords P 
+    ON K.keyWordId IN ( 
+        SELECT keyWordId 
+        FROM pubs_keywords 
+        WHERE pubs_keywords.pubId = 9 AND pubs_keywords.userId = 2) 
+    ORDER BY `K`.`keyWordId` ASC
+     */
 
 }
 

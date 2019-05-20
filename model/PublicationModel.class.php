@@ -34,7 +34,7 @@ class PublicationModel {
     public function add($pub):bool {
         $result = $this->pubDAO->add($pub);
         if ($result == FALSE && empty($_SESSION['error'])) {
-            $_SESSION['error'] = UserMessage::ERR_DAO['insert'];
+            $_SESSION['error'] = PubMessage::ERR_DAO['insert'];
         }
         return $result;
     }
@@ -43,14 +43,14 @@ class PublicationModel {
         $result=$this->pubDAO->update($pub);
         // var_dump($result);
         if ($result==FALSE) {
-            $_SESSION['error']=UserMessage::ERR_DAO['update'];
+            $_SESSION['error']=PubMessage::ERR_DAO['update'];
         } 
         return $result;
     }
     public function delete($pubId):bool {
         $result=$this->pubDAO->delete($pubId);
         if ($result==FALSE) {
-            $_SESSION['error']=UserMessage::ERR_DAO['delete'];
+            $_SESSION['error']=PubMessage::ERR_DAO['delete'];
         } 
         return $result;
     }

@@ -37,6 +37,20 @@ class UserController {
                 case "search":
                     $this->searchById();
                     break;
+
+                case "to_user_form":
+                    $this->toUserForm();
+                    break;
+                case "add_user":
+                    $this->addUser();
+                    break;
+                case "delete_user":
+                    $this->deleteUser();
+                    break;
+                case "modify_user":
+                    $this->updateUser();
+                    break;
+                
                 default:
                     $this->view->display();
             }
@@ -52,22 +66,21 @@ class UserController {
     }
 
     public function login() {
-        $userValid = new User(  trim(filter_input(INPUT_POST, 'name')),
-                                trim(filter_input(INPUT_POST, 'password'))
+        $userValid = new User(  NULL,
+                                trim(filter_input(INPUT_POST, 'name')),
+                                trim(filter_input(INPUT_POST, 'password')),
+                                NULL
                             );
-        $user = $this->model->searchByName($userValid->getName());
-        $this->view->display("view/form/UserFormModify.php");
+       // var_dump($userValid);                    
+        $user = $this->model->searchValid($userValid->getName(), $userValid->getPassword());
+        $this->view->display("view/form/UserForm.php");
         
         if (!is_null($user) && ($userValid->getPassword() == $user->getPassword())) {
-              session_destroy();
             $_SESSION['name'] = $user->getName();
-        }
-        else if (  trim(filter_input(INPUT_POST, 'name')) == "admin" &&
-                    trim(filter_input(INPUT_POST, 'password')) == "admin"){
-            $_SESSION['name'] = new User('admin','admin', 22, 'admin', true);
+            $_SESSION['user'] = $user;
         }
         header("Location: index.php");
-                            
+        //$this->view->display("view/form/LoginForm.php");                    
     }
 
     public function listAll() {
@@ -83,22 +96,91 @@ class UserController {
     }
 
     public function searchById() {
+        $content = NULL;
         $userValid=UserFormValidation::checkData(UserFormValidation::SEARCH_FIELDS);
-        
+        var_dump($userValid);
         if (empty($_SESSION['error'])) {
-            $user=$this->model->searchByName($userValid->getName());
+            $user=$this->model->searchById($userValid->getId());
 
             if (!is_null($user)) {
                 $_SESSION['info']=UserMessage::INF_FORM['found'];
-                $userValid=$user;
+                $content=$user;
             }
             else {
                 $_SESSION['error']=UserMessage::ERR_FORM['not_found'];
             }
         }
-        
-        $this->view->display("view/form/UserFormModify.php", $userValid);
+        var_dump($content);
+        $this->view->display("view/form/UserForm.php", $content);
     }
+
+    public function toUserForm($content=NULL) {
+        $this->view->display("view/form/UserForm.php", $content);
+    }
+
+    public function addUser() {
+        $userValid = UserFormValidation::checkData(UserFormValidation::ADD_FIELDS); 
+
+        if (empty($_SESSION['error'])) {
+            $user = $this->model->searchById($userValid->getId());
+            if (is_null($user)) {
+                $result=$this->model->add($userValid);
+                
+                if ($result == TRUE) {
+                    $_SESSION['info']=UserMessage::INF_FORM['insert'];
+                    $userValid=NULL;
+                }
+            }
+            else {
+                $_SESSION['error']=UserMessage::ERR_FORM['exists_id'];          
+            } 
+        }
+        $this->listAll();
+    }
+
+    public function deleteUser() {
+        $content=UserFormValidation::checkData(UserFormValidation::DELETE_FIELDS);
+        
+        if (empty($_SESSION['error'])) {
+            $user=$this->model->searchById($content->getId());
+
+            if (!is_null($user)) {            
+                $result=$this->model->delete($user->getId());
+
+                if ($result == TRUE) {
+                    $_SESSION['info']=UserMessage::INF_FORM['delete'];
+                    $content=NULL;
+                }
+            }
+            else {
+                $_SESSION['error']=UserMessage::ERR_FORM['not_exists_id'];
+            }
+        }
+        
+        $this->view->display("view/form/UserForm.php",$content);
+    }
+
+    public function updateUser() {
+        $content=UserFormValidation::checkData(UserFormValidation::MODIFY_FIELDS);
+
+        if (empty($_SESSION['error'])) {
+            if (!is_null($content)) {    
+                $result=$this->model->update($content);
+
+                if ($result == TRUE) {
+                    $_SESSION['info']=UserMessage::INF_FORM['update'];
+                    $content=NULL;
+                }
+            } else {
+                $_SESSION['error']=UserMessage::ERR_FORM['not_exists_id'];
+            }
+        }
+        
+        //$this->view->display("view/form/Nano/AddForm.php");
+        $this->view->display("view/form/UserForm.php",$content);
+        
+    }
+
 
     public function logout() {
         session_destroy();
