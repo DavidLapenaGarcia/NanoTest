@@ -10,9 +10,9 @@
             ?>">
             <label>* Required fields</label>
             <input type="submit" name="action" value="by_identifier" />
-            <?php if (isset($content['result'])) { ?>
-                <input type='submit' name='action' value='DownloadPub'/>
-            <?php } ?>
+        <?php if (isset($content['result'])) { ?>
+            <input type='submit' name='action' value='download_pub'/>
+        <?php } ?>
             <input type="reset" name="reset" value="reset" />
         </fieldset>
         <p>Doi Valid: 10.1016/S0014-5793(01)03313-0</p>

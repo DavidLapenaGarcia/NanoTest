@@ -231,9 +231,9 @@ SQL;
             $stmt->execute(); // devuelve TRUE o FALSE
             return $stmt->execute();
         } catch (Exception $ex) {
-            var_dump($ex);
-            return FALSE;
+            // var_dump($ex);
         }
+            return FALSE;
     }
 
    /*  SELECT DISTINCT K.keyWordId, K.totem, K.contented

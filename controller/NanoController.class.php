@@ -123,6 +123,7 @@ class NanoController {
 
     public function listAllPubs() {
         $pubs = $this->pModel->listAll();
+        
         if (empty($_SESSION['error'])){
             if(!empty($pubs)) {
                 $_SESSION['info'] = UserMessage::INF_FORM['found'];
@@ -133,63 +134,63 @@ class NanoController {
         $this->view->display("view/form/Nano/PubsList.php", $pubs);
     }
 
-    public function toAddPub() {
+    public function toAddPub($content=NULL) {
+        
+        /* 
+        if(is_null($content)) {
+            $pub_id= trim(filter_input(INPUT_POST, 'pub_id')); 
+            $doi = trim(filter_input(INPUT_POST, 'doi'));
+            $title= trim(filter_input(INPUT_POST, 'title'));
+            $abstract= trim(filter_input(INPUT_POST, 'abstract'));
+            $authors= trim(filter_input(INPUT_POST, 'authors'));
+            $pubType= trim(filter_input(INPUT_POST, 'pubType'));
+            $linkWeb= trim(filter_input(INPUT_POST, 'linkWeb'));
+            $linkDownload= trim(filter_input(INPUT_POST, 'linkDownload'));
+            $jsonRetrieval= trim(filter_input(INPUT_POST, 'jsonRetrieval'));
+            $jsonCrossRef= trim(filter_input(INPUT_POST, 'jsonCrossRef'));
+            $jsonArticle= trim(filter_input(INPUT_POST, 'jsonArticle'));
+            $jsonScopus= trim(filter_input(INPUT_POST, 'jsonScopus'));
 
-        /* $pub_id= trim(filter_input(INPUT_POST, 'pub_id')); 
-        $doi = trim(filter_input(INPUT_POST, 'doi'));
-        $title= trim(filter_input(INPUT_POST, 'title'));;
-        $abstract= trim(filter_input(INPUT_POST, 'abstract'));;
-        $authors= trim(filter_input(INPUT_POST, 'authors'));;
-        $pubType= trim(filter_input(INPUT_POST, 'pubType'));;
-        $linkWeb= trim(filter_input(INPUT_POST, 'linkWeb'));;
-        $linkDownload= trim(filter_input(INPUT_POST, 'linkDownload'));;
-        $jsonRetrieval= trim(filter_input(INPUT_POST, 'jsonRetrieval'));;
-        $jsonCrossRef= trim(filter_input(INPUT_POST, 'jsonCrossRef'));;
-        $jsonArticle= trim(filter_input(INPUT_POST, 'jsonArticle'));;
-        $jsonScopus= trim(filter_input(INPUT_POST, 'jsonScopus'));;
-
-        $content = array(
-            "pub_id" =>$pub_id,               
-            "doi" => $doi ,
-            "title" => $title,
-            "abstract" => $abstract,
-            "authors" => $authors,
-            "pubType" => $pubType,
-            "linkWeb" => $linkWeb,
-            "linkDownload" => $linkDownload,
-            "jsonRetrieval" => $jsonRetrieval,
-            "jsonCrossRef" => $jsonCrossRef,
-            "jsonArticle" => $jsonArticle,
-            "jsonScopus" => $jsonScopus
-        ); */
+            $content = array(
+                "pub_id" =>$pub_id,               
+                "doi" => $doi ,
+                "title" => $title,
+                "abstract" => $abstract,
+                "authors" => $authors,
+                "pubType" => $pubType,
+                "linkWeb" => $linkWeb,
+                "linkDownload" => $linkDownload,
+                "jsonRetrieval" => $jsonRetrieval,
+                "jsonCrossRef" => $jsonCrossRef,
+                "jsonArticle" => $jsonArticle,
+                "jsonScopus" => $jsonScopus
+            );
+        }   */
         $this->view->display("view/form/Nano/AddForm.php", $content);
     }
 
     public function searchByDoi() {
-        $content=PubFormValidation::checkData(PubFormValidation::SEARCH_FIELDS);
+        $pubValid=PubFormValidation::checkData(PubFormValidation::SEARCH_FIELDS);
         
         if (empty($_SESSION['error'])) {
-            $pub=$this->pModel->search($content->getDoi());
+            $pub=$this->pModel->search($pubValid->getDoi());
 
             if (!is_null($pub)) {
                 $_SESSION['info']=PubMessage::INF_FORM['found'];
                 // ADD AUTHORS, KEYSW
-                $content=$pub;
+                $pubValid=$pub;
             }
             else {
                 $_SESSION['error']=PubMessage::ERR_FORM['not_found'];
             }
         }
-        
-        $this->view->display("view/form/Nano/AddForm.php", $content);
+        $this->toAddPub($pubValid);
     }
 
-    public function addPub() {
-        
+    public function addPub() { 
         $pubValid = PubFormValidation::checkData(PubFormValidation::ADD_FIELDS); 
         if (empty($_SESSION['error'])) {
             $pub = $this->pModel->search($pubValid->getDoi());
-            
 
             if (is_null($pub)) {
                 $result=$this->pModel->add($pubValid);
@@ -204,7 +205,7 @@ class NanoController {
             } 
         }
         $pubValid = $pubValid;
-        $this->view->display("view/form/Nano/AddForm.php", $pubValid);
+        $this->toAddPub($pubValid);
     }
 
     public function deletePub() {
@@ -225,10 +226,7 @@ class NanoController {
                 $_SESSION['error']=PubMessage::ERR_FORM['not_exists_doi'];
             }
         }
-        
-        //$this->view->display("view/form/Nano/AddForm.php");
-        $this->listAllPubs();
-        
+        $this->toAddPub($pubValid);
     }
 
     public function updatePub() {
@@ -239,21 +237,24 @@ class NanoController {
                 $result=$this->pModel->update($pubValid);
 
                 if ($result == TRUE) {
-                    $_SESSION['info']=PubMessage::INF_FORM['delete'];
+                    $_SESSION['info']=PubMessage::INF_FORM['update'];
                     $pubValid=NULL;
                 }
             } else {
                 $_SESSION['error']=PubMessage::ERR_FORM['not_exists_id'];
             }
         }
-        
-        //$this->view->display("view/form/Nano/AddForm.php");
-        $this->listAllPubs();
-        
+        $this->toAddPub($pubValid);
     }
 
 
 
+
+
+
+
+
+    
 
 
     public function listAllKeys() {

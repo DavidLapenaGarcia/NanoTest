@@ -77,7 +77,7 @@ class UserController {
         
         if (!is_null($user) && ($userValid->getPassword() == $user->getPassword())) {
             $_SESSION['name'] = $user->getName();
-            $_SESSION['user'] = $user;
+            $_SESSION['user'] = serialize($user);
         }
         header("Location: index.php");
         //$this->view->display("view/form/LoginForm.php");                    

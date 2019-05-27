@@ -21,6 +21,7 @@ class DownloadApi {
         if(is_null($searchAs)){
             $searchAs = "doi"; 
         }
+
         $rAbstractRetrieval = $this->elsevier->abstractRetrieval($toSearch, $searchAs);
         $rArticleRetrieval = $this->elsevier->articleRetrieval($toSearch);
         $rCrossref = $this->crossref->getData($toSearch, $searchAs);
@@ -38,35 +39,41 @@ class DownloadApi {
 
 
     public function byAbstract($toSearch) {
-        $scopusAbstract = $this->elsevier->scopusAbstract($toSearch);
 
-        if(!is_null($scopusAbstract)){
-            $doi = $scopusAbstract["search-results"]["entry"][0]["prism:doi"];
-            // TODO Validate doi
-            $pub = $this->byIdentifier($doi);
-            return  $pub;
+        $scopusJson = $this->elsevier->scopusAbstract($toSearch);
+
+        $result = $this->makePubsFromScopus($scopusJson);
+
+        return $result;
+
+        
+    }
+
+    public function byAuthor($auid=NULL, $name=NULL, $surname=NULL, $afid=NULL, $city=NULL, $country=NULL) {
+
+        $scopusJson = $this->elsevier->scopusAuthor($auid, $name, $surname, $afid, $city, $country);
+
+        $result = $this->makePubsFromScopus($scopusJson);
+
+        return $result;
+
+    }
+
+    private function makePubsFromScopus($scopusJson) {
+        $result = NULL;
+        if(!is_null($scopusJson)){
+            $pubs = array();
+            foreach($scopusJson["search-results"]["entry"] as $sJ) {
+                $doi = $sJ["prism:doi"];
+                $pub = $this->byIdentifier($doi);
+                array_push($pubs, $pub);
+            }
+            $result = $pubs;
         }else {
             array_push($_SESSION['error'], "Fail on DownloadAPI / byAbstract");
-            return NULL;
         }
+        return $result;
     }
-    public function byAuthor($auid=NULL, $name=NULL, $surname=NULL, $afid=NULL, $city=NULL, $country=NULL) {
-        $scopusAbstract = $this->elsevier->scopusAuthor($auid, $name, $surname, $afid, $city, $country);
-        if(!is_null($scopusAbstract)){
-            /**
-            * toSearch example:
-            * doi = $scopusAbstract["search-results"]["entry"][0]["prism:doi"];
-            * TODO Validate doi
-            * $pub = $this->byIdentifier($doi);
-            **/
-            
-            return  $pubs;
-        }else {
-            array_push($_SESSION['error'], "Fail on DownloadAPI / scopusAuthor");
-            return NULL;
-        }
-    }
-    
     
     private function makePublication($rAbstractRetrieval,$rArticleRetrieval, $rCrossref, $rScopusSearch) {
 
@@ -89,9 +96,12 @@ class DownloadApi {
         } 
 
         if (!is_null($rArticleRetrieval)){ 
+//var_dump($rArticleRetrieval);
             $pub->setAbstract($rArticleRetrieval["full-text-retrieval-response"]["coredata"]["dc:description"]);
             $pub->setJsonArticle($rArticleRetrieval);
         } else {
+            $pub->setAbstract(NULL);
+            $pub->setJsonArticle(NULL);
             array_push($_SESSION['error'], "Fail on DownloadAPI / makePublication / rArticleRetrieval /");           
         }
 

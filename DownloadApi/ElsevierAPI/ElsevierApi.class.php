@@ -47,7 +47,7 @@ class ElsevierApi {
 
     public function scopusAbstract($toSearch) {
         $result = $this->elsevier->getScopusSearchAbstract($toSearch);
-
+        
         if(!is_null($result)){
             return  $result;
         }else {

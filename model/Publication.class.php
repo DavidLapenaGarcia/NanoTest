@@ -1,5 +1,7 @@
 <?php
 
+require_once "model/Keyword.class.php";
+
 class Publication {
     
     public $pubId;
@@ -132,7 +134,7 @@ class Publication {
     }
 
     public function getKeywords() {
-        return $this->kaywords;
+        return $this->keywords;
     }
     public function setKeywords($keywords) {
         $this->keywords=$keywords;

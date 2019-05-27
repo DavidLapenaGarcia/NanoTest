@@ -56,10 +56,11 @@ class PubMessage {
 
     const ERR_DAO =
         array(
+            'not_found' => 'Error not found',
             'insert' => 'Error inserting data',
             'update' => 'Error updating data',
             'delete' => 'Error deleting data',
-            'used'   => 'No data deleted, Category in use',
+            'used'   => 'Can not be deleted',
             '' => ''
         );
     

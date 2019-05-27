@@ -64,4 +64,76 @@
 
         </fieldset>
     </form>
+    <div>
+<?php
+    if (isset($content)) {
+                    echo <<<EOT
+                <table>
+                        <tr>
+                                <td>ID</td>
+                                <td>{$content->getId()}</td>
+                        </tr>
+                        <tr>
+                                <td>Doi</td>
+                                <td>{$content->getDoi()}</td>
+                        </tr>
+                        <tr>
+                                <td>Title</td>
+                                <td>{$content->getTitle()}</td>
+                        </tr>
+                        <tr>
+                                <td>Abstract</td>
+                                <td>{$content->getAbstract()}</td>
+                        </tr>
+                        <tr>
+                                <td>PubType</td>
+                                <td>{$content->getPubType()}</td>
+                        </tr>
+                        <tr>
+                                <td>LinkWeb</td>
+                                <td>{$content->getLinkWeb()}</td>
+                        </tr>
+                        <tr>
+                                <td>Crossref</td>
+                                <td>{$content->getJsonCrossref()}</td>
+                        </tr>
+                        <tr>
+                                <td>Article</td>
+                                <td>{$content->getJsonArticle()}</td>
+                        </tr>
+                        <tr>
+                                <td>Scopus</td>
+                                <td>{$content->getJsonScopus()}</td>
+                        </tr>
+                        <tr>
+                                <td>JsonRetieval</td>
+                                <td>{$content->getJsonRetieval()}</td>
+                        </tr>
+                </table>
+                <label>KEYWORDS: </label>
+                <table>
+EOT;
+   
+                if( !is_null($content->getKeywords()) ) {
+                       
+                        foreach ($content->getKeywords() as $key) {
+                                echo <<<EOT
+                                <tr>
+                                        <td>Totem</td>
+                                        <td>{$key->getTotem()}</td>
+                                </tr>
+                                <tr>
+                                        <td>Contented</td>
+                                        <td>{$key->getContented()}</td>
+                                </tr>    
+EOT;
+                        }
+                }else{
+                        echo "Have not keyword";
+                }
+                echo "</table>";
+    }
+?>
+    </div>
+    
 </div>

@@ -53,7 +53,10 @@ class ElsevierDAO  {
         $query = $api . $toSearch;
 
         $result = (new ConnectElsevier())->askJson($query);
-
+        if ( array_key_exists( "service-error", $result ) ) {
+         
+            $result=NULL;
+        }
         return $result;
         // There must no to use urlencode() to the $toSearch attribute:
         //Bad:   https://api.elsevier.com/content/article/doi/10.1016%2FS0014-5793%2801%2903313-0?apiKey=8932ae370b77efdfd90cbe1e78f27211

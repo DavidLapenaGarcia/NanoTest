@@ -1,13 +1,14 @@
 <?php
 
 require_once "model/persist/PublicationDAO.class.php";
-
+require_once "model/persist/PublicationKeywordsDAO.class.php";
 class PublicationModel {
 
     private $pubDAO;
 
     public function __construct() {
-        $this->pubDAO=PublicationDAO::getInstance();        
+        $this->pubDAO=PublicationDAO::getInstance();
+        $this->pubKeysDAO=PublicationKeywordsDAO::getInstance();          
     }
 
 
@@ -17,10 +18,22 @@ class PublicationModel {
     }
 
     public function search($doi) {
-        /* var_dump('<br/>PubDAO:::update::<br/>');
-        var_dump($pub);
-        var_dump('<br/><br/>'); */
         $result = $this->pubDAO->searchByDoi($doi);
+
+        if( !is_null($result) ) {
+            if($this->pubKeysDAO->isKeys($result->getId())) {
+                var_dump('<br/>1<br/>');
+                $keys = $this->pubKeysDAO->getAllByPubId($result->getId());
+            }else{
+                var_dump('<br/>2<br/>');
+                $keys = NULL;
+            }
+            var_dump($keys);
+            $result->setKeywords($keys);
+
+        }else{
+            $_SESSION['error']=PubMessage::ERR_DAO['not_found']; 
+        }
         return $result;
     }
 

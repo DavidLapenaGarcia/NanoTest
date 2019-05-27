@@ -48,7 +48,7 @@ class DownloadController {
                         $this->byAuthor();
                     break;
                 
-                case "download":
+                case "download_pub":
                         $this->download();
                 default:
                     $this->view->display();
@@ -99,13 +99,14 @@ class DownloadController {
         );
         $this->view->display("view/form/Download/AbstractForm.php", $content);
     }
+
     public function byAbstract() {
         //TODO: validations
 
         $abstract = trim(filter_input(INPUT_POST, 'abstract'));
         $content = array("abstract" => $abstract);
         $result = $this->dAPI->byAbstract($abstract);
-
+      //  var_dump($result);
         if(!is_null($result)) {
             $_SESSION['publication'] = $result;
             $content = array_merge($content, array("result"=>$result));
@@ -169,7 +170,12 @@ class DownloadController {
     }
 
     public function download() {
-        $this->view->display("view/form/Nano/Downloading.php", $content);
+        $toSearch = trim(filter_input(INPUT_POST, 'to-search'));
+        $searchAs = "doi";
+        $pub = $this->dAPI->byIdentifier($toSearch, $searchAs);
+
+        
+
     }
 
 
