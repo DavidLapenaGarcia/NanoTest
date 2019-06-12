@@ -17,7 +17,7 @@ EOT;
                     echo <<<EOT
                         <tr>
                             <td>{$user->getId()}</td>
-                            <td>{$user->getName()}</td>
+                            <td>{$user->getFirstName()}</td>
                             <td>{$user->getPassword()}</td>                        
                             <td>{$user->getMail()}</td>
                             <td>

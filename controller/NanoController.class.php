@@ -88,9 +88,10 @@ class NanoController {
                 case "list_all_keys":
                     $this->listAllKeys();
                 break;
+                
                 case "to_key_form":
                     $this->toKeyForm();
-                    break;
+                break;
                 case "add_key":
                     $this->addKey();
                     break;
@@ -268,8 +269,9 @@ class NanoController {
         }
         $this->view->display("view/form/Nano/KeysList.php", $keyws);
     }
+    
     public function toKeyForm() {
-
+        $content = null;
         /* 
         $pub_id= trim(filter_input(INPUT_POST, 'pub_id')); 
         $doi = trim(filter_input(INPUT_POST, 'doi'));

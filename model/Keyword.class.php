@@ -41,5 +41,14 @@ class Keyword {
         $this->contented
         );
     }
+
+    public function jsonSerialize() {
+        return [
+            'keyWordId' =>  $this->keyWordId,
+            'totem' =>  $this->totem,
+            'contented' =>  $this->contented
+        ];
+    }
+    
     
 }

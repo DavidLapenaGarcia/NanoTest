@@ -2,8 +2,8 @@
     <form method="post" action="">
         <fieldset>
             <legend>Login</legend>
-            <label>User *:</label>
-            <input type="text" placeholder="Name" name="name" value="" />
+            <label>User Mail *:</label>
+            <input type="text" placeholder="Mail" name="mail" value="" />
             <label>Password *:</label>
             <input type="password" placeholder="Password" name="password" value="" />
 

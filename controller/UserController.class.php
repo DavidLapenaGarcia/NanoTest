@@ -66,21 +66,20 @@ class UserController {
     }
 
     public function login() {
-        $userValid = new User(  NULL,
-                                trim(filter_input(INPUT_POST, 'name')),
+        $userValid = new User(  0,
+                                trim(filter_input(INPUT_POST, 'mail')),
                                 trim(filter_input(INPUT_POST, 'password')),
                                 NULL
-                            );
-       // var_dump($userValid);                    
-        $user = $this->model->searchValid($userValid->getName(), $userValid->getPassword());
+                            );           
+        $user = $this->model->searchValid($userValid->getMail(), $userValid->getPassword());
         $this->view->display("view/form/UserForm.php");
         
         if (!is_null($user) && ($userValid->getPassword() == $user->getPassword())) {
-            $_SESSION['name'] = $user->getName();
+            $_SESSION['name'] = $user->getFirstname();
             $_SESSION['user'] = serialize($user);
         }
         header("Location: index.php");
-        //$this->view->display("view/form/LoginForm.php");                    
+        // $this->view->display("view/form/LoginForm.php");                    
     }
 
     public function listAll() {

@@ -28,6 +28,10 @@ class MainController {
                 $controlLogin = new NanoController();
                 $controlLogin->processRequest();
                 break;
+            case "nanoProbes":
+                $controlLogin = new NanoController();
+                $controlLogin->processRequest();
+                break;
             default:
                 $controlLogin = new UserController();
                 $controlLogin->processRequest();

@@ -146,7 +146,7 @@ class Publication {
             $this->doi,
             $this->title,
             $this->abstract,
-            $this->authors,
+            $this->author,
             $this->pubType,
             $this->linkWeb,
             $this->linkDownload,
@@ -156,5 +156,26 @@ class Publication {
             $this->jsonScopus
         );
     }
+
+    public function jsonSerialize() {
+        return [
+            'pubId' =>  $this->pubId,
+            'doi' =>  $this->doi,
+            'title' =>  $this->title,
+            'abstract' =>  $this->abstract,
+            'author' =>  $this->author,
+            'pubType' =>  $this->pubType,
+            'linkWeb' =>  $this->linkWeb,
+            'linkDownload' =>  $this->linkDownload,
+            'jsonRetieval' =>  $this->jsonRetieval,
+            'jsonCrossref' =>  $this->jsonCrossref,
+            'jsonArticle' =>  $this->jsonArticle,
+            'jsonScopus' =>  $this->jsonScopus,
+
+            'authors' =>  $this->authors.jsonSerialize(),
+            'keywords' =>  $this->keywords.jsonSerialize(),
+        ];
+    }
+
     
 }

@@ -1,7 +1,7 @@
 <?php
 
 require_once "view/DownloadView.class.php";
-require_once "DownloadApi/DownloadApi.class.php";
+require_once "DownloadElsevier/DownloadElsevier.class.php";
 require_once "util/DownloadMessage.class.php";
 
 class DownloadController {
@@ -10,7 +10,7 @@ class DownloadController {
 
     public function __construct() {
         $this->view = new DownloadView();
-        $this->dAPI = new DownloadApi();
+        $this->dAPI = new DownloadElsevier();
     }
     public function processRequest() {
 

@@ -39,12 +39,10 @@ class UserModel {
         return $result;
     }
     
-    public function searchValid($name, $password) {
-        $result = $this->dataUser->searchName($name);
+    public function searchValid($mail, $password) {
+        $result = $this->dataUser->searchMail($mail);
         if (!is_null($result)) {
-            $result = $this->dataUser->searchValid($name, $password);
-            /* var_dump('<br/>');
-            var_dump($result); */
+            $result = $this->dataUser->searchValid($mail, $password);
             if(is_null($result)){
                 $_SESSION['error']=UserMessage::ERR_DAO['invalid_password'];
             } 

@@ -3,7 +3,7 @@ require_once "ElsevierAPI/ElsevierApi.class.php";
 require_once "model/Publication.class.php";
 require_once "CrossrefAPI/CrossrefApi.class.php";
 
-class DownloadApi {
+class DownloadElsevier {
 
     private $elsevier;
     private $crossref;
@@ -32,7 +32,7 @@ class DownloadApi {
         if( !is_null($pub) ) {
             return $pub;
         } else {
-            array_push($_SESSION['error'], "Fail on DownloadAPI / byIdentifier");
+            array_push($_SESSION['error'], "Fail on DownloadElsevier / byIdentifier");
             return NULL;
         }
     }
@@ -70,7 +70,7 @@ class DownloadApi {
             }
             $result = $pubs;
         }else {
-            array_push($_SESSION['error'], "Fail on DownloadAPI / byAbstract");
+            array_push($_SESSION['error'], "Fail on DownloadElsevier / byAbstract");
         }
         return $result;
     }
@@ -85,14 +85,14 @@ class DownloadApi {
             $pub->setLinkWeb($rAbstractRetrieval["abstracts-retrieval-response"]["coredata"]["link"][1]["@href"]);
             $pub->setJsonRetieval($rAbstractRetrieval);
         } else {
-            array_push($_SESSION['error'], "Fail on DownloadAPI / makePublication / rAbstractRetrieval /");            
+            array_push($_SESSION['error'], "Fail on DownloadElsevier / makePublication / rAbstractRetrieval /");            
         } 
         
         if (!is_null($rScopusSearch)){  
             $pub->setPubType($rScopusSearch["search-results"]["entry"][0]["subtypeDescription"]);
             $pub->setJsonScopus($rScopusSearch);
         } else {
-            array_push($_SESSION['error'], "Fail on DownloadAPI / makePublication / ScopusSearch /");            
+            array_push($_SESSION['error'], "Fail on DownloadElsevier / makePublication / ScopusSearch /");            
         } 
 
         if (!is_null($rArticleRetrieval)){ 
@@ -102,14 +102,14 @@ class DownloadApi {
         } else {
             $pub->setAbstract(NULL);
             $pub->setJsonArticle(NULL);
-            array_push($_SESSION['error'], "Fail on DownloadAPI / makePublication / rArticleRetrieval /");           
+            array_push($_SESSION['error'], "Fail on DownloadElsevier / makePublication / rArticleRetrieval /");           
         }
 
         if (!is_null($rCrossref)){  
             $pub->setAuthors($rCrossref["author"]);
             $pub->setJsonCrossref($rCrossref);
         } else {
-            array_push($_SESSION['error'], "Fail on DownloadAPI / rCrossref /");
+            array_push($_SESSION['error'], "Fail on DownloadElsevier / rCrossref /");
         }
 
         return  $pub;

@@ -26,12 +26,13 @@ class UserDbDAO  {
 
         try {
             $sql = <<<SQL
-                INSERT INTO Users (userId, name,password, mail)
-                    VALUES (NULL, :name,:password, :mail);
+                INSERT INTO Users 
+                (userId, mail, password, firstname, surname, auid, initials, country, institutionName)
+                VALUES (NULL, :mail, :password, :firstname, :surname, :auid, :initials, :country, :institutionName);
 SQL;
 
             $stmt = $this->connect->prepare($sql);
-            $stmt->bindValue(":name", $user->getName(), PDO::PARAM_STR);
+            $stmt->bindValue(":firstname", $user->getName(), PDO::PARAM_STR);
             $stmt->bindValue(":password", $user->getPassword(), PDO::PARAM_STR);
             $stmt->bindValue(":mail", $user->getMail(), PDO::PARAM_STR);
 
@@ -58,7 +59,8 @@ SQL;
 
         try {
             $sql = <<<SQL
-                SELECT userId,name,password,mail FROM Users;
+                SELECT userId, mail, password, firstname, surname, auid, initials, country, institutionName
+                FROM Users;
 SQL;
 
             $stmt = $this->connect->query($sql); 
@@ -136,7 +138,8 @@ var_dump($sql);
 
         try {
             $sql = <<<SQL
-                SELECT userId, name, password, mail FROM Users WHERE userId=:userId;
+                SELECT userId, mail, password, firstname, surname, auid, initials, country, institutionName
+                FROM Users WHERE userId=:userId;
 SQL;
 
             $stmt = $this->connect->prepare($sql);
@@ -155,7 +158,7 @@ SQL;
         }
     }
 
-    public function searchName($name) {
+    public function searchMail($mail) {
         if ($this->connect == NULL) {
             $_SESSION['error'] = "Unable to connect to database";
             return NULL;
@@ -163,12 +166,13 @@ SQL;
 
         try {
             $sql = <<<SQL
-                SELECT * FROM Users 
-                WHERE name=:name;
+                SELECT userId, mail, password, firstname, surname, auid, initials, country, institutionName
+                FROM Users 
+                WHERE mail=:mail;
 SQL;
 
             $stmt = $this->connect->prepare($sql);
-            $stmt->bindParam(":name", $name, PDO::PARAM_STR);
+            $stmt->bindParam(":mail", $mail, PDO::PARAM_STR);
 
             $stmt->execute();
 
@@ -183,7 +187,7 @@ SQL;
         }
     }
 
-    public function searchValid($name, $password) {
+    public function searchValid($mail, $password) {
         if ($this->connect == NULL) {
             $_SESSION['error'] = "Unable to connect to database";
             return NULL;
@@ -191,12 +195,13 @@ SQL;
 
         try {
             $sql = <<<SQL
-                SELECT userId, name, password, mail FROM Users 
-                WHERE name=:name AND password=:password;
+                SELECT  userId, mail, password, firstname, surname, auid, initials, country, institutionName
+                FROM Users 
+                WHERE mail=:mail AND password=:password;
 SQL;
 
             $stmt = $this->connect->prepare($sql);
-            $stmt->bindParam(":name",       $name, PDO::PARAM_STR);
+            $stmt->bindParam(":mail",       $mail, PDO::PARAM_STR);
             $stmt->bindParam(":password",   $password, PDO::PARAM_STR);
 
             $stmt->execute();

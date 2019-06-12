@@ -22,10 +22,8 @@ class PublicationModel {
 
         if( !is_null($result) ) {
             if($this->pubKeysDAO->isKeys($result->getId())) {
-                var_dump('<br/>1<br/>');
                 $keys = $this->pubKeysDAO->getAllByPubId($result->getId());
             }else{
-                var_dump('<br/>2<br/>');
                 $keys = NULL;
             }
             var_dump($keys);

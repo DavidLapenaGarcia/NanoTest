@@ -1,5 +1,5 @@
 <?php
-require_once "DownloadApi/ElsevierAPI/persist/ConnectElsevier.class.php";
+require_once "DownloadElsevier/ElsevierAPI/persist/ConnectElsevier.class.php";
 
 class ElsevierDAO  {
     

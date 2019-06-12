@@ -1,0 +1,17 @@
+RewriteEngine On
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+
+#Rules working as web service:
+# amb GET - list all
+# amb POST - insert
+# amb PUT - update
+RewriteRule ^([a-zA-Z]+)/?$ service.php?object=$1
+# amb GET - search by id
+# amb DELETE - delete
+RewriteRule ^([a-zA-Z_]+)/(([0-9])+)/?$ service.php?object=$1&id=$2
