@@ -17,12 +17,19 @@ class PublicationKeywordsDAO  {
         return self::$instance;
     }
 
-    public function isKeys($pubId): bool {
+    public function isKeys($pubId, $userId=NULL): bool {
         if ($this->connect == NULL) {
             $_SESSION['error'] = "Unable to connect to database";
             return $result;
         }
 
+        if(!is_null($userId)) {
+            $userId = unserialize($_SESSION['user'])->getId(); 
+        }
+
+        if(!is_string($pubId)){
+            $pubId = strval($pubId);
+        }
         try {
             $sql = <<<SQL
                SELECT * FROM pubs_keywords WHERE pubId =:pubId AND userId = :userId;
@@ -39,16 +46,19 @@ SQL;
             }
 
         } catch (PDOException $e) {
-            var_dump($e);
+            //var_dump($e);
             return FALSE;
         }
         return FALSE;
     }
 
 
-    public function getAllByPubId($pubId) {
+    public function getAllByPubId($pubId, $userId=NULL) {
         $result = array();
-        $userId = unserialize($_SESSION['user'])->getId();
+        if(!is_null($userId)) {
+           $userId = unserialize($_SESSION['user'])->getId(); 
+        }
+        
         //var_dump($pubId);
         if ($this->connect == NULL) {
             $_SESSION['error'] = "Unable to connect to database";
@@ -77,7 +87,7 @@ SQL;
             }
 
         } catch (PDOException $e) {
-            var_dump($e);
+            //mp($e);
         }
         return $result;
     }

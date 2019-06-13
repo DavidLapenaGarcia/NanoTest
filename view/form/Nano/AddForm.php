@@ -1,7 +1,7 @@
 <div id="content">
 <?php 
         if (isset($content)) { 
-                // var_dump($content);
+                //var_dump($content);
         } 
 ?>
     <form method="post" action="">

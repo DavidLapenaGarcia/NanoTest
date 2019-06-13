@@ -106,7 +106,7 @@ class DownloadController {
         $abstract = trim(filter_input(INPUT_POST, 'abstract'));
         $content = array("abstract" => $abstract);
         $result = $this->dAPI->byAbstract($abstract);
-      //  var_dump($result);
+      //var_dump($result);
         if(!is_null($result)) {
             $_SESSION['publication'] = $result;
             $content = array_merge($content, array("result"=>$result));

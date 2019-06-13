@@ -17,6 +17,26 @@ class PublicationModel {
         return $pubs;
     }
 
+    public function listUserPubs($userId = null):array {
+        if ($userId == null) {
+            $userId = unserialize($_SESSION['user'])->getId();
+        }
+        $pubs = $this->pubDAO->listUserPubs($userId);
+        if(!is_null($pubs)){
+
+            foreach($pubs as $pub) {
+                if( $this->pubKeysDAO->isKeys($pub->getId(), $userId)) {
+                    //var_dump('3aa');
+                    $keys = $this->pubKeysDAO->getAllByPubId($pub->getId(), $userId);
+                }else{
+                    $keys = NULL;
+                }
+                $pub->setKeywords($keys);
+            }  
+        }
+        return $pubs;
+    }
+
     public function search($doi) {
         $result = $this->pubDAO->searchByDoi($doi);
 
@@ -26,7 +46,6 @@ class PublicationModel {
             }else{
                 $keys = NULL;
             }
-            var_dump($keys);
             $result->setKeywords($keys);
 
         }else{

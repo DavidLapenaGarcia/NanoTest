@@ -97,7 +97,7 @@ class UserController {
     public function searchById() {
         $content = NULL;
         $userValid=UserFormValidation::checkData(UserFormValidation::SEARCH_FIELDS);
-        var_dump($userValid);
+        //var_dump($userValid);
         if (empty($_SESSION['error'])) {
             $user=$this->model->searchById($userValid->getId());
 
@@ -109,7 +109,7 @@ class UserController {
                 $_SESSION['error']=UserMessage::ERR_FORM['not_found'];
             }
         }
-        var_dump($content);
+        //var_dump($content);
         $this->view->display("view/form/UserForm.php", $content);
     }
 

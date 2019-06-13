@@ -99,8 +99,8 @@ SQL;
     }
 
     public function update($user): bool {
-        var_dump($user);
-        var_dump("<br/>");
+        //var_dump($user);
+        //var_dump("<br/>");
         if ($this->connect == NULL) {
             $_SESSION['error'] = "Unable to connect to database";
             return FALSE;
@@ -110,7 +110,7 @@ SQL;
                 UPDATE Users SET name=:name,   password=:password,  mail=:mail
                             WHERE userId=:userId;
 SQL;
-var_dump($sql);
+//var_dump($sql);
             $stmt = $this->connect->prepare($sql);
             $stmt->bindValue(":userId",     $user->getId(),         PDO::PARAM_INT);
             $stmt->bindValue(":name",       $user->getName(),       PDO::PARAM_STR);
@@ -125,7 +125,7 @@ var_dump($sql);
             } */
             return $stmt->execute();
         } catch (Exception $ex) {
-            var_dump($ex);
+            //var_dump($ex);
             return FALSE;
         }
     }

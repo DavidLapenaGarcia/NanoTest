@@ -44,6 +44,45 @@ SQL;
         return $result;
     }
 
+    public function listUserPubs($userId = NULL): array {
+        $result = array();
+        
+        if ($userId == null) {
+            $userId = unserialize($_SESSION['user'])->getId();
+        }
+
+        if ($this->connect == NULL) {
+            $_SESSION['error'] = "Unable to connect to database";
+            return $result;
+        };
+
+        try {
+            $sql = <<<SQL
+            SELECT DISTINCT Pubs . pubId , Pubs . doi, Pubs . title, Pubs . abstract, 
+                            Pubs . pubType, Pubs . linkWeb, Pubs . linkDownload,
+                            Pubs . jsonRetieval, Pubs . jsonCrossref, Pubs . jsonArticle, Pubs . jsonScopus
+            FROM Pubs JOIN pubs_keywords 
+            ON Pubs . pubId IN ( 
+                SELECT pubId 
+                FROM pubs_keywords 
+                WHERE pubs_keywords.userId = :userId
+                ) 
+            ORDER BY Pubs.pubId ASC;
+SQL;
+            $stmt = $this->connect->prepare($sql);
+            $stmt->bindParam(":userId", $userId,    PDO::PARAM_STR);    
+            $stmt->execute();
+
+            if ($stmt->rowCount()) {
+                $stmt->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Publication');
+                return $stmt->fetchAll();
+            }
+
+        } catch (PDOException $e) {
+        }
+        return $result;
+    }
+
 
     public function searchByDoi($doi) {
         if ($this->connect == NULL) {

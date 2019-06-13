@@ -8,25 +8,24 @@ class ServiceMainController {
         switch ($requestObject) {
             case "publication":
             //http://10.0.2.15/nanoTest/service.php?object=publication&option=list/list
-                var_dump('ServiceMainController/publication');
                 $controlServicePublication = new ServicePublicationController();
                 $controlServicePublication->processRequest();
                 break;
 
             case "search":
-                var_dump('ServiceMainController/search');
+                //var_dump('ServiceMainController/search');
                 $controlServicePublication = new ServicePublicationController();
                 $controlServicePublication->processRedquest();
                 break;
 
             case "users":
-                var_dump('ServiceMainController/users');
+                //var_dump('ServiceMainController/users');
                 $controlServicePublication = new ServicePublicationController();
                 $controlServicePublication->processRedquest();
                 break;
                 
             default:
-                var_dump('ServiceMainController/default');
+                //var_dump('ServiceMainController/default');
                 $controlServicePublication = new ServicePublicationController();
                 $controlServicePublication->processRequest();
                 break;

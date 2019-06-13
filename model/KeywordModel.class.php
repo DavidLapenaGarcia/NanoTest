@@ -22,9 +22,9 @@ class KeywordModel {
     }
 
     public function search($id) {
-        /* var_dump('<br/>PubDAO:::update::<br/>');
-        var_dump($pub);
-        var_dump('<br/><br/>'); */
+        /*var_dump('<br/>PubDAO:::update::<br/>');
+        //var_dump($pub);
+        //var_dump('<br/><br/>'); */
         $result = $this->keyDAO->searchById($id);
         return $result;
     }
@@ -46,7 +46,7 @@ class KeywordModel {
     
     public function update($keyw):bool {
         $result=$this->keyDAO->update($keyw);
-        // var_dump($result);
+        //var_dump($result);
         if ($result==FALSE) {
             $_SESSION['error']=KeyMessage::ERR_DAO['update'];
         } 

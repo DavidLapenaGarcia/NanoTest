@@ -39,6 +39,9 @@ class NanoController {
                 case "list_all":
                     $this->listAllPubs();
                     break;
+                case "list_all_user":
+                    $this->listUserPubs(); // !! change to all
+                    break;
                 case "add_pub_form":
                     $this->toAddPub();
                     break;
@@ -135,38 +138,24 @@ class NanoController {
         $this->view->display("view/form/Nano/PubsList.php", $pubs);
     }
 
-    public function toAddPub($content=NULL) {
-        
-        /* 
-        if(is_null($content)) {
-            $pub_id= trim(filter_input(INPUT_POST, 'pub_id')); 
-            $doi = trim(filter_input(INPUT_POST, 'doi'));
-            $title= trim(filter_input(INPUT_POST, 'title'));
-            $abstract= trim(filter_input(INPUT_POST, 'abstract'));
-            $authors= trim(filter_input(INPUT_POST, 'authors'));
-            $pubType= trim(filter_input(INPUT_POST, 'pubType'));
-            $linkWeb= trim(filter_input(INPUT_POST, 'linkWeb'));
-            $linkDownload= trim(filter_input(INPUT_POST, 'linkDownload'));
-            $jsonRetrieval= trim(filter_input(INPUT_POST, 'jsonRetrieval'));
-            $jsonCrossRef= trim(filter_input(INPUT_POST, 'jsonCrossRef'));
-            $jsonArticle= trim(filter_input(INPUT_POST, 'jsonArticle'));
-            $jsonScopus= trim(filter_input(INPUT_POST, 'jsonScopus'));
+    public function listUserPubs($userId=NULL) {
+        $userId = null;
+        if ($userId == null) {
+            $userId = unserialize($_SESSION['user'])->getId();
+        }
+        $pubs = $this->pModel->listUserPubs($userId);
+        if (empty($_SESSION['error'])){
+            if(!empty($pubs)) {
+                $_SESSION['info'] = UserMessage::INF_FORM['found'];
+            }else{
+                $_SESSION['info'] = UserMessage::ERR_FORM['not_found'];
+            }
+        }
+        $this->view->display("view/form/Nano/PubsList.php", $pubs);
+    }
 
-            $content = array(
-                "pub_id" =>$pub_id,               
-                "doi" => $doi ,
-                "title" => $title,
-                "abstract" => $abstract,
-                "authors" => $authors,
-                "pubType" => $pubType,
-                "linkWeb" => $linkWeb,
-                "linkDownload" => $linkDownload,
-                "jsonRetrieval" => $jsonRetrieval,
-                "jsonCrossRef" => $jsonCrossRef,
-                "jsonArticle" => $jsonArticle,
-                "jsonScopus" => $jsonScopus
-            );
-        }   */
+    public function toAddPub($content=NULL) {
+
         $this->view->display("view/form/Nano/AddForm.php", $content);
     }
 

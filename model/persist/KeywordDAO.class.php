@@ -69,9 +69,9 @@ SQL;
     }
   
     public function add($keyw): bool {
-        var_dump('<br/>keyw');
-        var_dump($keyw);
-        var_dump('<br/>');
+        //var_dump('<br/>keyw');
+        //var_dump($keyw);
+        //var_dump('<br/>');
         if ($this->connect == NULL) {
             $_SESSION['error'] = "Unable to connect to database";
             return FALSE;
@@ -95,7 +95,7 @@ SQL;
                 return FALSE;
             }
         } catch (PDOException $e) {
-            var_dump($e);
+            //var_dump($e);
             return FALSE;
         }
         
@@ -140,7 +140,6 @@ SQL;
             $sql = <<<SQL
                     DELETE FROM Key_words WHERE keyWordId=:keyWordId;
 SQL;
-var_dump($sql);
             $stmt = $this->connect->prepare($sql);
             $stmt->bindValue(":keyWordId", $keyWordId, PDO::PARAM_INT);
 
@@ -156,7 +155,6 @@ var_dump($sql);
     }
 
     public function update($keyw): bool {
-        var_dump($keyw);
         if ($this->connect == NULL) {
             $_SESSION['error'] = "Unable to connect to database";
             return FALSE;
@@ -176,7 +174,6 @@ SQL;
 
             return $stmt->execute();
         } catch (Exception $ex) {
-            var_dump($ex);
             return FALSE;
         }
     }
